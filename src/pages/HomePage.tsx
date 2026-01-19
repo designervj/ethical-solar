@@ -1,0 +1,45 @@
+
+import Hero from "@/components/sections/Hero";
+import FeatureTiles from "@/components/sections/FeatureTiles";
+import AboutStrip from "@/components/sections/AboutStrip";
+import ProductTabsGrid, { Product } from "@/components/sections/ProductTabsGrid";
+import AboutKarloBan from "@/components/sections/CTASection";
+
+import OurWork from "@/components/sections/OurWork";
+
+import SliderBrand from "@/components/sections/SliderBrand";
+import BrandPartnerSec from "@/components/sections/BrandPartnerSec";
+import CTASection from "@/components/sections/CTASection";
+import IdeaInSightPage from "@/components/sections/IdeaInSightPage";
+import HomeHeroSec from "@/components/sections/HomeHeroSec";
+
+const pettyProducts: Product[] = [
+  { id: "p1", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
+  { id: "p2", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
+  { id: "p3", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
+  { id: "p4", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
+  { id: "p5", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
+  { id: "p6", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
+  { id: "p7", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
+  { id: "p8", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
+];
+const categories = [
+  { id: "petty", label: "Petty", products: pettyProducts },
+  { id: "gyuto", label: "Gyuto", products: pettyProducts.slice(0, 6) },
+  { id: "santoku", label: "Santoku", products: pettyProducts.slice(0, 6) },
+  { id: "nakiri", label: "Nakiri", products: pettyProducts.slice(0, 6) },
+];
+export default function HomePage() {
+  return (
+    <main>
+      <Hero />
+      {/* <HomeHeroSec/> */}
+      <SliderBrand/>
+      <AboutStrip/>
+      <OurWork/>
+      <BrandPartnerSec/>
+      <CTASection />
+      <IdeaInSightPage/>
+    </main>
+  );
+}
