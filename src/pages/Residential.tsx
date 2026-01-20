@@ -68,7 +68,7 @@ export const Residential: React.FC = () => {
               <p className="text-xl text-gray-200 font-light max-w-xl leading-relaxed">
                 We've been designing, selling, and installing high-quality solar on homes in Virginia for over a decade. Experience the difference of ethical energy.
               </p>
-              <div className="flex flex-wrap gap-4 pt-4">
+              {/* <div className="flex flex-wrap gap-4 pt-4">
                  <div className="h-12 bg-white/90 px-4 flex items-center rounded-lg shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Better_Business_Bureau_logo.svg/1200px-Better_Business_Bureau_logo.svg.png" className="h-6 w-auto" alt="BBB" />
                  </div>
@@ -76,7 +76,7 @@ export const Residential: React.FC = () => {
                     <Award className="text-gray-800 w-5 h-5" />
                     <span className="font-bold text-gray-900 text-xs tracking-wide">NABCEP CERTIFIED</span>
                  </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Hero Form */}
@@ -123,7 +123,7 @@ export const Residential: React.FC = () => {
         <div  className='container-xl'>
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-2 block">Benefits</span>
-          <h2 className="text-4xl font-serif text-gray-900 mb-6">Why Go Solar?</h2>
+          <h2 className="md:text-4xl  text-3xl font-serif text-gray-900 mb-6">Why Go Solar?</h2>
           <p className="text-gray-600">Switching to solar isn't just about saving money; it's about investing in your home's future and the planet.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -171,7 +171,7 @@ export const Residential: React.FC = () => {
       <section className="bg-gray-50 py-20">
          <div  className='container-xl'>
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif text-gray-900 mb-4">How Solar Works</h2>
+          <h2 className="md:text-4xl  text-3xl font-serif text-gray-900 mb-4">How Solar Works</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">Understanding your system is the first step to energy independence.</p>
         </div>
 
@@ -186,7 +186,7 @@ export const Residential: React.FC = () => {
                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
                         When sunlight hits your panels, they generate DC electricity. Even on cloudy days, your system produces power. Excess energy flows back to the grid for credits (Net Metering).
                     </p>
-                    <Button className="text-xs">Learn about Net Metering</Button>
+                    <Button className="text-xs">Learn about Net Metering </Button>
                 </div>
             </div>
 
@@ -240,7 +240,7 @@ export const Residential: React.FC = () => {
 
         <div className="text-center mb-12">
            <span className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-2 block">Installation Options</span>
-           <h2 className="text-4xl font-serif text-gray-900 mb-6">Roof-Mounted vs. Ground-Mounted</h2>
+           <h2 className="md:text-4xl  text-3xl font-serif text-gray-900 mb-6">Roof-Mounted vs. Ground-Mounted</h2>
            <p className="max-w-3xl mx-auto text-gray-600">
              We optimize the installation based on your property's layout and sun exposure.
            </p>
@@ -316,7 +316,7 @@ export const Residential: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="text-white">
-              <h2 className="text-4xl md:text-5xl font-serif mb-6 leading-tight">Get a free solar quote</h2>
+              <h2 className="md:text-4xl  text-3xl md:text-5xl font-serif mb-6 leading-tight">Get a free solar quote</h2>
               <p className="text-gray-700 mb-10 text-lg leading-relaxed">
                 Every home is unique. We build a 3D model of your property to give you an accurate production estimate, cost analysis, and shading report.
               </p>
@@ -361,7 +361,7 @@ export const Residential: React.FC = () => {
                       <button type="button" className="text-xs bg-white border border-gray-300 px-4 py-2 rounded-full shadow-sm hover:bg-gray-100 transition-colors">Choose file</button>
                    </div>
 
-                   <Button className="w-full mt-2 px-4 py-3">Get My Proposal</Button>
+                   <button className="w-full mt-2 px-4 py-3 bg-[#3ccb7f] rounded-full text-white font-medium hover:bg-opacity-90">Get My Proposal</button>
                  </form>
                </div>
             </div>
@@ -373,7 +373,7 @@ export const Residential: React.FC = () => {
       <section>
         <div className='container-xl py-20'>
         <div className="text-center mb-16">
-           <h2 className="text-4xl font-serif text-gray-900 mb-4">Our Residential Projects</h2>
+           <h2 className="md:text-4xl  text-3xl font-serif text-gray-900 mb-4">Our Residential Projects</h2>
            <p className="text-gray-600">Performance meets aesthetics. See how we install across the region.</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -487,7 +487,7 @@ export const Residential: React.FC = () => {
                </div>
              </div>
              <div className="lg:pl-10 lg:border-l border-gray-800">
-               <h2 className="text-4xl font-serif mb-8">Why you should choose us</h2>
+               <h2 className="md:text-4xl  text-3xl font-serif mb-8">Why you should choose us</h2>
                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
                  We started Ethical Solar as a one-man shop with a Subaru Outback and a borrowed trailer. Over the years, we've grown to become the region's most trusted solar partner.
                </p>
@@ -506,7 +506,7 @@ export const Residential: React.FC = () => {
       <section className='py-20 bg-[#f7f7f7]'>
         <div className='container-xl'>
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif mb-6">Solar Maintenance & Longevity</h2>
+          <h2 className="md:text-4xl  text-3xl font-serif mb-6">Solar Maintenance & Longevity</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
            <div className="flex gap-6 items-start">
@@ -546,7 +546,7 @@ export const Residential: React.FC = () => {
            </div>
            <div className="lg:w-1/2 flex justify-center relative z-10">
              <div className="text-center bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
-               <div className="text-4xl font-black text-gray-900 mb-2 tracking-tighter">SolarInsure</div>
+               <div className="md:text-4xl  text-3xl font-black text-gray-900 mb-2 tracking-tighter">SolarInsure</div>
                <div className="border-4 border-gray-900 p-8 rounded-full w-56 h-56 flex flex-col items-center justify-center mx-auto mb-2">
                   <span className="text-6xl font-black text-gray-900 leading-none">30</span>
                   <span className="text-sm font-bold uppercase tracking-widest mt-1">Year Warranty</span>
@@ -564,9 +564,9 @@ export const Residential: React.FC = () => {
       {/* Installation Process */}
       <section className="bg-white py-20">
         <div className='container-xl'></div>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto pe-8 md:px-0">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif mb-4">Our Installation Process</h2>
+            <h2 className="md:text-4xl  text-3xl font-serif mb-4">Our Installation Process</h2>
             <p className="text-gray-600">We handle everything from the initial design to the final switch flip.</p>
           </div>
           <div className="space-y-2 border-l-2 border-emerald-100 ml-6 pl-8 relative">
@@ -595,7 +595,7 @@ export const Residential: React.FC = () => {
                  <img src={art.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Blog" />
                </div>
                <div className="p-6">
-                <h3 className="font-bold text-lg group-hover:text-emerald-600 transition-colors mb-4">{art.title}</h3>
+                <h3 className="font-bold md:text-lg text-md group-hover:text-emerald-600 transition-colors mb-4">{art.title}</h3>
                 <div className="flex items-center gap-2 text-xs text-gray-500 font-medium uppercase tracking-wide">
                     <span>Ethical Solar</span>
                     <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
@@ -609,10 +609,10 @@ export const Residential: React.FC = () => {
       </section>
 
       {/* FAQ */}
-      <section className="bg-gray-100 py-20 ">
-        <div className="max-w-3xl mx-auto">
+      <section className="bg-gray-100 py-20 md:px-0 px-8">
+        <div className="md:max-w-3xl  mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif mb-4">Frequently Asked Questions</h2>
+            <h2 className="md:text-4xl  text-3xl font-serif mb-4">Frequently Asked Questions</h2>
           </div>
           <div className="divide-y divide-gray-100">
             <FAQItem question="How long does it take to get solar installed?" answer="While the physical installation only takes 1-3 days, the entire process (permitting, utility approval) typically takes 60-90 days from contract signing." />
@@ -633,7 +633,7 @@ export const Residential: React.FC = () => {
          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-400/20 blur-[100px] rounded-full"></div>
          
          <div className="relative z-10 px-4 max-w-4xl mx-auto">
-           <h2 className="text-4xl md:text-5xl font-serif mb-6">Ready to make the switch?</h2>
+           <h2 className="md:text-4xl  text-3xl md:text-5xl font-serif mb-6">Ready to make the switch?</h2>
            <p className="text-emerald-100 mb-10 text-xl font-light">
              We'd be happy to provide you with a custom design, quote, and site assessment.<br/> All free of charge, with no pressure.
            </p>

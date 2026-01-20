@@ -37,9 +37,9 @@ export const AboutUs: React.FC = () => {
       <section className="bg-gray-50  py-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-serif text-gray-900">Our Core Values</h2>
+            <h2 className="md:text-4xl  text-3xl font-serif text-gray-900">Our Core Values</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 md:px-0">
             {[
               { icon: Heart, title: "Integrity First", desc: "We never recommend a system if it doesn't make financial sense for the customer." },
               { icon: Globe, title: "Sustainability", desc: "We are carbon neutral in our operations and plant 50 trees for every installation." },
@@ -59,9 +59,9 @@ export const AboutUs: React.FC = () => {
         </div>
       </section>
 
-      <section className='py-20 container-xl'>
+      <section className='md:py-20 py-10 container-xl'>
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-serif text-gray-900">Meet the Leadership</h2>
+          <h2 className="md:text-4xl  text-3xl font-serif text-gray-900">Meet the Leadership</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[

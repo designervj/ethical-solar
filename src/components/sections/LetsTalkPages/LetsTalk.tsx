@@ -62,7 +62,7 @@ const LetsTalk: React.FC = () => {
         <div className="container-xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-6 overflow-hidden">
             {/* LEFT PURPLE PANEL */}
-            <div className="bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] text-white p-8 md:p-10 flex flex-col min-h-[520px] rounded-[20px] w-1/3">
+            <div className="bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] text-white p-8 md:p-10 flex flex-col min-h-[520px] rounded-[20px] md:w-1/3">
               <div>
                 <h4 className="text-xl font-semibold">
                   Get a free solar assessment
@@ -113,7 +113,7 @@ const LetsTalk: React.FC = () => {
             </div>
 
             {/* RIGHT FORM PANEL */}
-            <div className="p-8 md:p-10 bg-white w-2/3">
+            <div className="px-0 py-8  md:p-10 bg-white md:w-2/3 ">
               <form className="space-y-6">
                 {/* First + Email */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -169,7 +169,7 @@ const LetsTalk: React.FC = () => {
                 <div className="w-full rounded-xl bg-slate-900 px-6 py-5" style={{marginTop:"10px"}}>
                   <label
                     htmlFor={id}
-                    className="block text-white text-md font-medium mb-4"
+                    className="block text-white md:text-md text-sm font-medium mb-4"
                   >
                     {label}
                   </label>
@@ -188,12 +188,12 @@ const LetsTalk: React.FC = () => {
                     <button
                       type="button"
                       onClick={handlePick}
-                      className="inline-flex items-center justify-center px-8 py-2 rounded-full border border-white text-white font-medium text-md hover:bg-white/10 active:scale-[0.99] transition"
+                      className="inline-flex items-center justify-center md:px-8 px-4 py-2 rounded-full border border-white text-white font-medium md:text-md text-sm hover:bg-white/10 active:scale-[0.99] transition"
                     >
                       Choose file
                     </button>
 
-                    <span className="text-white text-md font-medium">
+                    <span className="text-white md:text-md text-sm font-medium">
                       {fileName}
                     </span>
                   </div>

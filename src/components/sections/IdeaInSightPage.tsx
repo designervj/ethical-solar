@@ -24,7 +24,7 @@ const blogPosts = [
     title: "5 Maintenance Tips for Peak Solar Efficiency",
     category: "Guides",
     date: "Feb 10, 2025",
-    image: "c",
+    image: "assets/img/img (5).jpg",
     excerpt: "Dirty panels can lose up to 25% efficiency. Here is our simple guide to keeping your system running perfectly."
   },
 

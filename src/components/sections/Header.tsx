@@ -52,89 +52,7 @@ const megaMenuData: Record<
   // ====================================================================
   // CUSTOM 'WHAT WE DO' MEGA MENU DATA
   // ====================================================================
-  whatWeDo: {
-    title: "What We Do",
-    subtitle:
-      "Pregled svih usluga i modela pretplate (branding, web, content, AI video). SEO: creative services, marketing subscription, branding agency Croatia.",
-    sections: [
-      {
-        title: "Branding & Strategy",
-        href: "/what-we-do/branding-strategy",
-        subcategories: [
-          {
-            title: "Brand strategy & positioning",
-            description: "Clear foundations, positioning, messaging.",
-          },
-          {
-            title: "Visual identity",
-            description: "Your brand’s visual language, modern & consistent.",
-          },
-          {
-            title: "Packaging & Print design",
-            description: "Physical brand experience design.",
-          },
-        ],
-      },
-      {
-        title: "Web & Digital",
-        href: "/what-we-do/web-design-development",
-        subcategories: [
-          {
-            title: "UI/UX, web design",
-            description: "Clear flows that turn visitors into clients.",
-          },
-          {
-            title: "Web shop",
-            description: "Custom e-commerce solutions.",
-          },
-          {
-            title: "SEO & Technical structure",
-            description: "Structure that helps clients (and Google) find you.",
-          },
-          {
-            title: "Deployment",
-            description: "Fast, reliable, and secure launching.",
-          },
-        ],
-      },
-      {
-        title: "Content & Marketing",
-        href: "/what-we-do/marketing",
-        subcategories: [
-          {
-            title: "Content System",
-            description: "Your monthly communication rhythm.",
-          },
-          {
-            title: "Marketing strategy",
-            description: "Targeted plans to drive demand.",
-          },
-          {
-            title: "Social media, Ads, PPC",
-            description: "Paid media campaigns for high conversion.",
-          },
-        ],
-      },
-      {
-        title: "AI Video Production",
-        href: "/what-we-do/ai-and-video",
-        subcategories: [
-          {
-            title: "Video for Social media and Ads",
-            description: "Scroll-stopping storytelling for your brand.",
-          },
-          {
-            title: "Video for Web & Presentations",
-            description: "Professional visual assets.",
-          },
-          {
-            title: "AI powered Video production",
-            description: "Efficient, scalable video creation using AI.",
-          },
-        ],
-      },
-    ],
-  },
+
 
   // ====================================================================
   // REST OF THE MENU DATA (old 'items' structure)
@@ -142,125 +60,12 @@ const megaMenuData: Record<
 
   
 
-  whoWeCreateFor: {
-    title: "Who We Create For",
-    subtitle:
-      "Niše u kojima imamo najviše iskustva – turizam, charter, zdravstvo i lokalni brendovi.",
-    sections: [
-      {
-        title: "Tourism & Travel",
-        href: "/what-we-do/branding-strategy",
-        subcategories: [
-          {
-            title: "Core Challenges",
-            description: "Clear foundations, positioning, messaging.",
-          },
-         
-        ],
-      },
-      {
-        title: "Yacht & Charter",
-        href: "/what-we-do/web-design-development",
-        subcategories: [
-          {
-            title: "What They Need",
-            description: "Clear flows that turn visitors into clients.",
-          },
-          
-        ],
-      },
-      {
-        title: "Health & Beauty",
-        href: "/what-we-do/marketing",
-        subcategories: [
-          {
-            title: "Snapshot Results",
-            description: "Your monthly communication rhythm.",
-          },
-          
-        ],
-      },
-      {
-        title: "Boutique Brands",
-        href: "/what-we-do/ai-and-video",
-        subcategories: [
-          {
-            title: "Best-Fit Plans",
-            description: "Which subscription plan suits each industry.",
-          },
-        ],
-      },
-    ],
-  },
 
-  brands: {
-    title: "Brands We Partner With",
-    subtitle:
-      "Case study sekcija; SEO: marketing results, case studies, agency portfolio.",
-    items: [
-      {
-        title: "Case Studies",
-        description:
-          "Pregled suradnji i rezultata koje smo ostvarili za klijente.",
-        cards: [
-          {
-            title: "Featured Projects",
-            description:
-              "Najzanimljiviji projekti – rezultati, brojke i konkretni primjeri rasta.",
-            href: "/brands-we-partner-with/case-studies",
-          },
-        ],
-      },
-    ],
-  },
 
-  ideas: {
-    title: "Ideas & Insights",
-    subtitle:
-      "Blog / resource center; SEO: marketing insights, creative strategy, content ideas.",
-    items: [
-      {
-        title: "Insights Hub",
-        description:
-          "Blog i resursi: SEO, content marketing, kreativna strategija.",
-        cards: [
-          {
-            title: "Articles",
-            description:
-              "Praktični vodiči i insighti o brandingu, marketingu i AI alatima.",
-            href: "/ideas-insights/articles",
-          },
-          {
-            title: "Resources",
-            description:
-              "Templatei, checkliste i materijali koji pomažu vašem marketing timu.",
-            href: "/ideas-insights/resources",
-          },
-        ],
-      },
-    ],
-  },
 
-  contact: {
-    title: "Let’s Talk",
-    subtitle:
-      "Kontakt / booking demo; SEO: marketing consultation, creative demo, contact agency.",
-    items: [
-      {
-        title: "Contact & Demo",
-        description:
-          "Brzi kontakt, upit ili dogovor za prezentaciju rješenja i strategije.",
-        cards: [
-          {
-            title: "Book a Free Demo",
-            description:
-              "Glavni poziv na akciju – kreativni demo, marketing konzultacije i free strategy call.",
-            href: "/lets-talk/book-demo",
-          },
-        ],
-      },
-    ],
-  },
+
+
+
 };
 
 const Header = () => {
@@ -348,7 +153,7 @@ const Header = () => {
 
               {/* CTA Button */}
               <Link
-                to="/lets-talk/book-demo"
+                to="/contact-us"
                 className="bg-[#3ccb7f] hover:bg-[#23499b] text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
               >
 
@@ -373,7 +178,7 @@ const Header = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
-                className="text-gray-700"
+                className="text-white"
               >
                 {mobileOpen ? (
                   <X className="w-6 h-6" />
