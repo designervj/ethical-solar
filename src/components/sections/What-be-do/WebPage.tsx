@@ -28,7 +28,7 @@ const WebPage = () => {
 
           <div className="flex  items-center gap-4">
             {/* Primary CTA */}
-            <button className="bg-[#9B00FF] hover:bg-[#8000FF] text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all">
+            <button className="bg-[#9B00FF] hover:bg-[#0e7090] text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all">
               Book a Free Demo
             </button>
 

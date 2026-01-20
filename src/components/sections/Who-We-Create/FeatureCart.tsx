@@ -62,7 +62,7 @@ const FeatureCart = () => {
                   {/* --- Horizontal Line Added --- */}
                   <hr className="border-gray-200 mb-4" />
                   
-                  <a href="#" className="text-[#8000FF] italic text-md font-medium hover:underline">
+                  <a href="#" className="text-[#0e7090] italic text-md font-medium hover:underline">
                    Read Article &gt;
                   </a>
                 </div>
@@ -75,7 +75,7 @@ const FeatureCart = () => {
           <div className="text-center mt-16">
             <button 
               // --- Changed to rounded-full ---
-              className="bg-[#6F00FF] text-white font-medium py-3 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300"
+              className="bg-[#3ccb7f] text-white font-medium py-3 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300"
             >
               See all Article
             </button>

@@ -22,7 +22,7 @@ const IdeasInsights = () => {
           <button
             className="
               md:px-7 px-5 py-3 rounded-full
-              bg-[#8000FF] text-white font-medium text-sm md:text-[16px]
+              bg-[#0e7090] text-white font-medium text-sm md:text-[16px]
               shadow-sm transition-all
               hover:brightness-95 hover:-translate-y-0.5
               focus:outline-none focus:ring-2 focus:ring-[#6C2CF5]/40

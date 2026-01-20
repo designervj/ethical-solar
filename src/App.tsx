@@ -8,6 +8,11 @@ import WebPage from './components/sections/What-be-do/WebPage';
 import WorkPage from './components/sections/Who-We-Create/WorkPage';
 import IdeasInsights from './components/sections/IdeaInsightPage/IdeasInsights';
 import LetsTalkPage from './pages/LetsTalkPage';
+import { AboutUs } from './pages/AboutUs';
+import { Blog } from './pages/Blog';
+import ContactUs from './pages/ContactUs';
+import { Residential } from './pages/Residential';
+import Commercial from './pages/Commercial';
 
 
 
@@ -33,10 +38,13 @@ export default function App(){
       />
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/what-we-do' element={<WebPage/>}/>
-        <Route path='/who-we-create-for' element={<WorkPage/>}/>
-        <Route path='/ideas-insights' element={<IdeasInsights/>}/>
-        <Route path='/lets-talk' element={<LetsTalkPage/>}/>
+        <Route path='/residentia' element={<Residential/>}/>
+        {/* <Route path='/contact-us' element={<WorkPage/>}/> */}
+        <Route path='/blog' element={<Blog/>}/>
+        <Route path='/commercial' element={<Commercial/>}/>
+        <Route path='/about-us' element={<AboutUs/>}/>  
+       
+        <Route path='/contact-us' element={<ContactUs/>}/>
 
 
 

@@ -4,7 +4,7 @@ import { Mail } from "lucide-react";
 const NewsletterSection = () => {
   return (
     <section className="bg-[#FF7020] py-14 mb-8">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="container-xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Left Section */}
         <div className="flex items-start gap-4 text-white">
           <div className="bg-orange-400/80 p-4 rounded-md">

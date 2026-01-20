@@ -16,7 +16,7 @@ const CTASections: React.FC = () => {
 
           <div className="flex  items-center gap-4 md:flex-nowrap md:gap-4 mt-6">
             {/* Primary CTA */}
-            <button className="bg-[#6F00FF] hover:bg-[#5a00d1] text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all ">
+            <button className="bg-[#3ccb7f] hover:bg-[#5a00d1] text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all ">
               Book a Free Demo
             </button>
 

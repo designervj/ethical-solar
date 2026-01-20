@@ -1,71 +1,69 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { Play, ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
-import YouTube, { YouTubeEvent, YouTubeProps } from "react-youtube";
+import { motion, AnimatePresence } from "framer-motion";
 
-// Services data based on the image
+// ✅ CONTENT UPDATED FOR ETHICAL SOLAR (NO ICONS ADDED, SAME STRUCTURE)
 const services = [
   {
-    title: "Branding & Strategy",
-    description: "Build clarity, consistency and a voice people remember.",
-    linkText: "Explore branding services",
-    href: "#",
+    title: "Residential Solar",
+    description:
+      "Custom rooftop solar systems designed for your home, usage, and budget — built to maximize long-term savings.",
+    linkText: "Explore residential solar",
+    href: "#residential",
   },
   {
-    title: "Web & Digital",
+    title: "Commercial Solar",
     description:
-      "Websites and booking experiences designed to convert - not just exist.",
-    linkText: "Explore web services",
-    href: "#",
+      "Scalable solar solutions for businesses to reduce operating costs and improve sustainability performance.",
+    linkText: "Explore commercial solar",
+    href: "#commercial",
   },
   {
-    title: "Content & Marketing",
+    title: "Battery Storage",
     description:
-      "Content that compounds: social, email, campaigns and analytics.",
-    linkText: "Explore marketing services",
-    href: "#",
+      "Store energy for nights and outages. Add backup power and smarter savings with modern battery systems.",
+    linkText: "Explore battery options",
+    href: "#battery",
   },
   {
-    title: "AI Video Production",
+    title: "Maintenance & Monitoring",
     description:
-      "Turn photos into cinematic stories. Faster, smarter, and finally affordable.",
-    linkText: "See full services",
-    href: "#",
+      "Ongoing monitoring, performance checks, and maintenance support to keep your system running at its best.",
+    linkText: "View support plans",
+    href: "#support",
   },
 ];
 
+type VideoState = "idle" | "ready" | "playing" | "error";
+
 export default function WhatWeDo() {
   const [expanded, setExpanded] = useState(false);
+  const [videoState, setVideoState] = useState<VideoState>("idle");
 
-  // YouTube video id from: https://www.youtube.com/watch?v=VCo6_Q0-mL0
-  const videoId = "VCo6_Q0-mL0";
+  // ✅ If these files are in /public, use leading "/"
+  // /public/assets/img/solar-panal4.jpg
+  // /public/assets/video/showreel.mp4
+  const posterSrc = "/assets/img/solar-panal4.jpg";
+  const videoSrc = "assets/img/showreel.mp4";
 
-  const ytOpts: YouTubeProps["opts"] = useMemo(
-    () => ({
-      width: "100%",
-      height: "100%",
-      playerVars: {
-        autoplay: 1,
-        controls: 1,
-        rel: 0,
-        modestbranding: 1,
-      },
-    }),
-    []
+  const cardGridClass = useMemo(
+    () =>
+      expanded
+        ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        : "grid grid-cols-1 sm:grid-cols-2 gap-6",
+    [expanded]
   );
 
-  const handlePlay = (_e: YouTubeEvent<number>) => {
+  const onOpen = () => {
     setExpanded(true);
+    setVideoState("ready");
   };
 
-  const handlePause = (_e: YouTubeEvent<number>) => {
+  const onClose = () => {
     setExpanded(false);
-  };
-
-  const handleEnd = (_e: YouTubeEvent<number>) => {
-    setExpanded(false);
+    setVideoState("idle");
   };
 
   return (
@@ -74,12 +72,12 @@ export default function WhatWeDo() {
         {/* Header */}
         <div className="max-w-lg mx-auto text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-normal text-[#555555] mb-4">
-            What We Do 
+            What We Do
           </h2>
           <p className="text-lg text-[#555555] md:text-lg">
-            We combine brand strategy, web design and content to build creative
-            systems - not one-off campaigns. Pick what you need, or plug us in
-            as your ongoing team.
+            We design and install reliable solar + storage systems for homes and
+            businesses — with clear pricing, quality components, and long-term
+            support.
           </p>
         </div>
 
@@ -103,37 +101,99 @@ export default function WhatWeDo() {
                 : "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[450px] p-6 flex flex-col justify-between"
             }
           >
-            {/* Collapsed state overlay (logo + play button) */}
+            {/* Collapsed state (placeholder image + play) */}
             {!expanded && (
               <>
-                <h4 className="font-light text-white text-3xl">hrescic</h4>
+                <h4 className="font-light text-white text-3xl relative z-10">
+                  ETHICAL SOLAR
+                </h4>
+
+                {/* Poster background */}
+                <div className="absolute inset-0">
+                  <img
+                    src={posterSrc}
+                    alt="Project preview"
+                    className="w-full h-full object-cover opacity-70"
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).style.display =
+                        "none";
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/50" />
+                </div>
 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button
-                    onClick={() => setExpanded(true)}
+                    onClick={onOpen}
                     className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all"
-                    aria-label="Play showreel"
+                    aria-label="Play video"
                   >
                     <Play className="w-8 h-8 fill-white" />
                   </button>
                 </div>
 
-                <span className="text-white text-sm">Showreel, 2026</span>
+                <span className="text-white text-sm relative z-10">
+                  Solar Installation Overview
+                </span>
               </>
             )}
 
-            {/* Expanded state: actual YouTube player */}
+            {/* Expanded state: video player */}
             {expanded && (
               <div className="absolute inset-0">
-                <YouTube
-                  videoId={videoId}
-                  opts={ytOpts}
-                  className="w-full h-full"
-                  iframeClassName="w-full h-full"
-                  onPlay={handlePlay}
-                  onPause={handlePause}
-                  onEnd={handleEnd}
+                <video
+                  src={videoSrc}
+                  poster={posterSrc}
+                  controls
+                  autoPlay
+                  playsInline
+                  className="w-full h-full object-cover"
+                  onCanPlay={() => setVideoState("ready")}
+                  onPlay={() => setVideoState("playing")}
+                  onPause={() => setVideoState("ready")}
+                  onEnded={onClose}
+                  onError={() => setVideoState("error")}
                 />
+
+                {/* Close */}
+                <button
+                  type="button"
+                  onClick={onClose}
+                  className="absolute top-3 right-3 bg-black/40 hover:bg-black/60 text-white rounded-full px-3 py-1 text-sm"
+                >
+                  Close
+                </button>
+
+                {/* Error overlay */}
+                <AnimatePresence>
+                  {videoState === "error" && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="absolute inset-0 bg-black/70 flex items-center justify-center p-6"
+                    >
+                      <div className="max-w-md text-center text-white">
+                        <p className="font-semibold text-lg mb-2">
+                          Video load nahi hua.
+                        </p>
+                        <p className="text-sm text-white/80 mb-4">
+                          Ensure video exists at:{" "}
+                          <span className="font-mono">{videoSrc}</span>
+                          <br />
+                          Recommended: keep mp4 inside{" "}
+                          <b>/public/assets/video/</b>
+                        </p>
+                        <button
+                          onClick={onClose}
+                          className="px-4 py-2 rounded-lg bg-white text-black font-semibold"
+                        >
+                          Back
+                        </button>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             )}
           </motion.div>
@@ -142,11 +202,7 @@ export default function WhatWeDo() {
           <motion.div
             layout
             transition={{ duration: 0.7, ease: "easeInOut" }}
-            className={
-              expanded
-                ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-                : "grid grid-cols-1 sm:grid-cols-2 gap-6"
-            }
+            className={cardGridClass}
           >
             {services.map((service) => (
               <motion.div
@@ -157,14 +213,14 @@ export default function WhatWeDo() {
                 <h4 className="font-bold text-lg text-[#1F1F1F] mb-2">
                   {service.title}
                 </h4>
-                <p className="text-[#4B4B4B] text-md mb-4">
+                <p className="text-[#4B4B4B] text-sm mb-4">
                   {service.description}
                 </p>
 
                 <hr className="mt-auto" />
                 <a
                   href={service.href}
-                  className="text-purple-600 hover:text-purple-800 text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
+                  className="text-[#0e7090] hover:text-[#0e7090] text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
                 >
                   {service.linkText}
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

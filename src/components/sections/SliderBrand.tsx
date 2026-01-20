@@ -1,92 +1,108 @@
 "use client";
-import React from "react";
+
+import React, { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, A11y } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
-import {
-  Truck,
-  Star,
-  RotateCcw,
-  MessageCircle,
-  CreditCard,
-} from "lucide-react";
 
-const features = [
-  {
-    icon: <Truck className="w-10 h-10 text-orange-500" />,
-    title: "Free Delivery",
-    desc: "from $40",
-  },
-  {
-    icon: <Star className="w-10 h-10 text-orange-500" />,
-    title: "Best Quality",
-    desc: "Brand",
-  },
-  {
-    icon: <RotateCcw className="w-10 h-10 text-orange-500" />,
-    title: "1 Year",
-    desc: "for free Return",
-  },
-  {
-    icon: <MessageCircle className="w-10 h-10 text-orange-500" />,
-    title: "Feedback",
-    desc: "98% Real Data",
-  },
-  {
-    icon: <CreditCard className="w-10 h-10 text-orange-500" />,
-    title: "Payment",
-    desc: "Secure",
-  },
+type Brand = {
+  img: string;
+  alt: string;
+  href?: string;
+};
+
+/**
+ * ✅ Replace these with your real solar partner logos in /public/assets/solar/
+ * Example paths:
+ *  - /assets/solar/sunpower.svg
+ *  - /assets/solar/enphase.svg
+ *  - /assets/solar/tesla-energy.svg
+ */
+const SOLAR_BRANDS: Brand[] = [
+  { img: "/assets/img/Tesla_Energy_logo.png", alt: "SunPower" },
+  { img: "/assets/img/Enphase_logo.svg.png", alt: "Enphase" },
+  { img: "/assets/img/Tesla_Energy_logo.png", alt: "Tesla Energy" },
+  { img: "/assets/img/SolarEdge_logo.svg.png", alt: "SolarEdge" },
+  { img: "https://media.us.lg.com/transform/6c7ea0f8-5f94-4fc3-a8fe-18ad05ac2205/lg_logo", alt: "LG Solar" },
+  { img: "/assets/img/CSIQ-logo.png", alt: "Canadian Solar" },
+  { img: "/assets/img/jinko-solar.png", alt: "Jinko Solar" },
+    { img: "/assets/img/Tesla_Energy_logo.png", alt: "SunPower" },
+  { img: "/assets/img/Enphase_logo.svg.png", alt: "Enphase" },
+  { img: "/assets/img/Tesla_Energy_logo.png", alt: "Tesla Energy" },
+  { img: "/assets/img/SolarEdge_logo.svg.png", alt: "SolarEdge" },
+  { img: "https://media.us.lg.com/transform/6c7ea0f8-5f94-4fc3-a8fe-18ad05ac2205/lg_logo", alt: "LG Solar" },
+  { img: "/assets/img/CSIQ-logo.png", alt: "Canadian Solar" },
+  { img: "/assets/img/jinko-solar.png", alt: "Jinko Solar" },
+
 ];
 
-const brands = [
-  { img: "assets/Image/apple-logo.svg", alt: "Apple logo" },
-  { img: "assets/Image/Swoosh-logo.svg", alt: "Swoosh logo" },
-  { img: "assets/Image/hult-logo.svg", alt: "Hult logo" },
-  { img: "assets/Image/mercedes-logo.svg", alt: "Mercedes logo" },
-  { img: "assets/Image/logo-amazon.svg", alt: "Amazon logo" },
-  { img: "assets/Image/microsoft-logo.svg", alt: "Microsoft Logo" },
-  
-];
+const SliderBrandSolar: React.FC = () => {
+  const brands = useMemo(() => SOLAR_BRANDS, []);
 
-const SliderBrand = () => {
   return (
-    <div className="bg-white py-16 container-xl">
-      <div className=" mx-auto">
-        {/* ---------- Bottom Brand Slider ---------- */}
-        <div className="flex justify-center italic text-sm font-medium text-[#555555]">
-        <span className="text-center pb-6">Trusted by Industry Professionals From:</span>
+    <section className="bg-white py-12">
+      <div className="mx-auto max-w-6xl px-4">
+        {/* Heading */}
+        <div className="text-center">
+          <p className="text-sm md:text-base italic font-medium text-[#555555]">
+            Trusted by homeowners and installers — featuring leading solar
+            brands:
+          </p>
         </div>
-        <div className="pt-8">
+
+        {/* Slider */}
+        <div className="mt-8">
           <Swiper
-            slidesPerView={8}
-            spaceBetween={30}
-            loop={true}
-            navigation={false}
-            modules={[Navigation]}
+            modules={[Autoplay, A11y]}
+            loop
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            speed={700}
+            spaceBetween={28}
+            slidesPerView={6}
             breakpoints={{
-              320: { slidesPerView: 3 },
-              640: { slidesPerView: 4 },
-              1024: { slidesPerView: 6 },
+              0: { slidesPerView: 2.5, spaceBetween: 18 },
+              480: { slidesPerView: 3.5, spaceBetween: 22 },
+              768: { slidesPerView: 5, spaceBetween: 26 },
+              1024: { slidesPerView: 6, spaceBetween: 28 },
             }}
-            className="flex items-start">
+          >
             {brands.map((brand, i) => (
-              <SwiperSlide key={i}>
-                <div className="flex items-center justify-start opacity-90 hover:opacity-100 transition-all">
-                  <img
-                    src={brand.img}
-                    alt={brand.alt}
-                    className="h-9 object-contain"
-                  />
+              <SwiperSlide key={`${brand.alt}-${i}`}>
+                <div className="h-14 md:h-16 flex items-center justify-center">
+                  {brand.href ? (
+                    <a
+                      href={brand.href}
+                      className="opacity-80 hover:opacity-100 transition"
+                      aria-label={brand.alt}
+                    >
+                      <img
+                        src={brand.img}
+                        alt={brand.alt}
+                        className="h-8 md:h-9 w-auto object-contain"
+                        loading="lazy"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={brand.img}
+                      alt={brand.alt}
+                      className="h-8 md:h-9 w-auto object-contain opacity-80 hover:opacity-100 transition"
+                      loading="lazy"
+                    />
+                  )}
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
+
+        {/* Small note */}
+        {/* <div className="mt-6 text-center text-xs text-[#777]">
+          Logos are trademarks of their respective owners.
+        </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default SliderBrand;
+export default SliderBrandSolar;

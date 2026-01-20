@@ -128,7 +128,7 @@ const SectorCards: React.FC = () => {
                   </div>
                 </div>
 
-                <button className="mt-2 w-fit rounded-full bg-[#8000FF] px-5 py-2 text-[14px] font-medium text-white shadow-sm hover:opacity-95">
+                <button className="mt-2 w-fit rounded-full bg-[#0e7090] px-5 py-2 text-[14px] font-medium text-white shadow-sm hover:opacity-95">
                   {c.cta}
                 </button>
               </div>

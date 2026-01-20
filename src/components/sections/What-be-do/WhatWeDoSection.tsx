@@ -1,37 +1,36 @@
 import React from "react";
 
-// Service data taken from the screenshot
+// ✅ Ethical Solar service data
 const services = [
   {
-    service: "Branding & Strategy",
-    problem: "People don’t quickly understand your value.",
-    get: "Positioning, messaging, tone of voice, visual identity.",
-    growth: "Creates clarity — the foundation for conversion.",
+    service: "Residential Solar",
+    problem: "High electricity bills and unpredictable rate increases.",
+    get: "Site assessment, system design, premium panels + inverter, clean installation.",
+    growth: "Cuts monthly bills and increases home value with long-term energy security.",
   },
   {
-    service: "Web & Digital",
-    problem: "Your website looks good but doesn’t perform.",
-    get: "UX/UI, landing pages, full websites, booking flows, SEO.",
-    growth: "Turns clarity into action (leads, bookings, sales).",
+    service: "Commercial Solar",
+    problem: "Rising operating costs are eating into profit margins.",
+    get: "Energy audit, scalable design, performance modelling, compliant commercial install.",
+    growth: "Reduces overhead, improves sustainability reporting, and stabilizes energy spend.",
   },
   {
-    service: "Content & Marketing",
-    problem:
-      "You’re visible, but not consistently or to the right people.",
-    get: "Social content, emails, blogs, campaigns, analytics.",
-    growth: "Builds trust, demand and long-term momentum.",
+    service: "Battery Storage",
+    problem: "Grid outages and peak-hour costs reduce reliability and savings.",
+    get: "Battery sizing, backup setup, smart load control, hybrid-ready configuration.",
+    growth: "Stores solar for night use, improves resilience, and increases ROI over time.",
   },
   {
-    service: "AI Video Production",
-    problem: "Hard to stand out in a crowded market.",
-    get: "Hero videos, social clips, variations, monthly refresh.",
-    growth: "Adds emotional impact and boosts conversions.",
+    service: "Maintenance & Monitoring",
+    problem: "Systems underperform without anyone noticing.",
+    get: "Production monitoring, health checks, cleaning guidance, warranty support.",
+    growth: "Protects performance year-round and maximizes lifetime savings.",
   },
 ];
 
-// Simple placeholder icon (design same as before)
+// ✅ Simple icon (same layout) with SOLAR gradient text + ring
 const ServiceIcon = () => (
-  <div className="p-3 rounded-full bg-purple-50 text-[#6F00FF]">
+  <div className="p-3 rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="h-6 w-6"
@@ -41,84 +40,103 @@ const ServiceIcon = () => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      aria-hidden="true"
     >
-      <circle cx="12" cy="12" r="10" />
-      <path d="M8 12h8" />
-      <path d="M12 8v8" />
+      <circle cx="12" cy="12" r="5" />
+      <path d="M12 1v3" />
+      <path d="M12 20v3" />
+      <path d="M4.22 4.22l2.12 2.12" />
+      <path d="M17.66 17.66l2.12 2.12" />
+      <path d="M1 12h3" />
+      <path d="M20 12h3" />
+      <path d="M4.22 19.78l2.12-2.12" />
+      <path d="M17.66 6.34l2.12-2.12" />
     </svg>
   </div>
 );
 
 const WhatWeDoSection = () => {
   return (
-    <section className="container-xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-      {/* Header Section */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-light tracking-tight text-gray-800">
-          What We Do
-        </h2>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-          Your brand, website, content and video all need to work as one system.
-          <br />
-          We align these four areas to attract the right clients and create
-          consistent growth.
-        </p>
-      </div>
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight text-gray-900">
+            What Ethical Solar Does
+          </h2>
+          <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
+            Solar is not just panels — it’s a complete system. We design,
+            install, and support solar + storage solutions that reduce bills,
+            improve reliability, and deliver long-term savings.
+          </p>
+        </div>
 
-      {/* Service Overview header */}
-      <div className="mb-10 flex justify-between items-center border-b pb-4">
-        <h3 className="text-2xl font-semibold text-gray-900">
-          Service Overview
-        </h3>
-        <a
-          href="#"
-          className="text-purple-600 hover:text-purple-800 flex items-center group"
-        >
-          Learn more
-          <svg
-            className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        {/* Section header */}
+        <div className="mb-10 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 border-b border-black/10 pb-4">
+          <h3 className="text-2xl font-semibold text-gray-900">
+            Service Overview
+          </h3>
+
+          <a
+            href="#contact-section"
+            className="text-emerald-700 hover:text-emerald-900 inline-flex items-center group font-medium"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17.5 12h-11M13.5 16l4-4-4-4"
-            />
-          </svg>
-        </a>
-      </div>
+            Get a free solar assessment
+            <svg
+              className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M17.5 12h-11M13.5 16l4-4-4-4"
+              />
+            </svg>
+          </a>
+        </div>
 
-      {/* Services grid – same design, new content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
-        {services.map((item) => (
-          <div key={item.service} className="flex items-start space-x-4">
-            {/* Icon */}
-            <ServiceIcon />
+        {/* Services grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+          {services.map((item) => (
+            <div key={item.service} className="flex items-start space-x-4">
+              <ServiceIcon />
 
-            {/* Text block */}
-            <div>
-              <h4 className="text-lg font-semibold text-gray-900">
-                {item.service}
-              </h4>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900">
+                  {item.service}
+                </h4>
 
-              <p className="mt-2 text-sm text-gray-700">
-                <span className="font-semibold">Problem It Solves: </span>
-                {item.problem}
-              </p>
-              <p className="mt-1 text-sm text-gray-700">
-                <span className="font-semibold">What You Get: </span>
-                {item.get}
-              </p>
-              <p className="mt-1 text-sm text-gray-700">
-                <span className="font-semibold">How It Supports Growth: </span>
-                {item.growth}
-              </p>
+                <p className="mt-2 text-sm text-gray-700">
+                  <span className="font-semibold">Problem It Solves: </span>
+                  {item.problem}
+                </p>
+
+                <p className="mt-1 text-sm text-gray-700">
+                  <span className="font-semibold">What You Get: </span>
+                  {item.get}
+                </p>
+
+                <p className="mt-1 text-sm text-gray-700">
+                  <span className="font-semibold">How It Supports Savings: </span>
+                  {item.growth}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Optional note */}
+        <div className="mt-12 rounded-2xl bg-white border border-black/5 p-6 text-center">
+          <p className="text-gray-700">
+            Want a clear estimate for your property? We’ll model your roof,
+            show expected production, and explain incentives available in your
+            area.
+          </p>
+        </div>
       </div>
     </section>
   );

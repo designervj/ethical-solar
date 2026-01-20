@@ -21,15 +21,18 @@ type MegaSection = {
 
 // Top-level nav (page urls added)
 const navItems = [
-  { name: "What We Do", href: "/what-we-do", megaKey: "whatWeDo" },
-  { name: "Who We Create For", href: "/who-we-create-for", megaKey: "whoWeCreateFor" },
+  { name: "Home ", href: "/what-we-do", megaKey: "whatWeDo" },
+  { name: "Residentia", href: "/residentia", megaKey: "whoWeCreateFor" },
   {
-    name: "Brands We Partner With",
-    href: "/brands-we-partner-with",
+    name: "Commercial",
+    href: "/commercial",
     megaKey: "brands",
   },
-  { name: "Ideas & Insights", href: "/ideas-insights", megaKey: "ideas" },
-  { name: "Let's Talk", href: "/lets-talk", megaKey: "contact" },
+  { name: "Blog", href: "/blog", megaKey: "ideas" },
+
+  { name: "About Us", href: "/about-us", megaKey: "about" },
+
+  { name: "Contact us", href: "/contact-us", megaKey: "contact" },
 ];
 
 // Re-defining the Mega-menu data structure
@@ -284,26 +287,28 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white">
+    <header className="sticky top-0 z-50 w-full bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] ">
       <div
         className="relative border-b border-gray-100"
         onMouseLeave={() => {
           setActiveMega(null);
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container-fuild mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link
                 to="/"
-                className="flex items-center gap-2 text-3xl font-serif font-medium text-gray-900"
+                className="flex items-center gap-2 text-3xl font-serif font-medium text-white "
               >
-                <img
+                {/* <img
                   src="../assets/Image/hrescic-logo.svg"
                   alt="Hrescic logo"
                   className="h-8 w-auto"
-                />
+                /> */}
+
+                <h3 className="text-white">ETHICAL SOLAR</h3>
               </Link>
             </div>
 
@@ -323,8 +328,8 @@ const Header = () => {
                     }
                     className={`group text-[14px] font-medium transition-colors relative ${
                       isActive
-                        ? "text-gray-900"
-                        : "text-[#555] hover:text-gray-900"
+                        ? "text-[#f4f4f4]"
+                        : "text-[#fff] hover:text-[#fff]"
                     }`}
                   >
                     {item.name}
@@ -332,8 +337,8 @@ const Header = () => {
                       <span
                         className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] rounded-full transition-all duration-200 ${
                           isActive
-                            ? "w-full bg-[#6F00FF]"
-                            : "w-0 bg-[#6F00FF] group-hover:w-full"
+                            ? "w-full bg-[#3ccb7f]"
+                            : "w-0 bg-[#3ccb7f] group-hover:w-full"
                         }`}
                       />
                     )}
@@ -344,13 +349,14 @@ const Header = () => {
               {/* CTA Button */}
               <Link
                 to="/lets-talk/book-demo"
-                className="bg-[#6F00FF] hover:bg-[#5a00d1] text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
+                className="bg-[#3ccb7f] hover:bg-[#23499b] text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
               >
-                Book a Free Demo
+
+                Get a Quote
               </Link>
 
               {/* Language Selector */}
-              <select
+              {/* <select
                 defaultValue={i18n.language}
                 onChange={onChangeLang}
                 className="text-sm font-medium text-gray-700 border-none border-gray-200 rounded-md px-2 py-1 bg-white focus:outline-none"
@@ -360,7 +366,7 @@ const Header = () => {
                     {label}
                   </option>
                 ))}
-              </select>
+              </select> */}
             </nav>
 
             {/* Mobile Menu Button */}
@@ -413,7 +419,7 @@ const Header = () => {
                             onMouseEnter={() => setActiveSectionIndex(idx)}
                             className={`w-full text-left text-base font-bold py-3 px-4 rounded-md transition-all ${
                               isSelected
-                                ? "bg-[#6F00FF] text-white shadow-sm"
+                                ? "bg-[#3ccb7f] text-white shadow-sm"
                                 : "text-gray-900 hover:bg-gray-50"
                             }`}
                           >
@@ -444,16 +450,16 @@ const Header = () => {
                               className="group relative flex items-start gap-3 p-4 rounded-lg transition-all duration-200 bg-transparent hover:bg-[#f6f7f9]"
                             >
                               {/* Left purple bar on hover */}
-                              <span className="absolute inset-y-0 left-0 w-1 rounded-full bg-transparent group-hover:bg-[#6F00FF]" />
+                              <span className="absolute inset-y-0 left-0 w-1 rounded-full bg-transparent group-hover:bg-[#3ccb7f]" />
 
                               {/* Circular badge */}
-                              <div className="relative z-10 mt-1 flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-[11px] font-semibold text-gray-500 group-hover:border-[#6F00FF] group-hover:text-[#6F00FF]">
+                              <div className="relative z-10 mt-1 flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-[11px] font-semibold text-gray-500 group-hover:border-[#0e7090] group-hover:text-[#0e7090]">
                                 {badgeLetter}
                               </div>
 
                               {/* Text content */}
                               <div className="relative z-10">
-                                <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-[#6F00FF]">
+                                <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-[#0e7090]">
                                   {sub.title}
                                 </h4>
                                 <p className="mt-1 text-xs text-gray-500 leading-relaxed">
@@ -478,7 +484,7 @@ const Header = () => {
                     <div className="w-full">
                       {currentMega.items.map((section) => (
                         <div key={section.title} className="mb-6">
-                          <h3 className="text-sm font-semibold uppercase text-[#6F00FF] mb-3">
+                          <h3 className="text-sm font-semibold uppercase text-[#0e7090] mb-3">
                             {section.title}
                           </h3>
                           <div className="grid grid-cols-2 gap-x-10 gap-y-4">
@@ -490,7 +496,7 @@ const Header = () => {
                                   to={href}
                                   className="group flex flex-col p-3 rounded-md hover:bg-[#F4F5F7] transition-colors"
                                 >
-                                  <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-[#6F00FF]">
+                                  <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-[#0e7090]">
                                     {card.title}
                                   </h4>
                                   <p className="mt-1 text-xs text-gray-500 leading-relaxed">
@@ -531,7 +537,7 @@ const Header = () => {
             <Link
               to="/lets-talk/book-demo"
               onClick={() => setMobileOpen(false)}
-              className="bg-[#6F00FF] hover:bg-[#8000FF] text-white w-full py-3 rounded-full text-sm font-medium text-center transition-all"
+              className="bg-[#3ccb7f] hover:bg-[#0e7090] text-white w-full py-3 rounded-full text-sm font-medium text-center transition-all"
             >
               Book a Free Demo
             </Link>
