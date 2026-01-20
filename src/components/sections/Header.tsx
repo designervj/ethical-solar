@@ -21,7 +21,7 @@ type MegaSection = {
 
 // Top-level nav (page urls added)
 const navItems = [
-  { name: "Home ", href: "/what-we-do", megaKey: "whatWeDo" },
+  { name: "Home ", href: "/", megaKey: "whatWeDo" },
   { name: "Residentia", href: "/residentia", megaKey: "whoWeCreateFor" },
   {
     name: "Commercial",
