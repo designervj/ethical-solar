@@ -112,7 +112,7 @@ const Header = () => {
                   src="../assets/Image/ethicalsolar-logo.svg"
                   // src="../assets/Image/ethical-solar-logo.svg"
                   alt="Ethical Solar logo"
-                  className="h-14 w-auto"
+                  className="md:h-14 h-12 w-auto"
                 />
 
                 {/* <h3 className="text-white">ETHICAL SOLAR</h3> */}
