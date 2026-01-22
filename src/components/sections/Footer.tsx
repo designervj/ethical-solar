@@ -235,7 +235,7 @@ const Footer: React.FC = () => {
 
       {/* Bottom */}
       <div className="relative z-[2] mt-14 pt-5 border-t border-white/10 text-center text-[0.85rem] text-[#cfd8dc]">
-        &copy; 2025 Ethical Solar Pty Ltd. All rights reserved. ABN: 12 345 678
+        &copy; 2026 Ethical Solar Pty Ltd. All rights reserved. ABN: 12 345 678
         901.
         <br />
         <span className="mt-2 inline-block text-[13px]">

@@ -1,59 +1,57 @@
-import React from "react";
+"use client";
 
-// ✅ Ethical Solar service data
+import React from "react";
+import {
+  FiHome,
+  FiBriefcase,
+  FiBatteryCharging,
+  FiActivity,
+} from "react-icons/fi";
+
+// ✅ Ethical Solar service data (with proper icons per service)
 const services = [
   {
     service: "Residential Solar",
+    Icon: FiHome,
     problem: "High electricity bills and unpredictable rate increases.",
     get: "Site assessment, system design, premium panels + inverter, clean installation.",
-    growth: "Cuts monthly bills and increases home value with long-term energy security.",
+    growth:
+      "Cuts monthly bills and increases home value with long-term energy security.",
   },
   {
     service: "Commercial Solar",
+    Icon: FiBriefcase,
     problem: "Rising operating costs are eating into profit margins.",
     get: "Energy audit, scalable design, performance modelling, compliant commercial install.",
-    growth: "Reduces overhead, improves sustainability reporting, and stabilizes energy spend.",
+    growth:
+      "Reduces overhead, improves sustainability reporting, and stabilizes energy spend.",
   },
   {
     service: "Battery Storage",
+    Icon: FiBatteryCharging,
     problem: "Grid outages and peak-hour costs reduce reliability and savings.",
     get: "Battery sizing, backup setup, smart load control, hybrid-ready configuration.",
-    growth: "Stores solar for night use, improves resilience, and increases ROI over time.",
+    growth:
+      "Stores solar for night use, improves resilience, and increases ROI over time.",
   },
   {
     service: "Maintenance & Monitoring",
+    Icon: FiActivity,
     problem: "Systems underperform without anyone noticing.",
     get: "Production monitoring, health checks, cleaning guidance, warranty support.",
-    growth: "Protects performance year-round and maximizes lifetime savings.",
+    growth:
+      "Protects performance year-round and maximizes lifetime savings.",
   },
 ];
 
-// ✅ Simple icon (same layout) with SOLAR gradient text + ring
-const ServiceIcon = () => (
-  <div className="p-3 rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <circle cx="12" cy="12" r="5" />
-      <path d="M12 1v3" />
-      <path d="M12 20v3" />
-      <path d="M4.22 4.22l2.12 2.12" />
-      <path d="M17.66 17.66l2.12 2.12" />
-      <path d="M1 12h3" />
-      <path d="M20 12h3" />
-      <path d="M4.22 19.78l2.12-2.12" />
-      <path d="M17.66 6.34l2.12-2.12" />
-    </svg>
-  </div>
-);
+// ✅ Reusable Icon Component (same style like screenshot)
+function ServiceIcon({ Icon }: { Icon: React.ElementType }) {
+  return (
+    <div className="p-3 rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100 flex items-center justify-center">
+      <Icon className="h-6 w-6" aria-hidden="true" />
+    </div>
+  );
+}
 
 const WhatWeDoSection = () => {
   return (
@@ -64,7 +62,7 @@ const WhatWeDoSection = () => {
           <h2 className="text-3xl md:text-4xl font-light tracking-tight text-gray-900">
             What Ethical Solar Does
           </h2>
-          <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
+          <p className="mt-4 max-w-3xl mx-auto md:text-lg text-base text-gray-600">
             Solar is not just panels — it’s a complete system. We design,
             install, and support solar + storage solutions that reduce bills,
             improve reliability, and deliver long-term savings.
@@ -103,7 +101,7 @@ const WhatWeDoSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
           {services.map((item) => (
             <div key={item.service} className="flex items-start space-x-4">
-              <ServiceIcon />
+              <ServiceIcon Icon={item.Icon} />
 
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">
@@ -121,7 +119,9 @@ const WhatWeDoSection = () => {
                 </p>
 
                 <p className="mt-1 text-sm text-gray-700">
-                  <span className="font-semibold">How It Supports Savings: </span>
+                  <span className="font-semibold">
+                    How It Supports Savings:{" "}
+                  </span>
                   {item.growth}
                 </p>
               </div>
@@ -132,9 +132,8 @@ const WhatWeDoSection = () => {
         {/* Optional note */}
         <div className="mt-12 rounded-2xl bg-white border border-black/5 p-6 text-center">
           <p className="text-gray-700">
-            Want a clear estimate for your property? We’ll model your roof,
-            show expected production, and explain incentives available in your
-            area.
+            Want a clear estimate for your property? We’ll model your roof, show
+            expected production, and explain incentives available in your area.
           </p>
         </div>
       </div>

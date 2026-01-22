@@ -48,7 +48,7 @@ const stats = [
 
 export default function WhoWeCreateFor() {
   return (
-    <section className="bg-white py-16 md:py-18 px-4 md:px-10">
+    <section className="bg-[#f7f7f7] py-16 md:py-18 px-4 md:px-10">
       <div className="max-w-6xl mx-auto">
         {/* 1) Header */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
@@ -71,6 +71,7 @@ export default function WhoWeCreateFor() {
                 href={item.href}
                 className="group rounded-2xl border border-black/10 bg-white p-7 shadow-sm hover:shadow-md transition-all"
               >
+                
                 <div className="flex items-start gap-4">
                   <div className="h-12 w-12 rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100 grid place-items-center">
                     <Icon className="h-6 w-6" />

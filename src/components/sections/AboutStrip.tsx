@@ -74,7 +74,7 @@ export default function WhatWeDo() {
           <h2 className="text-3xl md:text-4xl font-normal text-[#555555] mb-4">
             What We Do
           </h2>
-          <p className="text-lg text-[#555555] md:text-lg">
+          <p className="md:text-lg text-base text-[#555555] md:text-lg">
             We design and install reliable solar + storage systems for homes and
             businesses — with clear pricing, quality components, and long-term
             support.
@@ -220,7 +220,7 @@ export default function WhatWeDo() {
                 <hr className="mt-auto" />
                 <a
                   href={service.href}
-                  className="text-[#0e7090] hover:text-[#0e7090] text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
+                  className="text-[#047857] hover:text-[#047857] text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
                 >
                   {service.linkText}
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

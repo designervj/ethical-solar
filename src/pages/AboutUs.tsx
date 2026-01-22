@@ -16,10 +16,10 @@ export const AboutUs: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
            <div className="space-y-6">
              <h2 className="text-3xl md:text-4xl font-serif text-gray-900">Not Just Another Solar Company</h2>
-             <p className="text-gray-600 text-lg leading-relaxed">
+             <p className="text-gray-600 md:text-lg text-base leading-relaxed">
                The solar industry has a reputation problem. Aggressive sales tactics, hidden fees, and fly-by-night installers have left many homeowners skeptical. 
              </p>
-             <p className="text-gray-600 text-lg leading-relaxed">
+             <p className="text-gray-600 md:text-lg text-base leading-relaxed">
                **Ethical Solar** was born from a desire to change that. We believe in educating our clients, not selling them. We believe in high-quality components that last decades, not years. And we believe that renewable energy should be accessible, transparent, and truly beneficial for the planet.
              </p>
            </div>

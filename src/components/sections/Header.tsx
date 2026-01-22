@@ -92,14 +92,15 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] ">
+    <header className="sticky top-0 z-50 w-full  bg-[#050B2F] ">
+      {/* bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] */}
       <div
-        className="relative border-b border-gray-100"
+        className="relative "
         onMouseLeave={() => {
           setActiveMega(null);
         }}
       >
-        <div className="container-fuild mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -107,13 +108,14 @@ const Header = () => {
                 to="/"
                 className="flex items-center gap-2 text-3xl font-serif font-medium text-white "
               >
-                {/* <img
-                  src="../assets/Image/hrescic-logo.svg"
-                  alt="Hrescic logo"
-                  className="h-8 w-auto"
-                /> */}
+                <img
+                  src="../assets/Image/ethicalsolar-logo.svg"
+                  // src="../assets/Image/ethical-solar-logo.svg"
+                  alt="Ethical Solar logo"
+                  className="h-14 w-auto"
+                />
 
-                <h3 className="text-white">ETHICAL SOLAR</h3>
+                {/* <h3 className="text-white">ETHICAL SOLAR</h3> */}
               </Link>
             </div>
 
@@ -131,7 +133,7 @@ const Header = () => {
                     onMouseEnter={() =>
                       hasMega ? setActiveMega(item.megaKey as string) : null
                     }
-                    className={`group text-[14px] font-medium transition-colors relative ${
+                    className={`group text-[16px] font-medium transition-colors relative ${
                       isActive
                         ? "text-[#f4f4f4]"
                         : "text-[#fff] hover:text-[#fff]"

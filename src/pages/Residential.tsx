@@ -12,12 +12,12 @@ import CTASection from '@/components/sections/CTASection';
 const FAQItem = ({ question, answer }: { question: string, answer: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-b border-gray-200 bg-white  px-6 shadow rounded-md  mb-4">
       <button 
-        className="w-full py-6 flex justify-between items-center text-left focus:outline-none group"
+        className="w-full py-6 flex justify-between items-center text-left focus:outline-none group bg-white "
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-medium text-gray-900 pr-8 group-hover:text-emerald-600 transition-colors">{question}</span>
+        <span className="text-sm  md:text-lg  font-medium text-gray-900 pr-8 group-hover:text-emerald-600 transition-colors">{question}</span>
         {isOpen ? <ChevronUp className="text-emerald-500 flex-shrink-0" /> : <ChevronDown className="text-gray-400 flex-shrink-0" />}
       </button>
       <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 pb-6' : 'max-h-0'}`}>
@@ -32,7 +32,7 @@ const ProcessStep = ({ number, title, desc }: { number: string, title: string, d
     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-serif font-bold text-xl z-10 relative group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
       {number}
     </div>
-    <div className="pb-12 border-l-2 border-gray-100 ml-[-2.25rem] pl-16 group-last:border-0 group-last:pb-0">
+    <div className="pb-12 border-l-2 border-gray-100 -ml-[48px] pl-16 group-last:border-0 group-last:pb-0 ">
       <h4 className="text-xl font-bold text-gray-900 mb-2">{title}</h4>
       <p className="text-gray-600 leading-relaxed">{desc}</p>
     </div>
@@ -65,7 +65,7 @@ export const Residential: React.FC = () => {
               <h1 className="text-5xl md:text-7xl font-serif leading-tight">
                 Let's put solar <br/><span className="text-emerald-400">on your home.</span>
               </h1>
-              <p className="text-xl text-gray-200 font-light max-w-xl leading-relaxed">
+              <p className="md:text-xl text-base text-gray-200  font-light max-w-xl leading-relaxed">
                 We've been designing, selling, and installing high-quality solar on homes in Virginia for over a decade. Experience the difference of ethical energy.
               </p>
               {/* <div className="flex flex-wrap gap-4 pt-4">
@@ -119,7 +119,7 @@ export const Residential: React.FC = () => {
       </div>
 
       {/* Why Go Solar */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 md:px-0 px-4">
         <div  className='container-xl'>
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-2 block">Benefits</span>
@@ -128,11 +128,11 @@ export const Residential: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="group text-center px-4 hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-20 h-20 mx-auto bg-emerald-50 rounded-2xl rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center text-emerald-600 mb-8 shadow-sm">
+            <div className="w-20 h-20 mx-auto bg-[#d1fae5] rounded-2xl rotate-3 group-hover:rotate-0 shadow transition-transform duration-300 flex items-center justify-center text-black mb-8 shadow-sm">
               <DollarSign size={36} strokeWidth={1.5} />
             </div>
             <h3 className="text-xl font-bold mb-4">Lower Your Electricity Bills</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed md:mb-6">
               The Federal Investment Tax Credit (ITC) offers homeowners a 30% credit. Projects begin paying for themselves immediately through monthly savings.
             </p>
             <a href="#" className="text-emerald-600 font-medium hover:text-emerald-700 flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
@@ -140,11 +140,11 @@ export const Residential: React.FC = () => {
             </a>
           </div>
           <div className="group text-center px-4 hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-20 h-20 mx-auto bg-blue-50 rounded-2xl -rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center text-brand-blue mb-8 shadow-sm">
+            <div className="w-20 h-20 mx-auto bg-[#d1fae5] rounded-2xl -rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center text-black mb-8 shadow-sm">
               <Home size={36} strokeWidth={1.5} />
             </div>
             <h3 className="text-xl font-bold mb-4">Increase Your Home's Value</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed md:mb-6">
               Homes with solar sell faster and for more money. Studies show an increase in property value by up to 4.1% compared to non-solar homes.
             </p>
             <a href="#" className="text-brand-blue font-medium hover:text-blue-700 flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
@@ -152,11 +152,11 @@ export const Residential: React.FC = () => {
             </a>
           </div>
           <div className="group text-center px-4 hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-20 h-20 mx-auto bg-yellow-50 rounded-2xl rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center text-yellow-600 mb-8 shadow-sm">
+            <div className="w-20 h-20 mx-auto bg-[#d1fae5] rounded-2xl rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center text-black mb-8 shadow-sm">
               <Leaf size={36} strokeWidth={1.5} />
             </div>
             <h3 className="text-xl font-bold mb-4">Help the Planet Out</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed md:mb-6">
               Reduce your carbon footprint immediately. Rooftop solar generates clean electricity without emissions, noise, or water use.
             </p>
             <a href="#" className="text-yellow-600 font-medium hover:text-yellow-700 flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
@@ -183,10 +183,10 @@ export const Residential: React.FC = () => {
                 </div>
                 <div>
                     <h3 className="text-xl font-bold mb-3">1. Solar Panels</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    <p className="text-gray-600 text-base leading-relaxed mb-4">
                         When sunlight hits your panels, they generate DC electricity. Even on cloudy days, your system produces power. Excess energy flows back to the grid for credits (Net Metering).
                     </p>
-                    <Button className="text-xs">Learn about Net Metering </Button>
+                  
                 </div>
             </div>
 
@@ -197,10 +197,10 @@ export const Residential: React.FC = () => {
                 </div>
                 <div>
                     <h3 className="text-xl font-bold mb-3">2. Solar Inverters</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    <p className="text-gray-600 text-base leading-relaxed mb-4">
                         The inverter is the heart of the system, converting DC power to usable AC power for your home. We use premium Enphase microinverters or SolarEdge optimizers for maximum efficiency.
                     </p>
-                    <Button className="text-xs">View Technology</Button>
+                  
                 </div>
             </div>
 
@@ -211,7 +211,7 @@ export const Residential: React.FC = () => {
                 </div>
                 <div>
                     <h3 className="text-xl font-bold mb-3">3. Power Outages?</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    <p className="text-gray-600 text-base leading-relaxed mb-4">
                         Standard grid-tied systems shut off during outages for safety. To keep lights on during a blackout, you need a battery backup solution integrated with your solar.
                     </p>
                 </div>
@@ -224,10 +224,10 @@ export const Residential: React.FC = () => {
                 </div>
                 <div>
                     <h3 className="text-xl font-bold mb-3">4. Solar + Battery</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    <p className="text-gray-600 text-base leading-relaxed mb-4">
                         Batteries store excess solar energy for use at night or during outages. We design systems that power your essential appliances (fridges, lights, wifi) indefinitely.
                     </p>
-                    <Button className="text-xs">Explore Batteries</Button>
+                   
                 </div>
             </div>
         </div>
@@ -247,24 +247,24 @@ export const Residential: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group">
+          <div className="bg-white rounded-md overflow-hidden shadow-lg border border-gray-100 group">
             <div className="h-64 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?q=80&w=1974&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Roof Mount" />
             </div>
             <div className="p-8">
                 <h3 className="text-2xl font-serif mb-4">Roof-Mounted Solar</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 leading-relaxed md:mb-6">
                 The most common choice. It uses existing unused space and is typically cheaper to install. Ideal for homes with good south/west exposure.
                 </p>
             </div>
           </div>
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group">
+          <div className="bg-white rounded-md overflow-hidden shadow-lg border border-gray-100 group">
             <div className="h-64 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1548345680-f5475ea5df84?q=80&w=2073&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Ground Mount" />
             </div>
              <div className="p-8">
                 <h3 className="text-2xl font-serif mb-4">Ground-Mounted Solar</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 leading-relaxed mdmb-6">
                 Perfect if your roof is shaded or old. Ground mounts can be oriented perfectly for maximum production and are easier to clean and maintain.
                 </p>
              </div>
@@ -315,7 +315,7 @@ export const Residential: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="text-white">
+            <div >
               <h2 className="md:text-4xl  text-3xl md:text-5xl font-serif mb-6 leading-tight">Get a free solar quote</h2>
               <p className="text-gray-700 mb-10 text-lg leading-relaxed">
                 Every home is unique. We build a 3D model of your property to give you an accurate production estimate, cost analysis, and shading report.
@@ -469,7 +469,7 @@ export const Residential: React.FC = () => {
                     <Sun className="text-emerald-400 w-10 h-10" />
                   </div>
                   <div>
-                    <h3 className="text-3xl font-serif  tracking-wide text-gray-700">ETHICAL SOLAR</h3>
+                    <h3 className="md:text-3xl text-2xl  font-serif  tracking-wide text-gray-700">ETHICAL SOLAR</h3>
                     <p className="text-emerald-400 text-sm tracking-[0.2em] uppercase font-bold mt-1">Established 2015</p>
                   </div>
                </div>
@@ -488,10 +488,10 @@ export const Residential: React.FC = () => {
              </div>
              <div className="lg:pl-10 lg:border-l border-gray-800">
                <h2 className="md:text-4xl  text-3xl font-serif mb-8">Why you should choose us</h2>
-               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+               <p className="text-gray-700 leading-relaxed mb-6 md:text-lg text-base ">
                  We started Ethical Solar as a one-man shop with a Subaru Outback and a borrowed trailer. Over the years, we've grown to become the region's most trusted solar partner.
                </p>
-               <p className="text-gray-700 font-medium leading-relaxed mb-8 text-lg border-l-4 border-emerald-500 pl-6 italic">
+               <p className="text-gray-700 font-medium leading-relaxed mb-8 md:text-lg text-base border-l-4 border-emerald-500 pl-6 italic">
                  "Our goal has always been to focus on doing the right thing. We don't chase every sale; we chase the right solution for the homeowner."
                </p>
                <p className="text-gray-700 leading-relaxed">
@@ -509,8 +509,8 @@ export const Residential: React.FC = () => {
           <h2 className="md:text-4xl  text-3xl font-serif mb-6">Solar Maintenance & Longevity</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
-           <div className="flex gap-6 items-start">
-              <div className="bg-blue-50 p-3 rounded-xl text-brand-blue">
+           <div className="flex md:gap-6 gap-4 items-start">
+              <div className="bg-white p-3 rounded-xl text-brand-blue shadow">
                 <Calendar className="w-8 h-8" />
               </div>
               <div>
@@ -518,8 +518,8 @@ export const Residential: React.FC = () => {
                 <p className="text-gray-600 leading-relaxed">Modern solar panels are built to last, with most high-quality panels producing power for 30+ years. While efficiency slightly decreases over time (about 0.5% per year), reputable brands guarantee over 90% output even after 25 years.</p>
               </div>
            </div>
-           <div className="flex gap-6 items-start">
-              <div className="bg-blue-50 p-3 rounded-xl text-brand-blue">
+           <div className="flex md:gap-6 gap-4 items-start">
+              <div className="bg-white p-3 rounded-xl text-brand-blue shadow  ">
                 <Settings className="w-8 h-8" />
               </div>
               <div>
@@ -562,14 +562,14 @@ export const Residential: React.FC = () => {
       </section>
 
       {/* Installation Process */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 md:px-0 px-4">
         <div className='container-xl'></div>
         <div className="max-w-4xl mx-auto pe-8 md:px-0">
           <div className="text-center mb-16">
             <h2 className="md:text-4xl  text-3xl font-serif mb-4">Our Installation Process</h2>
             <p className="text-gray-600">We handle everything from the initial design to the final switch flip.</p>
           </div>
-          <div className="space-y-2 border-l-2 border-emerald-100 ml-6 pl-8 relative">
+          <div className="space-y-2 md:border-l-2 border-emerald-100 ml-6 md md:pl-8 relative">
              <ProcessStep number="1" title="Free Assessment & Proposal" desc="We start with a conversation to understand your goals. Using satellite data, we design a custom system and present a clear proposal with economics." />
              <ProcessStep number="2" title="Site Survey" desc="Our engineering team visits your home to inspect the roof condition, measure shading, and check your electrical panel capacity." />
              <ProcessStep number="3" title="Contract & Permitting" desc="Once you approve the design, we handle all the paperwork. We submit building permits to the city and interconnection applications to the utility." />
@@ -581,7 +581,7 @@ export const Residential: React.FC = () => {
       </section>
 
       {/* Blog Teaser */}
-      <section className="bg-gray-50 py-20">
+      {/* <section className="bg-gray-50 py-20">
         <div className='container-xl'>
         <h2 className="text-3xl font-serif mb-12 text-center">Latest from the Blog</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -606,10 +606,10 @@ export const Residential: React.FC = () => {
            ))}
         </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ */}
-      <section className="bg-gray-100 py-20 md:px-0 px-8">
+      <section className="bg-gray-100 py-20 md:px-0 px-6">
         <div className="md:max-w-3xl  mx-auto">
           <div className="text-center mb-12">
             <h2 className="md:text-4xl  text-3xl font-serif mb-4">Frequently Asked Questions</h2>

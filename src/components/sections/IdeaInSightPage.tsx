@@ -41,10 +41,7 @@ const IdeaInSightPage = () => {
           <h2 className="text-3xl md:text-[40px] font-normal text-gray-color mb-4">
            Latest from the Blog
           </h2>
-          {/* <p className="text-gray-color text-base md:text-lg">
-            We work with forward-thinking businesses across tourism, health, beauty,
-            charter and boutique industries - keeping them visible, trustworthy and alive.
-          </p> */}
+         
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 container-xl mx-auto  px-4 sm:px-6">

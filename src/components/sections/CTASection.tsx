@@ -15,7 +15,7 @@ const CTASection = () => {
         </h2>
         
         {/* Paragraph */}
-        <p className="mt-6 text-lg leading-relaxed text-[#555] max-w-3xl mx-auto">
+        <p className="mt-6 md:text-lg text-base leading-relaxed text-[#555] max-w-3xl mx-auto">
         We’d be happy to provide you with information, a quote and site visit, all FREE of charge.
         </p>
         

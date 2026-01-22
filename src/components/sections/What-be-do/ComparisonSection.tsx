@@ -105,7 +105,7 @@ const ComparisonSection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-light tracking-tight text-gray-800">
          Compare All Plans
         </h2>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+        <p className="mt-4 max-w-2xl mx-auto md:text-lg text-base text-gray-600">
          See exactly what each plan includes — side by side.
         </p>
       </div>

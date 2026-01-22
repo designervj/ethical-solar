@@ -61,10 +61,10 @@ const Commercial = () => {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold mb-3">1. Solar Panels</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                                <p className="text-gray-600 text-base leading-relaxed mb-4">
                                     When sunlight hits your panels, they generate DC electricity. Even on cloudy days, your system produces power. Excess energy flows back to the grid for credits (Net Metering).
                                 </p>
-                                <Button className="text-xs">Learn about Net Metering</Button>
+                             
                             </div>
                         </div>
 
@@ -75,10 +75,10 @@ const Commercial = () => {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold mb-3">2. Solar Inverters</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                                <p className="text-gray-600 text-base leading-relaxed mb-4">
                                     The inverter is the heart of the system, converting DC power to usable AC power for your home. We use premium Enphase microinverters or SolarEdge optimizers for maximum efficiency.
                                 </p>
-                                <Button className="text-xs">View Technology</Button>
+                             
                             </div>
                         </div>
 
@@ -89,7 +89,7 @@ const Commercial = () => {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold mb-3">3. Power Outages?</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                                <p className="text-gray-600 text-base leading-relaxed mb-4">
                                     Standard grid-tied systems shut off during outages for safety. To keep lights on during a blackout, you need a battery backup solution integrated with your solar.
                                 </p>
                             </div>
@@ -102,10 +102,10 @@ const Commercial = () => {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold mb-3">4. Solar + Battery</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                                <p className="text-gray-600 text-base leading-relaxed mb-4">
                                     Batteries store excess solar energy for use at night or during outages. We design systems that power your essential appliances (fridges, lights, wifi) indefinitely.
                                 </p>
-                                <Button className="text-xs">Explore Batteries</Button>
+                               
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const Commercial = () => {
 
             <LetsTalk />
             
-            <section className='py-20 bg-[#f7f7f7]'>
+            {/* <section className='py-20 bg-[#f7f7f7]'>
 
                    <h2 className="text-3xl font-serif mb-12 text-center">Latest from the Blog</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 container-xl mx-auto  px-4 sm:px-6">
@@ -171,7 +171,7 @@ const Commercial = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
 
 

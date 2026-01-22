@@ -44,7 +44,7 @@ export default function HomePage() {
       <AboutStrip />
       <OurWork />
       {/* <BrandPartnerSec/> */}
-      <IdeaInSightPage />
+      {/* <IdeaInSightPage /> */}
       <CTASection />
 
     </main>
