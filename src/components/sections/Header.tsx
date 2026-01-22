@@ -22,13 +22,13 @@ type MegaSection = {
 // Top-level nav (page urls added)
 const navItems = [
   { name: "Home ", href: "/", megaKey: "whatWeDo" },
-  { name: "Residentia", href: "/residentia", megaKey: "whoWeCreateFor" },
+  { name: "Residential", href: "/residential", megaKey: "whoWeCreateFor" },
   {
     name: "Commercial",
     href: "/commercial",
     megaKey: "brands",
   },
-  { name: "Blog", href: "/blog", megaKey: "ideas" },
+  // { name: "Blog", href: "/blog", megaKey: "ideas" },
 
   { name: "About Us", href: "/about-us", megaKey: "about" },
 
@@ -329,7 +329,7 @@ const Header = () => {
             mobileOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <nav className="flex flex-col px-4 pt-2 pb-6 space-y-4">
+          <nav className="flex flex-col px-4 pt-4 pb-6 space-y-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -348,7 +348,7 @@ const Header = () => {
             >
               Book a Free Demo
             </Link>
-
+{/* 
             <select
               defaultValue={i18n.language}
               onChange={onChangeLang}
@@ -359,7 +359,7 @@ const Header = () => {
                   {label}
                 </option>
               ))}
-            </select>
+            </select> */}
           </nav>
         </div>
       </div>

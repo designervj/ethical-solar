@@ -282,7 +282,7 @@ const LetsTalk: React.FC = () => {
                     I'm interested in...
                   </span>
                   <select className="w-full rounded-lg border border-slate-200 px-3 py-3 text-sm outline-none focus:ring-2 focus:ring-[#2AF598]/20 focus:border-[#2AF598]">
-                    <option value="residential">Residential Solar Quote</option>
+                    <option value="Residential">Residential Solar Quote</option>
                     <option value="commercial">Commercial/Business Solar</option>
                     <option value="support">Service & Support</option>
                     <option value="other">Other Inquiry</option>

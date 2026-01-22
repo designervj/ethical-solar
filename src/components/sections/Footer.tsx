@@ -14,12 +14,12 @@ import {
 
 // Explore links
 const exploreLinks = [
-  { label: "Home", href: "#" },
-  { label: "Residentia", href: "#" },
-  { label: "Residentia", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "About Us", href: "#" },
-  { label: "Contact Us", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Residential", href: "/residential" },
+  { label: "Commercial", href: "/commercial" },
+  // { label: "Blog", href: "#" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Contact Us", href: "/contact-us" },
 
 ];
 

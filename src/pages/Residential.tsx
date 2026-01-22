@@ -57,10 +57,10 @@ export const Residential: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7 text-white space-y-8">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
-                 <div className="flex text-yellow-400 gap-0.5">
+                 {/* <div className="flex text-yellow-400 gap-0.5">
                    {[1,2,3,4,5].map(i => <Sun key={i} size={14} fill="currentColor" />)}
-                 </div>
-                 <span className="text-xs font-bold tracking-widest uppercase">Top Rated Solar Installer</span>
+                 </div> */}
+                 <span className="text-xs font-bold tracking-widest uppercase">Residential Solar </span>
               </div>
               <h1 className="text-5xl md:text-7xl font-serif leading-tight">
                 Let's put solar <br/><span className="text-emerald-400">on your home.</span>
@@ -411,7 +411,7 @@ export const Residential: React.FC = () => {
     <div>
       <h3 className="text-xl font-bold mb-3">Average Solar Installation Costs</h3>
       <p className="text-gray-600 leading-relaxed mb-4">
-        In our region, residential solar typically costs between{" "}
+        In our region, Residential solar typically costs between{" "}
         <strong>$2.75 to $3.50 per watt</strong> before incentives.
       </p>
       <div className="bg-emerald-50 inline-block px-5 py-3 rounded-lg border border-emerald-100">
@@ -573,7 +573,7 @@ export const Residential: React.FC = () => {
              <ProcessStep number="1" title="Free Assessment & Proposal" desc="We start with a conversation to understand your goals. Using satellite data, we design a custom system and present a clear proposal with economics." />
              <ProcessStep number="2" title="Site Survey" desc="Our engineering team visits your home to inspect the roof condition, measure shading, and check your electrical panel capacity." />
              <ProcessStep number="3" title="Contract & Permitting" desc="Once you approve the design, we handle all the paperwork. We submit building permits to the city and interconnection applications to the utility." />
-             <ProcessStep number="4" title="Installation" desc="Most residential installs take just 1-3 days. Our in-house crew works efficiently and respects your property, leaving the site cleaner than we found it." />
+             <ProcessStep number="4" title="Installation" desc="Most Residential installs take just 1-3 days. Our in-house crew works efficiently and respects your property, leaving the site cleaner than we found it." />
              <ProcessStep number="5" title="Inspection & Activation" desc="We schedule the final city inspection. Once approved, the utility grants 'Permission to Operate', and you can turn on your clean power plant!" />
           </div>
         </div>

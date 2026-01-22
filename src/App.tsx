@@ -38,7 +38,7 @@ export default function App(){
       />
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/residentia' element={<Residential/>}/>
+        <Route path='/Residential' element={<Residential/>}/>
         {/* <Route path='/contact-us' element={<WorkPage/>}/> */}
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/commercial' element={<Commercial/>}/>

@@ -9,9 +9,9 @@ const industries = [
     title: "Homeowners (Residential)",
     description:
       "For families who want lower power bills and long-term energy independence. We design clean, high-performance rooftop solar systems.",
-    linkText: "Explore residential solar",
+    linkText: "Explore Residential solar",
     icon: Sun,
-    href: "#residential",
+    href: "#Residential",
   },
   {
     title: "Commercial & Industrial",
@@ -71,7 +71,7 @@ export default function WhoWeCreateFor() {
                 href={item.href}
                 className="group rounded-2xl border border-black/10 bg-white p-7 shadow-sm hover:shadow-md transition-all"
               >
-                
+
                 <div className="flex items-start gap-4">
                   <div className="h-12 w-12 rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100 grid place-items-center">
                     <Icon className="h-6 w-6" />

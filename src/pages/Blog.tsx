@@ -42,7 +42,7 @@ const blogPosts = [
     category: "Guides",
     date: "Jan 05, 2025",
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=3264&auto=format&fit=crop",
-    excerpt: "Comparing the two most popular renewable energy sources for residential and small commercial use."
+    excerpt: "Comparing the two most popular renewable energy sources for Residential and small commercial use."
   },
   {
     id: 6,

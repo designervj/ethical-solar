@@ -10,8 +10,8 @@ const services = [
     title: "Residential Solar",
     description:
       "Custom rooftop solar systems designed for your home, usage, and budget — built to maximize long-term savings.",
-    linkText: "Explore residential solar",
-    href: "#residential",
+    linkText: "Explore Residential solar",
+    href: "#Residential",
   },
   {
     title: "Commercial Solar",
