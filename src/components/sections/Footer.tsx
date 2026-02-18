@@ -45,8 +45,8 @@ const connectDetails = [
 // Social icons
 const socialIcons = [
   { icon: Linkedin, href: "#", name: "LinkedIn" },
-  { icon: Instagram, href: "#", name: "Instagram" },
-  { icon: Youtube, href: "#", name: "YouTube" },
+  // { icon: Instagram, href: "#", name: "Instagram" },
+  // { icon: Youtube, href: "#", name: "YouTube" },
 ];
 
 /* ---------- REUSABLE COMPONENTS ---------- */
@@ -157,11 +157,14 @@ const Footer: React.FC = () => {
           <div className="space-y-3 text-[0.95rem] text-[#cfd8dc]">
             <p className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 text-[#00b09b]" />
-              <span>123 Green St, Melbourne VIC 3000</span>
+              <span>Suite No. 1562,
+                    17 Gould Road
+                    Herston 4006
+                    QLD, Australia</span>
             </p>
             <p className="flex items-start gap-3">
               <Phone className="mt-0.5 h-5 w-5 text-[#00b09b]" />
-              <span>(03) 9000 1234</span>
+              <span>1300 686 595</span>
             </p>
             <p className="flex items-start gap-3">
               <Mail className="mt-0.5 h-5 w-5 text-[#00b09b]" />
@@ -208,11 +211,9 @@ const Footer: React.FC = () => {
             <div className="mx-auto mb-2 h-10 w-10 rounded-full bg-[#2AF598]/15 grid place-items-center">
               <span className="text-[#2AF598] text-xl font-black">✓</span>
             </div>
-            <span className="block font-bold text-white mb-1">CEC Accredited</span>
+            <span className="block font-bold text-white mb-1">SAA Accredited Installer</span>
             <span className="block text-[0.8rem] text-[#cfd8dc] leading-snug">
-              Approved Solar Retailer
-              <br />
-              Australia Wide
+              South East Queensland (SEQ)
             </span>
           </div>
 
@@ -235,7 +236,7 @@ const Footer: React.FC = () => {
 
       {/* Bottom */}
       <div className="relative z-[2] mt-14 pt-5 border-t border-white/10 text-center text-[0.85rem] text-[#cfd8dc]">
-        &copy; 2026 Ethical Solar Pty Ltd. All rights reserved. ABN: 12 345 678
+        &copy; 2026 Ethical Solar Pty Ltd. All rights reserved. ABN: 13 670 165 938
         901.
         <br />
         <span className="mt-2 inline-block text-[13px]">

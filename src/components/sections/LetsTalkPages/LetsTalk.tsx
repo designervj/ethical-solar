@@ -83,7 +83,7 @@ const LetsTalk: React.FC = () => {
                     alt="mail"
                     className="w-8"
                   />
-                  <span>support@coaching.com</span>
+                  <span>info@ethicalsolar.com.au</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <img
@@ -91,7 +91,7 @@ const LetsTalk: React.FC = () => {
                     alt="phone"
                     className="w-8"
                   />
-                  <span>+1 415 228 6857</span>
+                  <span> 1300686595</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <img
@@ -99,7 +99,11 @@ const LetsTalk: React.FC = () => {
                     alt="time"
                     className="w-8"
                   />
-                  <span>Hours of Operation: 6am ET - 7pm ET</span>
+                  <div className="grid">
+                  <span>Hours of Operation: </span>
+                  <span>9 am - 5 pm  AEST Mon- Fri</span>
+                  <span>9 am to 1 pm Sat</span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <img
@@ -107,7 +111,10 @@ const LetsTalk: React.FC = () => {
                     alt="map"
                     className="w-8"
                   />
-                  <span>9800 Wilshire Blvd, Beverly Hills, CA 90212</span>
+                  <span>Suite No. 1562,
+                   17 Gould Road
+                   Herston 4006 QLD AU
+</span>
                 </div>
               </div>
             </div>
@@ -141,7 +148,7 @@ const LetsTalk: React.FC = () => {
                 {/* Zip */}
                 <label className="space-y-2 block">
                   <span className="text-[16px] font-semibold text-[#0F0F3D]">
-                    Zip*
+                   Postcode
                   </span>
                   <input
                     type="text"

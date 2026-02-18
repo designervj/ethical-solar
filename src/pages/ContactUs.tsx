@@ -143,9 +143,11 @@ const LetsTalk: React.FC = () => {
                       Head Office
                     </div>
                     <div className="text-[#666]">
-                      123 Green Street, Tech Park
+                      Suite No. 1562
+                      ,17 Gould Road
                       <br />
-                      Jaipur, Rajasthan 302020
+                      Herston 4006
+                      QLD, Australia
                     </div>
                   </div>
                 </div>
@@ -162,7 +164,7 @@ const LetsTalk: React.FC = () => {
                       className="text-[#666] hover:text-[#00b09b] transition"
                       href="mailto:hello@ethicalsolar.com"
                     >
-                      hello@ethicalsolar.com
+                      info@ethicalsolar.com.au
                     </a>
                   </div>
                 </div>
@@ -179,7 +181,7 @@ const LetsTalk: React.FC = () => {
                       className="text-[#666] hover:text-[#00b09b] transition"
                       href="tel:+911234567890"
                     >
-                      (+91) 12345 67890
+                      1300 686 595
                     </a>
                   </div>
                 </div>
@@ -192,7 +194,8 @@ const LetsTalk: React.FC = () => {
                     <div className="font-semibold text-[#00305a] mb-1">
                       Business Hours
                     </div>
-                    <div className="text-[#666]">Mon–Fri, 9:00 AM – 6:00 PM</div>
+                    <div className="text-[#666]">Mon–Fri, 9:00 AM – 5:00 PM</div>
+                    <div className="text-[#666]">Sat, 9:00 AM – 1:00 PM</div>
                   </div>
                 </div>
               </div>
@@ -266,7 +269,7 @@ const LetsTalk: React.FC = () => {
                 {/* Zip */}
                 <label className="space-y-2 block">
                   <span className="text-[15px] font-semibold text-[#00305a]">
-                    Zip*
+                    Postcode
                   </span>
                   <input
                     required

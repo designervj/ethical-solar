@@ -97,9 +97,9 @@ const WorksSection = () => {
           <h2 className="text-3xl md:text-4xl font-light tracking-tight text-gray-800">
         Our services
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto md:text-lg text-base text-gray-600">
+          {/* <p className="mt-4 max-w-2xl mx-auto md:text-lg text-base text-gray-600">
            Every plan includes a one-time setup that fixes your foundation and a monthly rhythm that keeps your brand consistent and performing.
-          </p>
+          </p> */}
         </div>
 
       {/* Grid of Feature Cards */}

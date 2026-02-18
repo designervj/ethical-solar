@@ -183,7 +183,9 @@ export default function Hero() {
   return (
     <section className="mx-auto relative w-full overflow-hidden  ">
       <div
-        className="relative mx-auto md:ps-16 px-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center"
+       className="relative mx-auto md:ps-16 px-4 py-20 
+             grid md:grid-cols-[55%_45%] gap-10 items-center
+             min-h-[80vh]"
         style={{
           // ✅ IMPORTANT: use leading slash for Next public folder
           backgroundImage: "url(/assets/img/solar-panal4.jpg)",
@@ -196,7 +198,7 @@ export default function Hero() {
 
         {/* Left Text Content */}
         <div className="relative max-w-xl md:ps-14">
-          <h1 className="text-white font-normal text-3xl sm:text-4xl lg:text-[50px] mb-6 font-serif leading-tight">
+          <h1 className="text-white font-normal text-3xl sm:text-4xl lg:text-[80px] mb-6 font-serif leading-tight">
             Solar built to last, by a team you can trust.
           </h1>
 
@@ -205,11 +207,11 @@ export default function Hero() {
             with a 30-year warranty.
           </p>
 
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <button className="bg-[#3ccb7f] hover:bg-[#23499b] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm font-medium transition-all">
               Book a Free Demo
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Side Animated Masonry Blocks */}

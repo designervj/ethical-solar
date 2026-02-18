@@ -19,20 +19,20 @@ type Brand = {
  *  - /assets/solar/tesla-energy.svg
  */
 const SOLAR_BRANDS: Brand[] = [
-  { img: "/assets/img/Tesla_Energy_logo.png", alt: "SunPower" },
   { img: "/assets/img/Enphase_logo.svg.png", alt: "Enphase" },
-  { img: "/assets/img/Tesla_Energy_logo.png", alt: "Tesla Energy" },
+  // { img: "/assets/img/Tesla_Energy_logo.png", alt: "Tesla Energy" },
   { img: "/assets/img/SolarEdge_logo.svg.png", alt: "SolarEdge" },
-  { img: "https://media.us.lg.com/transform/6c7ea0f8-5f94-4fc3-a8fe-18ad05ac2205/lg_logo", alt: "LG Solar" },
+  // { img: "https://media.us.lg.com/transform/6c7ea0f8-5f94-4fc3-a8fe-18ad05ac2205/lg_logo", alt: "LG Solar" },
   { img: "/assets/img/CSIQ-logo.png", alt: "Canadian Solar" },
   { img: "/assets/img/jinko-solar.png", alt: "Jinko Solar" },
-    { img: "/assets/img/Tesla_Energy_logo.png", alt: "SunPower" },
-  { img: "/assets/img/Enphase_logo.svg.png", alt: "Enphase" },
-  { img: "/assets/img/Tesla_Energy_logo.png", alt: "Tesla Energy" },
-  { img: "/assets/img/SolarEdge_logo.svg.png", alt: "SolarEdge" },
-  { img: "https://media.us.lg.com/transform/6c7ea0f8-5f94-4fc3-a8fe-18ad05ac2205/lg_logo", alt: "LG Solar" },
-  { img: "/assets/img/CSIQ-logo.png", alt: "Canadian Solar" },
-  { img: "/assets/img/jinko-solar.png", alt: "Jinko Solar" },
+
+    { img: "/assets/img/Fronius Logo.webp", alt: "Fronius" },
+  { img: "/assets/img/logo-suntech.png", alt: "Suntech" },
+  { img: "/assets/img/SolisLogo.jpeg", alt: "Solis" },
+  { img: "/assets/img/sungrow.webp", alt: "Sungrow" },
+  { img: "/assets/img/trinasolar.png", alt: "trinasolar" },
+  { img: "/assets/img/PylonTech.png", alt: "PylonTech" },
+  // { img: "/assets/img/jinko-solar.png", alt: "Jinko Solar" },
 
 ];
 
