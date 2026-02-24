@@ -91,6 +91,7 @@ const Header = () => {
     i18n.changeLanguage(lang_code);
   };
 
+  
   return (
     <header className="sticky top-0 z-50 w-full  bg-[#050B2F] ">
       {/* bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] */}
@@ -103,7 +104,7 @@ const Header = () => {
         <div className="container-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            
+
             <div className="flex-shrink-0">
               <Link
                 to="/"
