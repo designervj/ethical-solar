@@ -235,10 +235,18 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom */}
-      <div className="relative z-[2] mt-14 pt-5 border-t border-white/10 text-center text-[0.85rem] text-[#cfd8dc]">
-        &copy; 2026 Ethical Solar Pty Ltd. All rights reserved. ABN: 13 670 165 938
-        
+      <div className="relative z-[2] mt-14 pt-5 border-t border-white/10 text-center text-[0.85rem] text-[#cfd8dc] ">
+      <span className="hidden md:block">
+        &copy; 2026 Ethical Solar Pty Ltd. All rights reserved.
+         ABN: 13 670 165 938 
+        </span> 
+
+          <span className="block md:hidden">
+        &copy; 2026 Ethical Solar Pty Ltd. All rights reserved.
+         <br/>ABN: 13 670 165 938
+        </span>
         <br />
+
         <span className="mt-2 inline-block text-[13px]">
           <a href="#" className="text-[#cfd8dc] hover:text-[#2AF598]">
             Privacy Policy
