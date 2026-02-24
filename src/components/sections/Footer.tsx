@@ -213,7 +213,7 @@ const Footer: React.FC = () => {
             </div>
             <span className="block font-bold text-white mb-1">SAA Accredited Installer</span>
             <span className="block text-[0.8rem] text-[#cfd8dc] leading-snug">
-              South East Queensland (SEQ)
+              Service area - South East Queensland (SEQ)
             </span>
           </div>
 
