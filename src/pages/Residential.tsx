@@ -66,7 +66,9 @@ export const Residential: React.FC = () => {
                 Let's put solar <br/><span className="text-emerald-400">on your home.</span>
               </h1>
               <p className="md:text-xl text-base text-gray-200  font-light max-w-xl leading-relaxed">
-                We've been designing, selling, and installing high-quality solar on homes in Virginia for over a decade. Experience the difference of ethical energy.
+                Residential Solar for Australian Homes, Power Your Home with Smart, Affordable Solar
+Take control of rising electricity costs with a custom-designed residential solar system built for Australian conditions.
+Whether you’re looking to reduce your power bills, increase your home’s value, or gain energy independence with battery storage, we make switching to solar simple and stress-free.
               </p>
               {/* <div className="flex flex-wrap gap-4 pt-4">
                  <div className="h-12 bg-white/90 px-4 flex items-center rounded-lg shadow-lg">
@@ -93,7 +95,7 @@ export const Residential: React.FC = () => {
                   </div>
                   <input type="tel" placeholder="Phone" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
                   <input type="email" placeholder="Email" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
-                  <input type="text" placeholder="Zip Code" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
+                  <input type="text" placeholder="Post Code" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
                   
                   <div className="relative">
                      <select className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 text-gray-500 appearance-none">
@@ -110,7 +112,7 @@ export const Residential: React.FC = () => {
                         Get a solar assessment
                     </Button>
                   </div>
-                  <p className="text-center text-xs text-gray-300 mt-2">Your information is safe with us.</p>
+                  {/* <p className="text-center text-xs text-gray-300 mt-2">Your information is safe with us.</p> */}
                 </form>
               </div>
             </div>
@@ -118,54 +120,116 @@ export const Residential: React.FC = () => {
         </div>
       </div>
 
-      {/* Why Go Solar */}
+      {/* Why Go Solar — redesigned premium layout */}
       <section className="bg-white py-20 md:px-0 px-4">
-        <div  className='container-xl'>
-        <div className="text-center mb-16 max-w-3xl mx-auto">
-          <span className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-2 block">Benefits</span>
-          <h2 className="md:text-4xl  text-3xl font-serif text-gray-900 mb-6">Why Go Solar?</h2>
-          <p className="text-gray-600">Switching to solar isn't just about saving money; it's about investing in your home's future and the planet.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="group text-center px-4 hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-20 h-20 mx-auto bg-[#d1fae5] rounded-2xl rotate-3 group-hover:rotate-0 shadow transition-transform duration-300 flex items-center justify-center text-black mb-8 shadow-sm">
-              <DollarSign size={36} strokeWidth={1.5} />
-            </div>
-            <h3 className="text-xl font-bold mb-4">Lower Your Electricity Bills</h3>
-            <p className="text-gray-600 leading-relaxed md:mb-6">
-              The Federal Investment Tax Credit (ITC) offers homeowners a 30% credit. Projects begin paying for themselves immediately through monthly savings.
+        <div className="container-xl">
+
+          {/* Header */}
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <span className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-2 block">Benefits</span>
+            <h2 className="md:text-4xl text-3xl font-serif text-gray-900 mb-6">Why More Australians Are Choosing Solar</h2>
+            <p className="text-gray-600 leading-relaxed">
+              Electricity prices across Australia continue to rise. Installing solar panels is one of the
+              smartest long-term investments you can make for your home.
             </p>
-            <a href="#" className="text-emerald-600 font-medium hover:text-emerald-700 flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
-                See savings calculator <ArrowRight size={16} />
-            </a>
           </div>
-          <div className="group text-center px-4 hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-20 h-20 mx-auto bg-[#d1fae5] rounded-2xl -rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center text-black mb-8 shadow-sm">
-              <Home size={36} strokeWidth={1.5} />
+
+          {/* 2-column card grid — Government Incentives spans full width */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+            {/* 1 — Lower Your Power Bills */}
+            <div className="group bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 rounded-2xl p-8 transition-all duration-300">
+              <div className="w-12 h-12 bg-emerald-100 group-hover:bg-emerald-200 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+                <DollarSign className="text-emerald-700" size={24} />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Lower Your Power Bills</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Generate your own electricity and significantly reduce your quarterly bills.
+              </p>
             </div>
-            <h3 className="text-xl font-bold mb-4">Increase Your Home's Value</h3>
-            <p className="text-gray-600 leading-relaxed md:mb-6">
-              Homes with solar sell faster and for more money. Studies show an increase in property value by up to 4.1% compared to non-solar homes.
-            </p>
-            <a href="#" className="text-brand-blue font-medium hover:text-blue-700 flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
-                Read the study <ArrowRight size={16} />
-            </a>
-          </div>
-          <div className="group text-center px-4 hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-20 h-20 mx-auto bg-[#d1fae5] rounded-2xl rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center text-black mb-8 shadow-sm">
-              <Leaf size={36} strokeWidth={1.5} />
+
+            {/* 2 — Protection from Rising Energy Prices */}
+            <div className="group bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 rounded-2xl p-8 transition-all duration-300">
+              <div className="w-12 h-12 bg-emerald-100 group-hover:bg-emerald-200 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+                <ShieldCheck className="text-emerald-700" size={24} />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Protection from Rising Energy Prices</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Lock in long-term savings and reduce dependence on energy retailers.
+              </p>
             </div>
-            <h3 className="text-xl font-bold mb-4">Help the Planet Out</h3>
-            <p className="text-gray-600 leading-relaxed md:mb-6">
-              Reduce your carbon footprint immediately. Rooftop solar generates clean electricity without emissions, noise, or water use.
-            </p>
-            <a href="#" className="text-yellow-600 font-medium hover:text-yellow-700 flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
-                Maximize impact <ArrowRight size={16} />
-            </a>
+
+            {/* 3 — Government Incentives — full width, richer content */}
+            <div className="group md:col-span-2 bg-emerald-900 rounded-2xl p-8 md:p-10 transition-all duration-300">
+              <div className="flex flex-col md:flex-row md:gap-10 gap-6">
+                <div className="shrink-0">
+                  <div className="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-5">
+                    <Award className="text-emerald-200" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-1">Government Incentives Available</h3>
+                  <p className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">STCs · Cheaper Home Batteries</p>
+                </div>
+                <div className="space-y-4 md:border-l md:border-emerald-700 md:pl-10">
+                  <p className="text-emerald-100 text-sm leading-relaxed">
+                    Eligible homeowners can benefit from the Small-scale Renewable Energy Scheme (SRES)
+                    which provides STCs (Small-scale Technology Certificates) that reduce upfront system costs.
+                  </p>
+                  <p className="text-emerald-100 text-sm leading-relaxed">
+                    You may also be eligible for around a <strong className="text-white">30% discount</strong> on the upfront cost of installing a
+                    battery system through the Cheaper Home Batteries Program.
+                  </p>
+                  <p className="text-emerald-200 text-sm leading-relaxed">
+                    The discount is based on battery size (usable capacity) and is funded by the Australian
+                    Government.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 4 — Increase Property Value */}
+            <div className="group bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 rounded-2xl p-8 transition-all duration-300">
+              <div className="w-12 h-12 bg-emerald-100 group-hover:bg-emerald-200 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+                <Home className="text-emerald-700" size={24} />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Increase Property Value</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Homes with solar systems are more attractive to buyers and often sell faster.
+              </p>
+            </div>
+
+            {/* 5 — Environmentally Friendly */}
+            <div className="group bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 rounded-2xl p-8 transition-all duration-300">
+              <div className="w-12 h-12 bg-emerald-100 group-hover:bg-emerald-200 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+                <Leaf className="text-emerald-700" size={24} />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Environmentally Friendly</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Reduce your carbon footprint and contribute to a cleaner, more sustainable Australia.
+              </p>
+            </div>
+
           </div>
-        </div>
         </div>
       </section>
+
+
+
+      {/* ── OLD "Why Go Solar" 3-column card layout — DISABLED (do not delete) ──
+      <section className="bg-white py-20 md:px-0 px-4">
+        <div className="container-xl">
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <span>Benefits</span>
+            <h2>Why More Australians Are Choosing Solar?</h2>
+            <p>Switching to solar isn't just about saving money; it's about investing in your home's future and the planet.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            Card 1 — Lower Your Power Bills (DollarSign icon, See savings calculator link)
+            Card 2 — Protection from Rising Energy Prices (Home icon, Read the study link)
+            Card 3 — Government Incentives Available (Leaf icon, Maximize impact link) — short text only
+          </div>
+        </div>
+      </section>
+      ── END OLD CONTENT ─────────────────────────────────────────────────────── */}
 
       {/* How Solar Works - 2x2 Grid */}
       <section className="bg-gray-50 py-20">
@@ -235,18 +299,18 @@ export const Residential: React.FC = () => {
       </section>
 
       {/* Roof vs Ground */}
-      <section className='py-20'>
-         <div className='container-xl'>
+      {/* <section className='py-20'>
+         <div className='container-xl'> */}
 
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
            <span className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-2 block">Installation Options</span>
            <h2 className="md:text-4xl  text-3xl font-serif text-gray-900 mb-6">Roof-Mounted vs. Ground-Mounted</h2>
            <p className="max-w-3xl mx-auto text-gray-600">
              We optimize the installation based on your property's layout and sun exposure.
            </p>
-        </div>
+        </div> */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="bg-white rounded-md overflow-hidden shadow-lg border border-gray-100 group">
             <div className="h-64 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?q=80&w=1974&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Roof Mount" />
@@ -257,8 +321,8 @@ export const Residential: React.FC = () => {
                 The most common choice. It uses existing unused space and is typically cheaper to install. Ideal for homes with good south/west exposure.
                 </p>
             </div>
-          </div>
-          <div className="bg-white rounded-md overflow-hidden shadow-lg border border-gray-100 group">
+          </div> */}
+          {/* <div className="bg-white rounded-md overflow-hidden shadow-lg border border-gray-100 group">
             <div className="h-64 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1548345680-f5475ea5df84?q=80&w=2073&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Ground Mount" />
             </div>
@@ -267,12 +331,12 @@ export const Residential: React.FC = () => {
                 <p className="text-gray-600 leading-relaxed mdmb-6">
                 Perfect if your roof is shaded or old. Ground mounts can be oriented perfectly for maximum production and are easier to clean and maintain.
                 </p>
-             </div>
-          </div>
-        </div>
+             </div> */}
+          {/* </div> */}
+        {/* </div> */}
 
         {/* Comparison Table */}
-        <div className="overflow-hidden rounded-2xl border border-gray-200">
+        {/* <div className="overflow-hidden rounded-2xl border border-gray-200">
           <table className="w-full text-left border-collapse">
             <thead className="bg-gray-50">
               <tr>
@@ -305,15 +369,15 @@ export const Residential: React.FC = () => {
             </tbody>
           </table>
         </div>
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
       {/* Dark Quote section */}
-      <div className="bg-brand-dark py-24 relative overflow-hidden">
+      {/* <div className="bg-brand-dark py-24 relative overflow-hidden"> */}
          {/* Abstract BG */}
-         <div className="absolute top-0 right-0 w-1/2 h-full bg-emerald-900/10 skew-x-12 transform origin-top-right"></div>
+         {/* <div className="absolute top-0 right-0 w-1/2 h-full bg-emerald-900/10 skew-x-12 transform origin-top-right"></div> */}
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div >
               <h2 className="md:text-4xl  text-3xl md:text-5xl font-serif mb-6 leading-tight">Get a free solar quote</h2>
@@ -366,11 +430,11 @@ export const Residential: React.FC = () => {
                </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
       {/* Gallery */}
-      <section>
+      {/* <section>
         <div className='container-xl py-20'>
         <div className="text-center mb-16">
            <h2 className="md:text-4xl  text-3xl font-serif text-gray-900 mb-4">Our Residential Projects</h2>
@@ -393,17 +457,17 @@ export const Residential: React.FC = () => {
            ))}
         </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Cost Info */}
-      <section className="bg-gray-50 py-20">
+      {/* <section className="bg-gray-50 py-20">
         <div className='container-xl'>
         <div className=" mx-auto space-y-12">
            <div className="text-center mb-12">
              <h2 className="text-3xl font-serif text-gray-900">Understanding the Numbers</h2>
-           </div>
+           </div> */}
          
-<div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
+{/* <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
   <div className="flex flex-col md:flex-row gap-8 items-start bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
     <div className="flex-shrink-0 w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600">
       <DollarSign size={32} />
@@ -453,14 +517,14 @@ export const Residential: React.FC = () => {
       </p>
     </div>
   </div>
-</div>
+</div> */}
 
+        {/* </div>
         </div>
-        </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
-      <div className="bg-brand-dark text-white py-24">
+      {/* <div className="bg-brand-dark text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
              <div>
@@ -500,7 +564,7 @@ export const Residential: React.FC = () => {
              </div>
            </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Maintenance & Warranty */}
       <section className='py-20 bg-[#f7f7f7]'>
@@ -615,13 +679,13 @@ export const Residential: React.FC = () => {
             <h2 className="md:text-4xl  text-3xl font-serif mb-4">Frequently Asked Questions</h2>
           </div>
           <div className="divide-y divide-gray-100">
-            <FAQItem question="How long does it take to get solar installed?" answer="While the physical installation only takes 1-3 days, the entire process (permitting, utility approval) typically takes 60-90 days from contract signing." />
-            <FAQItem question="Can I install solar panels myself?" answer="It is not recommended. Solar involves high-voltage electrical work and structural roof attachments. Professional installation ensures safety, code compliance, and protects your roof warranty." />
-            <FAQItem question="What happens if I sell my home?" answer="Owned solar systems increase home value. You can include the system in the sale price. If you have a loan, you can pay it off at closing or transfer it to the buyer." />
-            <FAQItem question="Will my home insurance go up?" answer="Usually, yes, but only slightly to cover the replacement cost of the system. We recommend notifying your insurance provider once the system is installed." />
-            <FAQItem question="Do solar panels work in winter?" answer="Yes. Panels run on light, not heat. In fact, they are more efficient in cooler temperatures. Production is lower in winter due to shorter days, but annual net metering balances this out." />
-            <FAQItem question="What happens during a power outage?" answer="For safety, grid-tied systems shut down during an outage to prevent back-feeding the lines. To have power during a blackout, you must have a battery backup system." />
-            <FAQItem question="Can my HOA stop me?" answer="In Virginia and many other states, 'Solar Access Rights' laws generally prevent HOAs from banning solar, though they can place reasonable restrictions on placement for aesthetics." />
+            <FAQItem question="How much does residential solar cost in Australia?" answer="System prices vary depending on size and equipment, but after government incentives, most systems are far more affordable than people expect." />
+            <FAQItem question="How long do solar panels last?" answer="Most panels come with 25-year performance warranties and often last even longer." />
+            <FAQItem question="What happens on cloudy days?" answer="Solar systems still generate electricity in cloudy weather — just at reduced output." />
+            <FAQItem question="Is a battery worth it?" answer="Batteries are ideal for households wanting energy independence, blackout protection, and maximum savings from their solar system." />
+            <FAQItem question="How long until I see savings?" answer="Most homeowners notice reduced electricity bills immediately after installation." />
+            {/* <FAQItem question="What happens during a power outage?" answer="For safety, grid-tied systems shut down during an outage to prevent back-feeding the lines. To have power during a blackout, you must have a battery backup system." />
+            <FAQItem question="Can my HOA stop me?" answer="In Virginia and many other states, 'Solar Access Rights' laws generally prevent HOAs from banning solar, though they can place reasonable restrictions on placement for aesthetics." /> */}
           </div>
         </div>
       </section>

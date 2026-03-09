@@ -2,7 +2,7 @@
 
 import React from "react";
 import {
-  Linkedin,
+  // Linkedin, // REMOVED: LinkedIn removed from whole website
   Instagram,
   Mail,
   Phone,
@@ -42,9 +42,9 @@ const connectDetails = [
   },
 ];
 
-// Social icons
+// Social icons — CHANGED: LinkedIn removed from whole website
 const socialIcons = [
-  { icon: Linkedin, href: "#", name: "LinkedIn" },
+  // { icon: Linkedin, href: "#", name: "LinkedIn" }, // REMOVED per client request
   // { icon: Instagram, href: "#", name: "Instagram" },
   // { icon: Youtube, href: "#", name: "YouTube" },
 ];
@@ -123,7 +123,8 @@ const Footer: React.FC = () => {
         </svg>
       </div>
 
-      {/* CTA Row */}
+      {/* CTA Row — REMOVED per client request ("Start saving with & get quote") */}
+      {/*
       <div className="relative z-[2] flex flex-col items-start gap-5 border-b border-white/10 pb-12 mb-12 md:flex-row md:items-end md:justify-between">
         <div>
           <h2 className="font-semibold tracking-tight leading-[1.15] text-[2rem] md:text-[2.8rem]">
@@ -131,20 +132,13 @@ const Footer: React.FC = () => {
             Ethical Solar
           </h2>
         </div>
-
         <div>
-          <a
-            href="#contact-section"
-            className="inline-block rounded-full px-8 py-4 text-white font-semibold text-base
-                       bg-[linear-gradient(90deg,_#00b09b_0%,_#0088cc_100%)]
-                       shadow-[0_4px_15px_rgba(0,176,155,0.30)]
-                       transition-transform hover:-translate-y-[3px]
-                       hover:shadow-[0_6px_20px_rgba(0,176,155,0.50)]"
-          >
+          <a href="#contact-section" className="inline-block rounded-full px-8 py-4 text-white font-semibold text-base bg-[linear-gradient(90deg,_#00b09b_0%,_#0088cc_100%)] shadow-[0_4px_15px_rgba(0,176,155,0.30)] transition-transform hover:-translate-y-[3px] hover:shadow-[0_6px_20px_rgba(0,176,155,0.50)]">
             Get Commercial Quote
           </a>
         </div>
       </div>
+      */}
 
       {/* Content Grid */}
       <div className="relative z-[2] grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
@@ -154,13 +148,15 @@ const Footer: React.FC = () => {
             Ethical <span className="text-[#2AF598]">Solar</span>
           </h3>
 
+          {/* CHANGED: address in 3-line format */}
           <div className="space-y-3 text-[0.95rem] text-[#cfd8dc]">
             <p className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 text-[#00b09b]" />
-              <span>Suite No. 1562,
-                    17 Gould Road
-                    Herston 4006
-                    QLD, Australia</span>
+              <span>
+                Suite No. 1562, 17 Gould Road<br />
+                Herston 4006<br />
+                QLD, Australia
+              </span>
             </p>
             <p className="flex items-start gap-3">
               <Phone className="mt-0.5 h-5 w-5 text-[#00b09b]" />
