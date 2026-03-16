@@ -60,7 +60,7 @@ const FooterLink: React.FC<FooterLinkProps> = ({ href, children }) => (
   <li>
     <a
       href={href}
-      className="text-[#cfd8dc] text-[0.95rem] transition hover:text-[#2AF598] hover:pl-1"
+      className="text-[#cfd8dc] text-[16px] transition hover:text-[#e5e7eb] hover:pl-1 font-medium"
     >
       {children}
     </a>
@@ -148,7 +148,10 @@ const Footer: React.FC = () => {
             Ethical <span className="text-[#2AF598]">Solar</span>
           </h3> */}
           <div className="mb-5">
-          <img src="../assets/Image/ethical-solar-white-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" />
+          {/* <img src="../assets/Image/ethical-solar-white-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" /> */}
+          <img src="../assets/Image/ethical-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" />
+
+
           </div>
 
           {/* CHANGED: address in 3-line format */}
@@ -211,11 +214,15 @@ const Footer: React.FC = () => {
             </p>
             <p className="flex items-start gap-3">
               <Phone className="mt-0.5 h-5 w-5 text-[#00b09b]" />
-              <span>1300 686 595</span>
+              <a href="tel:+1300686595" className="text-[#cfd8dc] hover:text-[#2AF598]">
+                <span>+1300 686 595</span>
+              </a>
             </p>
             <p className="flex items-start gap-3">
               <Mail className="mt-0.5 h-5 w-5 text-[#00b09b]" />
-              <span>info@ethicalsolar.com.au</span>
+              <a href="mailto:info@ethicalsolar.com.au" className="text-[#cfd8dc] hover:text-[#2AF598]">
+                <span>info@ethicalsolar.com.au</span>
+              </a>
             </p>
           </div>
 
