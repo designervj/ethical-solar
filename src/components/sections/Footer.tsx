@@ -144,9 +144,12 @@ const Footer: React.FC = () => {
       <div className="relative z-[2] grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
         <div>
-          <h3 className="text-[1.8rem] font-semibold mb-5">
+          {/* <h3 className="text-[1.8rem] font-semibold mb-5">
             Ethical <span className="text-[#2AF598]">Solar</span>
-          </h3>
+          </h3> */}
+          <div className="mb-5">
+          <img src="../assets/Image/ethical-solar-white-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" />
+          </div>
 
           {/* CHANGED: address in 3-line format */}
           <div className="space-y-3 text-[0.95rem] text-[#cfd8dc]">

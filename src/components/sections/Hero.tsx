@@ -198,7 +198,7 @@ export default function Hero() {
 
         {/* Left Text Content */}
         <div className="relative max-w-xl md:ps-14">
-          <h1 className="text-white font-normal text-3xl sm:text-4xl lg:text-[80px] mb-6 font-serif leading-tight">
+          <h1 className="text-white font-medium text-3xl sm:text-4xl lg:text-[70px] mb-6  leading-tight">
             Solar built to last, by a team you can trust.
           </h1>
 

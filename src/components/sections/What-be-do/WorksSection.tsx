@@ -88,7 +88,7 @@ const WorksSection = () => {
   return (
     <section className="bg-[#f7f7f7]">
         
-      <div className="container-xl  mx-auto py-16 px-4 sm:px-6">
+      <div className="container-xl  mx-auto py-20 px-4 sm:px-6">
       {/* Red Header Title */}
       {/* <h2 className="text-sm font-semibold tracking-widest text-red-600 uppercase mb-10">
         HOW OUR SUBSCRIPTION MODEL WORKS

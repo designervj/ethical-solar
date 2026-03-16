@@ -18,7 +18,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   backgroundImage 
 }) => {
   return (
-    <div className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+    <div className="relative h-[50vh] min-h-[500px] flex items-center justify-center overflow-hidden ">
       
       {/* Background */}
       <div className="absolute inset-0 z-0">
@@ -37,7 +37,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
           {title}
         </h1>
 
-        <p className="text-lg md:text-xl text-gray-100 font-light max-w-2xl mx-auto leading-relaxed mb-4">
+        <p className="text-lg md:text-xl text-gray-100 font-medium max-w-2xl mx-auto leading-relaxed mb-4">
           {subtitle}
         </p>
 

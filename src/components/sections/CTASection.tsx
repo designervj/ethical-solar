@@ -2,11 +2,12 @@ import React from "react";
 
 const CTASection = () => {
   return (
-    // Section ko vertical padding di hai
-    <section className="py-20 bg-white">
+      <>
+ 
+   {/* <section className="py-20 bg-white"> */}
       
       {/* Saare content ko center aur max-width di hai */}
-      <div className="container mx-auto max-w-3xl text-center px-4">
+      {/* // <div className="container mx-auto max-w-3xl text-center px-4"> */}
         
         {/* Heading */}
         {/* <h2 className="text-3xl md:text-4xl font-normal text-[#555555]">
@@ -28,8 +29,11 @@ const CTASection = () => {
           </button>
         </div> */}
 
-      </div>
-    </section>
+     {/* </div> */}
+    {/* </section> */}
+
+  
+    </>
   );
 };
 

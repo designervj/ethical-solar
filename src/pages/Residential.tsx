@@ -570,7 +570,7 @@ Whether you’re looking to reduce your power bills, increase your home’s valu
       <section className='py-20 bg-[#f7f7f7]'>
         <div className='container-xl'>
         <div className="text-center mb-16">
-          <h2 className="md:text-4xl  text-3xl font-serif mb-6">Solar Maintenance & Longevity</h2>
+          <h2 className="md:text-4xl  text-3xl font-serif mb-6 text-gray-800">Solar Maintenance & Longevity</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
            <div className="flex md:gap-6 gap-4 items-start">
@@ -630,7 +630,7 @@ Whether you’re looking to reduce your power bills, increase your home’s valu
         <div className='container-xl'></div>
         <div className="max-w-4xl mx-auto pe-8 md:px-0">
           <div className="text-center mb-16">
-            <h2 className="md:text-4xl  text-3xl font-serif mb-4">Our Installation Process</h2>
+            <h2 className="md:text-4xl  text-3xl font-serif mb-4 text-gray-800">Our Installation Process</h2>
             <p className="text-gray-600">We handle everything from the initial design to the final switch flip.</p>
           </div>
           <div className="space-y-2 md:border-l-2 border-emerald-100 ml-6 md md:pl-8 relative">
@@ -676,7 +676,7 @@ Whether you’re looking to reduce your power bills, increase your home’s valu
       <section className="bg-gray-100 py-20 md:px-0 px-6">
         <div className="md:max-w-3xl  mx-auto">
           <div className="text-center mb-12">
-            <h2 className="md:text-4xl  text-3xl font-serif mb-4">Frequently Asked Questions</h2>
+            <h2 className="md:text-4xl  text-3xl font-serif mb-4 text-gray-800">Frequently Asked Questions</h2>
           </div>
           <div className="divide-y divide-gray-100">
             <FAQItem question="How much does residential solar cost in Australia?" answer="System prices vary depending on size and equipment, but after government incentives, most systems are far more affordable than people expect." />

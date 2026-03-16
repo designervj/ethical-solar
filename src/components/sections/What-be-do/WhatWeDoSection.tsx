@@ -55,7 +55,7 @@ function ServiceIcon({ Icon }: { Icon: React.ElementType }) {
 
 const WhatWeDoSection = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
+    <section className="md:py-20 py-10 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

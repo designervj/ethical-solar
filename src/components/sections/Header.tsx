@@ -93,7 +93,9 @@ const Header = () => {
 
   
   return (
-    <header className="sticky top-0 z-50 w-full  bg-[#050B2F] ">
+    // <header className="sticky top-0 z-50 w-full  bg-[#050B2F] ">
+
+    <header className="sticky top-0 z-50 w-full  bg-[#fff] shadow">
       {/* bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] */}
       <div
         className="relative "
@@ -111,7 +113,8 @@ const Header = () => {
                 className="flex items-center gap-2 text-3xl font-serif font-medium text-white "
               >
                 <img
-                  src="../assets/Image/ethicalsolar-logo.svg"
+                  // src="../assets/Image/ethicalsolar-logo.svg"
+                  src="../assets/Image/ethical-logo.svg"
                   // src="../assets/Image/ethical-solar-logo.svg"
                   alt="Ethical Solar logo"
                   className="md:h-14 h-12 w-auto"
@@ -138,7 +141,7 @@ const Header = () => {
                     className={`group text-[16px] font-medium transition-colors relative ${
                       isActive
                         ? "text-[#f4f4f4]"
-                        : "text-[#fff] hover:text-[#fff]"
+                        : "text-[#050B2F] hover:text-[#528D35]"
                     }`}
                   >
                     {item.name}
@@ -182,7 +185,7 @@ const Header = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
-                className="text-white"
+                className="text-black"
               >
                 {mobileOpen ? (
                   <X className="w-6 h-6" />

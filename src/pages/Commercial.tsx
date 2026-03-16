@@ -214,7 +214,7 @@ const Commercial = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-emerald-700 rounded-full opacity-40 blur-3xl z-0"></div>
               <img
-                src="https://images.unsplash.com/photo-1620714223084-8fcacc2dfd4d?q=80&w=2071&auto=format&fit=crop"
+                src="https://www.world-energy.org/uploadfile/2023/0129/20230129100049100.png"
                 alt="Battery storage system"
                 className="relative z-10 rounded-2xl shadow-2xl"
               />
@@ -264,8 +264,8 @@ const Commercial = () => {
       {/* ── The Finance Case for Commercial Solar ─────────────────────── */}
       <section className="bg-white py-20">
         <div className="container-xl">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-50 rounded-3xl border border-gray-100 p-10 md:p-14">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-gray-50 rounded-3xl border border-gray-100 p-10 md:p-14 shadow">
               <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-6">
                 The Finance Case for Commercial Solar
               </h2>
@@ -301,7 +301,8 @@ const Commercial = () => {
       <section className="bg-gray-100 py-20 md:px-0 px-6">
         <div className="md:max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="md:text-4xl text-3xl font-serif mb-4">Frequently Asked Questions</h2>
+            <h2 className="md:text-4xl text-3xl text-gray-800 font-serif mb-4 
+">Frequently Asked Questions</h2>
             <p className="text-gray-600">
               Common questions from business owners considering commercial solar.
             </p>

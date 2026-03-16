@@ -67,11 +67,11 @@ export default function WhatWeDo() {
   };
 
   return (
-    <section className="py-16 md:py-10 md:px-4 md:px-10 bg-white">
+    <section className="py-16 md:py-20 md:px-4 md:px-10 bg-white">
       <div className="container-xl mx-auto">
         {/* Header */}
         <div className="max-w-lg mx-auto text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-normal text-[#555555] mb-4">
+          <h2 className="text-3xl md:text-4xl font-normal text-gray-800 mb-4">
             What We Do
           </h2>
           <p className="md:text-lg text-base text-[#555555] md:text-lg">

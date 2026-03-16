@@ -210,7 +210,7 @@ const LetsTalk: React.FC = () => {
                 <button
                   type="submit"
                   className="
-                    inline-flex items-center gap-2 bg-[#3ccb7f] text-white  px-5 py-3 rounded-full
+                    inline-flex items-center gap-2 bg-[#3ccb7f] hover:bg-[#23499b] text-white  px-5 py-3 rounded-full
                     text-sm font-medium shadow-sm
                     hover:brightness-95 transition
                   "
