@@ -152,7 +152,55 @@ const Footer: React.FC = () => {
           </div>
 
           {/* CHANGED: address in 3-line format */}
-          <div className="space-y-3 text-[0.95rem] text-[#cfd8dc]">
+          <div className="rounded-xl border border-[#2AF598]/30 bg-white/[0.03] p-5 text-center">
+            <div className="mx-auto mb-2 h-10 w-10 rounded-full bg-[#2AF598]/15 grid place-items-center">
+              <span className="text-[#2AF598] text-xl font-black">✓</span>
+            </div>
+            <span className="block font-bold text-white mb-1">SAA Accredited Installer</span>
+            <span className="block text-[0.8rem] text-[#cfd8dc] leading-snug">
+              Service area - South East Queensland (SEQ)
+            </span>
+          </div>
+
+          <div className="mt-6 flex gap-4">
+            {socialIcons.map(({ icon: Icon, href, name }) => (
+              <IconPillLink key={name} href={href} label={name}>
+                <Icon className="h-5 w-5" />
+              </IconPillLink>
+            ))}
+          </div>
+        </div>
+
+        {/* Links 1 */}
+       
+
+        {/* Links 2 */}
+        <div className="md:ps-10">
+          <FooterHeading title="Company" />
+          <ul className="space-y-3">
+            {exploreLinks.slice(0, 4).map((l) => (
+              <FooterLink key={l.label} href={l.href}>
+                {l.label}
+              </FooterLink>
+            ))}
+          </ul>
+        </div>
+
+         <div>
+          <FooterHeading title="Solutions" />
+          <ul className="space-y-3">
+            <FooterLink href="#">Residential Solar</FooterLink>
+            <FooterLink href="#">Commercial Solar</FooterLink>
+            <FooterLink href="#">Battery Storage</FooterLink>
+            <FooterLink href="#">Virtual Power Plant</FooterLink>
+          </ul>
+        </div>
+
+        {/* Connect / Accreditation */}
+        <div>
+          <FooterHeading title="Contact" />
+
+             <div className="space-y-3 text-[0.95rem] text-[#cfd8dc]">
             <p className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 text-[#00b09b]" />
               <span>
@@ -171,50 +219,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          <div className="mt-6 flex gap-4">
-            {socialIcons.map(({ icon: Icon, href, name }) => (
-              <IconPillLink key={name} href={href} label={name}>
-                <Icon className="h-5 w-5" />
-              </IconPillLink>
-            ))}
-          </div>
-        </div>
-
-        {/* Links 1 */}
-        <div>
-          <FooterHeading title="Solutions" />
-          <ul className="space-y-3">
-            <FooterLink href="#">Residential Solar</FooterLink>
-            <FooterLink href="#">Commercial Solar</FooterLink>
-            <FooterLink href="#">Battery Storage</FooterLink>
-            <FooterLink href="#">Virtual Power Plant</FooterLink>
-          </ul>
-        </div>
-
-        {/* Links 2 */}
-        <div>
-          <FooterHeading title="Company" />
-          <ul className="space-y-3">
-            {exploreLinks.slice(0, 4).map((l) => (
-              <FooterLink key={l.label} href={l.href}>
-                {l.label}
-              </FooterLink>
-            ))}
-          </ul>
-        </div>
-
-        {/* Connect / Accreditation */}
-        <div>
-          <FooterHeading title="Accreditation" />
-          <div className="rounded-xl border border-[#2AF598]/30 bg-white/[0.03] p-5 text-center">
-            <div className="mx-auto mb-2 h-10 w-10 rounded-full bg-[#2AF598]/15 grid place-items-center">
-              <span className="text-[#2AF598] text-xl font-black">✓</span>
-            </div>
-            <span className="block font-bold text-white mb-1">SAA Accredited Installer</span>
-            <span className="block text-[0.8rem] text-[#cfd8dc] leading-snug">
-              Service area - South East Queensland (SEQ)
-            </span>
-          </div>
+       
 
           {/* Optional: show connect details list under badge */}
           {/* <ul className="mt-6 space-y-3 text-[#cfd8dc]">

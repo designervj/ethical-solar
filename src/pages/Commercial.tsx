@@ -214,7 +214,7 @@ const Commercial = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-emerald-700 rounded-full opacity-40 blur-3xl z-0"></div>
               <img
-                src="https://www.world-energy.org/uploadfile/2023/0129/20230129100049100.png"
+                src="/assets/Image/battery-solar-img.png"
                 alt="Battery storage system"
                 className="relative z-10 rounded-2xl shadow-2xl"
               />
