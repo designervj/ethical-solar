@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/sections/header/Header";
 import Footer from "@/components/sections/footer/Footer";
 import ReduxProvider from "@/components/providers/ReduxProvider";
+import { Toaster } from 'sonner';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="text-brand-text">
         <ReduxProvider>
+          <Toaster position="top-center" richColors />
           <Header />
           {children}
           <Footer />
