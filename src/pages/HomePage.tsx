@@ -15,6 +15,7 @@ import HomeHeroSec from "@/components/sections/HomeHeroSec";
 import WhatWeDoSection from "@/components/sections/What-be-do/WhatWeDoSection";
 import WorksSection from "@/components/sections/What-be-do/WorksSection";
 import LetsTalk from "@/components/sections/LetsTalkPages/LetsTalk";
+import GetAllPages from "@/components/sections/homePage/GetAllPages";
 
 const pettyProducts: Product[] = [
   { id: "p1", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
@@ -33,8 +34,10 @@ const categories = [
   { id: "nakiri", label: "Nakiri", products: pettyProducts.slice(0, 6) },
 ];
 export default function HomePage() {
+  
   return (
     <main>
+      <GetAllPages/>
       <Hero />
       {/* <HomeHeroSec/> */}
       <SliderBrand />

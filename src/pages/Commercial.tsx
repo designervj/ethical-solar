@@ -1,55 +1,9 @@
 import LetsTalk from '@/components/sections/LetsTalkPages/LetsTalk'
 import CTASection from '@/components/sections/CTASection'
 import { PageHeader } from '@/components/ui/PageHeader'
-import { ArrowRight, Battery, CheckCircle, ChevronDown, ChevronUp, ShieldCheck, Sun, Zap } from 'lucide-react'
-import React, { useState } from 'react'
-
-// ─── FAQ DATA ─────────────────────────────────────────────────────────────────
-const faqs = [
-  {
-    q: "How much can a commercial solar system save my business?",
-    a: "Savings depend on your system size, energy usage, and feed-in tariff rates. Most commercial customers see a 30–60% reduction in electricity bills, with full payback typically achieved within 4–7 years.",
-  },
-  {
-    q: "Do we need to shut operations down during installation?",
-    a: "In most cases, no. Our installation teams are experienced in working around active business operations. We schedule work to minimise any disruption to your day-to-day activities.",
-  },
-  {
-    q: "What size system does my business need?",
-    a: "System size is determined by your energy consumption, roof or ground space available, and budget. We conduct a detailed energy audit and site assessment to recommend a correctly sized system.",
-  },
-  {
-    q: "Are there government incentives available for commercial solar?",
-    a: "Yes. The Small-scale Renewable Energy Scheme (SRES) and Large-scale Generation Certificates (LGCs) are available depending on system size. We assist with all applicable incentive applications.",
-  },
-  {
-    q: "What warranties come with a commercial solar install?",
-    a: "Our commercial systems include up to 25-year product and performance warranties on panels, 10-year inverter warranties, and a 10-year workmanship warranty on all installations carried out by Ethical Solar.",
-  },
-]
-
-// ─── FAQ ACCORDION — matches Residential FAQItem design exactly ────────────────
-const FAQ: React.FC<{ q: string; a: string }> = ({ q, a }) => {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="border-b border-gray-200 bg-white px-6 shadow rounded-md mb-4">
-      <button
-        className="w-full py-6 flex justify-between items-center text-left focus:outline-none group bg-white"
-        onClick={() => setOpen(!open)}
-      >
-        <span className="text-sm md:text-lg font-medium text-gray-900 pr-8 group-hover:text-emerald-600 transition-colors">{q}</span>
-        {open ? (
-          <ChevronUp className="text-emerald-500 flex-shrink-0" />
-        ) : (
-          <ChevronDown className="text-gray-400 flex-shrink-0" />
-        )}
-      </button>
-      <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-96 pb-6' : 'max-h-0'}`}>
-        <p className="text-gray-600 leading-relaxed">{a}</p>
-      </div>
-    </div>
-  )
-}
+import { Battery, CheckCircle, ShieldCheck, Sun, Zap } from 'lucide-react'
+import React from 'react'
+import { CommercialFAQ } from '@/components/sections/Commercial/CommercialFAQ'
 
 const Commercial = () => {
   return (
@@ -307,11 +261,28 @@ const Commercial = () => {
               Common questions from business owners considering commercial solar.
             </p>
           </div>
-          <div className="divide-y divide-gray-100">
-            {faqs.map((faq, i) => (
-              <FAQ key={i} q={faq.q} a={faq.a} />
-            ))}
-          </div>
+          <CommercialFAQ faqs={[
+            {
+              q: "How much can a commercial solar system save my business?",
+              a: "Savings depend on your system size, energy usage, and feed-in tariff rates. Most commercial customers see a 30–60% reduction in electricity bills, with full payback typically achieved within 4–7 years.",
+            },
+            {
+              q: "Do we need to shut operations down during installation?",
+              a: "In most cases, no. Our installation teams are experienced in working around active business operations. We schedule work to minimise any disruption to your day-to-day activities.",
+            },
+            {
+              q: "What size system does my business need?",
+              a: "System size is determined by your energy consumption, roof or ground space available, and budget. We conduct a detailed energy audit and site assessment to recommend a correctly sized system.",
+            },
+            {
+              q: "Are there government incentives available for commercial solar?",
+              a: "Yes. The Small-scale Renewable Energy Scheme (SRES) and Large-scale Generation Certificates (LGCs) are available depending on system size. We assist with all applicable incentive applications.",
+            },
+            {
+              q: "What warranties come with a commercial solar install?",
+              a: "Our commercial systems include up to 25-year product and performance warranties on panels, 10-year inverter warranties, and a 10-year workmanship warranty on all installations carried out by Ethical Solar.",
+            },
+          ]} />
         </div>
       </section>
 

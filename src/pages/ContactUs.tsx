@@ -1,8 +1,7 @@
-"use client";
-
-import React, { useRef, useState } from "react";
+import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { ContactForm } from "@/components/sections/ContactUs/ContactForm";
 
 // ─── CHANGED: Updated contact option cards with correct phone + email ─────────
 const contactOptions = [
@@ -30,10 +29,6 @@ const contactOptions = [
 ];
 
 const LetsTalk: React.FC = () => {
-  const onSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // hook your API here
-  };
 
   return (
     <>
@@ -161,119 +156,7 @@ const LetsTalk: React.FC = () => {
             </div>
 
             {/* RIGHT: FORM */}
-            <div
-              id="contact-section"
-              className="bg-white rounded-2xl border border-gray-200 shadow-[0_10px_40px_rgba(0,92,151,0.05)] p-7 md:p-10"
-            >
-              <h3 className="text-[#00305a] text-2xl font-semibold mb-6">
-                Send us a Message
-              </h3>
-
-              <form onSubmit={onSubmit} className="space-y-6">
-                {/* First + Last */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <label className="space-y-2">
-                    <span className="text-[15px] font-semibold text-[#00305a]">
-                      First Name*
-                    </span>
-                    <input
-                      required
-                      type="text"
-                      placeholder="John"
-                      className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
-                    />
-                  </label>
-
-                  <label className="space-y-2">
-                    <span className="text-[15px] font-semibold text-[#00305a]">
-                      Last Name*
-                    </span>
-                    <input
-                      required
-                      type="text"
-                      placeholder="Doe"
-                      className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
-                    />
-                  </label>
-                </div>
-
-                {/* Email + Phone — CHANGED: fixed phone placeholder to Australian format */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <label className="space-y-2">
-                    <span className="text-[15px] font-semibold text-[#00305a]">
-                      Email*
-                    </span>
-                    <input
-                      required
-                      type="email"
-                      placeholder="john@example.com"
-                      className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
-                    />
-                  </label>
-
-                  {/* CHANGED: phone placeholder was (+91) 98765 43210 → Australian format */}
-                  <label className="space-y-2">
-                    <span className="text-[15px] font-semibold text-[#00305a]">
-                      Phone*
-                    </span>
-                    <input
-                      required
-                      type="tel"
-                      placeholder="04XX XXX XXX"
-                      className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
-                    />
-                  </label>
-                </div>
-
-                {/* Postcode — CHANGED: placeholder from 302020 → Australian format */}
-                <label className="space-y-2 block">
-                  <span className="text-[15px] font-semibold text-[#00305a]">
-                    Postcode
-                  </span>
-                  <input
-                    required
-                    type="text"
-                    placeholder="e.g. 4000"
-                    className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
-                  />
-                </label>
-
-                {/* Message */}
-                <div className="space-y-2">
-                  <span className="text-[15px] font-semibold text-[#00305a]">
-                    How can we help?
-                  </span>
-                  <textarea
-                    rows={5}
-                    placeholder="Tell us about your energy needs..."
-                    className="w-full rounded-xl border border-black/10 p-3 text-sm outline-none focus:ring-2 focus:ring-[#2AF598]/20 focus:border-[#2AF598]"
-                  />
-                </div>
-
-                {/* REMOVED: Bill upload section — commented out below, not deleted
-                <div className="w-full rounded-2xl bg-slate-900 px-6 py-5">
-                  <label htmlFor={id} className="block text-white text-md font-medium mb-4">
-                    Upload your electric bill (optional)
-                  </label>
-                  <div className="flex items-center gap-4 flex-wrap">
-                    <input id={id} ref={inputRef} type="file" accept={accept} multiple={multiple} onChange={handleChange} className="hidden" />
-                    <button type="button" onClick={handlePick} className="inline-flex items-center justify-center px-7 py-2 rounded-full border border-white text-white font-medium text-md hover:bg-white/10 active:scale-[0.99] transition">
-                      Choose file
-                    </button>
-                    <span className="text-white text-md font-medium">{fileName}</span>
-                  </div>
-                </div>
-                */}
-
-                {/* Submit */}
-                <button
-                  type="submit"
-                  className="inline-flex items-center gap-2 bg-[#3ccb7f] text-white px-6 py-3 rounded-full text-sm font-semibold shadow-sm hover:brightness-95 transition"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </section>
