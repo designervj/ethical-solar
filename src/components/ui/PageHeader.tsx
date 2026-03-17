@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface PageHeaderProps {
   title: string;
@@ -50,12 +51,12 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 
         {/* CTA Button */}
         {buttonText && (
-          <a
-            href={buttonLink}
+          <Link
+            href={buttonLink ?? "#"}
             className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3 rounded-full font-semibold transition duration-300"
           >
             {buttonText}
-          </a>
+          </Link>
         )}
 
       </div>

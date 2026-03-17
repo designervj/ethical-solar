@@ -1,31 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { 
   CheckCircle, DollarSign, Leaf, Sun, Battery, 
-  Zap, ChevronDown, ChevronUp, ShieldCheck, 
-  Settings, Calendar, FileText, Award,
-  ArrowRight, Home
+  Zap, ShieldCheck, 
+  Settings, Calendar, Award,
+  Home
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import CTASection from '@/components/sections/CTASection';
-
-const FAQItem = ({ question, answer }: { question: string, answer: string }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <div className="border-b border-gray-200 bg-white  px-6 shadow rounded-md  mb-4">
-      <button 
-        className="w-full py-6 flex justify-between items-center text-left focus:outline-none group bg-white "
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <span className="text-sm  md:text-lg  font-medium text-gray-900 pr-8 group-hover:text-emerald-600 transition-colors">{question}</span>
-        {isOpen ? <ChevronUp className="text-emerald-500 flex-shrink-0" /> : <ChevronDown className="text-gray-400 flex-shrink-0" />}
-      </button>
-      <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 pb-6' : 'max-h-0'}`}>
-        <p className="text-gray-600 leading-relaxed">{answer}</p>
-      </div>
-    </div>
-  );
-};
+import { ResidentialFAQ } from '@/components/sections/Residential/ResidentialFAQ';
+import { ResidentialHeroForm } from '@/components/sections/Residential/ResidentialHeroForm';
 
 const ProcessStep = ({ number, title, desc }: { number: string, title: string, desc: string }) => (
   <div className="flex gap-6 relative group">
@@ -83,38 +66,7 @@ Whether you’re looking to reduce your power bills, increase your home’s valu
 
             {/* Hero Form */}
             <div className="lg:col-span-5">
-              <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl shadow-2xl">
-                <div className="text-white mb-6">
-                   <h3 className="text-2xl font-serif">Get a Free Assessment</h3>
-                   <p className="text-sm text-gray-300">Custom design and savings estimate.</p>
-                </div>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <input type="text" placeholder="First Name" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
-                    <input type="text" placeholder="Last Name" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
-                  </div>
-                  <input type="tel" placeholder="Phone" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
-                  <input type="email" placeholder="Email" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
-                  <input type="text" placeholder="Post Code" className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 placeholder-gray-500 text-gray-900" />
-                  
-                  <div className="relative">
-                     <select className="w-full px-4 py-3 rounded-xl bg-white/90 border-0 focus:ring-2 focus:ring-emerald-400 text-gray-500 appearance-none">
-                        <option>Average Electric Bill</option>
-                        <option>$100 - $150</option>
-                        <option>$150 - $250</option>
-                        <option>$250+</option>
-                     </select>
-                     <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={16} />
-                  </div>
-
-                  <div className="pt-2">
-                    <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white border-0 shadow-lg shadow-emerald-500/30">
-                        Get a solar assessment
-                    </Button>
-                  </div>
-                  {/* <p className="text-center text-xs text-gray-300 mt-2">Your information is safe with us.</p> */}
-                </form>
-              </div>
+              <ResidentialHeroForm />
             </div>
           </div>
         </div>
@@ -678,15 +630,7 @@ Whether you’re looking to reduce your power bills, increase your home’s valu
           <div className="text-center mb-12">
             <h2 className="md:text-4xl  text-3xl font-serif mb-4 text-gray-800">Frequently Asked Questions</h2>
           </div>
-          <div className="divide-y divide-gray-100">
-            <FAQItem question="How much does residential solar cost in Australia?" answer="System prices vary depending on size and equipment, but after government incentives, most systems are far more affordable than people expect." />
-            <FAQItem question="How long do solar panels last?" answer="Most panels come with 25-year performance warranties and often last even longer." />
-            <FAQItem question="What happens on cloudy days?" answer="Solar systems still generate electricity in cloudy weather — just at reduced output." />
-            <FAQItem question="Is a battery worth it?" answer="Batteries are ideal for households wanting energy independence, blackout protection, and maximum savings from their solar system." />
-            <FAQItem question="How long until I see savings?" answer="Most homeowners notice reduced electricity bills immediately after installation." />
-            {/* <FAQItem question="What happens during a power outage?" answer="For safety, grid-tied systems shut down during an outage to prevent back-feeding the lines. To have power during a blackout, you must have a battery backup system." />
-            <FAQItem question="Can my HOA stop me?" answer="In Virginia and many other states, 'Solar Access Rights' laws generally prevent HOAs from banning solar, though they can place reasonable restrictions on placement for aesthetics." /> */}
-          </div>
+          <ResidentialFAQ />
         </div>
       </section>
 
@@ -715,3 +659,5 @@ Whether you’re looking to reduce your power bills, increase your home’s valu
     </div>
   );
 };
+
+export default Residential;
