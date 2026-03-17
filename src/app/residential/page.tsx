@@ -1,4 +1,4 @@
-import { Residential } from "@/pages/Residential";
+import { Residential } from "@/views/Residential";
 
 export default function Page() {
   return <Residential />;

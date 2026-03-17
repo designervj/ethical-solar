@@ -5,6 +5,7 @@ export interface FormInterface {
   phone?: string;
   email?: string;
   postCode?: string;
+  averageBill?:string;
   electric_bill?:string[];
   message?:string
 }
