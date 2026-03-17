@@ -5,11 +5,14 @@ import { ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '@/lib/redux/store';
+import { createForm } from '@/lib/redux/slices/formSlice/formThunk';
+import { FormInterface } from '@/lib/redux/slices/formSlice/fromType';
+import { toast } from 'sonner';
 
 export const ResidentialHeroForm: React.FC = () => {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<FormInterface>({
     firstName: '',
-    type:'residential',
+    type: 'residential',
     lastName: '',
     phone: '',
     email: '',
@@ -17,13 +20,36 @@ export const ResidentialHeroForm: React.FC = () => {
     averageBill: '',
   });
 
-  const [ isLoading , setIsLoading] = useState(false);
-  const dispatch= useDispatch<AppDispatch>()
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const dispatch = useDispatch<AppDispatch>()
+
+  const resetForm=()=>{
+  setForm({
+          firstName: '',
+          type: 'residential',
+          lastName: '',
+          phone: '',
+          email: '',
+          postCode: '',
+          averageBill: '',
+        });
+  }
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    // dispatch(createLead(form))
-    setIsLoading(false);
+    try {
+      const response = await dispatch(createForm(form)).unwrap();
+      if (response.success) {
+        toast.success( 'Form submitted successfully');
+      resetForm()
+      } else {
+        toast.error(response.message || 'Failed to submit form');
+      }
+    } catch (error: any) {
+      toast.error(error || 'An unexpected error occurred');
+    } finally {
+      setIsLoading(false);
+    }
   };
   return (
     <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl shadow-2xl">
