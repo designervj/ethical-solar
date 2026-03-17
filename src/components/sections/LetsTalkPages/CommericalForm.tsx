@@ -89,6 +89,7 @@ const CommericalForm = () => {
                             </span>
                             <input
                                 type="text"
+                                placeholder='Jhon'
                                 value={form.firstName}
                                 onChange={(e) => setForm({ ...form, firstName: e.target.value })}
                                 className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
@@ -101,6 +102,7 @@ const CommericalForm = () => {
                             </span>
                             <input
                                 type="email"
+                                placeholder='Jhon@example.com'
                                 value={form.email}
                                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                                 className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"

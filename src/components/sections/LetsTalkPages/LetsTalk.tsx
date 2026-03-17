@@ -66,7 +66,7 @@ const LetsTalk: React.FC = () => {
                     alt="phone"
                     className="w-8"
                   />
-                  <span> 1300686595</span>
+                  <span> (+61) 1300686595</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <img

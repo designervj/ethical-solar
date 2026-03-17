@@ -9,8 +9,8 @@ const contactOptions = [
     icon: "☀️",
     title: "Interested in Solar?",
     desc: "Get a free quote and custom design for your home or business.",
-    linkText: "Call 1300 686 595",
-    href: "tel:1300686595",
+    linkText: "Call (+61) 1300 686 595",
+    href: "tel:+61 1300686595",
   },
   {
     icon: "🔧",
@@ -23,8 +23,8 @@ const contactOptions = [
     icon: "🤝",
     title: "Partnerships",
     desc: "Builders, architects, and roofers. Let's work together.",
-    linkText: "nick@ethicalsolar.com.au",
-    href: "mailto:nick@ethicalsolar.com.au",
+    linkText: "info@ethicalsolar.com.au",
+    href: "mailto:info@ethicalsolar.com.au",
   },
 ];
 
@@ -132,9 +132,9 @@ const LetsTalk: React.FC = () => {
                     </div>
                     <a
                       className="text-[#666] hover:text-[#00b09b] transition"
-                      href="tel:1300686595"
+                      href="tel:+61 1300686595"
                     >
-                      1300 686 595
+                      (+61) 1300 686 595
                     </a>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ const LetsTalk: React.FC = () => {
                       Business Hours
                     </div>
                     <div className="text-[#666]">Mon–Fri, 9:00 AM – 5:00 PM</div>
-                    <div className="text-[#666]">Saturday by appointment only</div>
+                    <div className="text-[#666]">9 am to 1 pm Sat</div>
                   </div>
                 </div>
               </div>

@@ -1,10 +1,7 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/commercial/page": "app/commercial/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/about-us/page": "app/about-us/page.js",
-  "/contact-us/page": "app/contact-us/page.js",
   "/page": "app/page.js",
-  "/lets-talk/page": "app/lets-talk/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/commercial/page": "app/commercial/page.js",
   "/residential/page": "app/residential/page.js"
 }

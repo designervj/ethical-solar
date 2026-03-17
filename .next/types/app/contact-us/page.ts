@@ -1,4 +1,4 @@
-// File: /Users/manishgupta/Desktop/Project/ethical-solar/ethical-solar/src/app/contact-us/page.tsx
+// File: C:\Users\ASUS\Documents\GitHub\ethical-solar\src\app\contact-us\page.tsx
 import * as entry from '../../../../src/app/contact-us/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
