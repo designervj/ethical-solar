@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '@/lib/redux/store';
 import { createForm } from '@/lib/redux/slices/formSlice/formThunk';
-import { FormInterface } from '@/lib/redux/slices/formSlice/fromType';
+import { FormInterface } from '@/lib/redux/slices/formSlice/formType';
 import { toast } from 'sonner';
 
 export const ResidentialHeroForm: React.FC = () => {

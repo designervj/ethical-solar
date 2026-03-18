@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { FormInterface } from './fromType';
+import { FormInterface } from './formType';
 
 const backendUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
 console.log('Backend URL:', backendUrl);

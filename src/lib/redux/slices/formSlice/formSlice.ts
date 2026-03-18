@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { fetchAllForms } from './formThunk';
-import { FormInterface } from './fromType';
+import { FormInterface } from './formType';
 
 
 
