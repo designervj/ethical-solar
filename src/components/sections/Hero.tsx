@@ -183,9 +183,9 @@ export default function Hero() {
   return (
     <section className="mx-auto relative w-full overflow-hidden  ">
       <div
-       className="relative mx-auto md:ps-16 px-4 py-20 
+       className="relative mx-auto md:ps-16 px-4 py-[68px] 
              grid md:grid-cols-[55%_45%] gap-10 items-center
-             min-h-[80vh]"
+             "
         style={{
           // ✅ IMPORTANT: use leading slash for Next public folder
           backgroundImage: "url(/assets/img/solar-panal4.jpg)",

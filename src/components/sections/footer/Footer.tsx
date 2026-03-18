@@ -116,6 +116,7 @@ const Footer: React.FC = () => {
       </div>
       */}
 
+
       {/* Content Grid */}
       <div className="relative z-[2] grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
@@ -125,7 +126,8 @@ const Footer: React.FC = () => {
           </h3> */}
           <div className="mb-5">
           {/* <img src="../assets/Image/ethical-solar-white-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" /> */}
-          <img src="/assets/Image/ethical-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" />
+          <img src="/assets/Image/ethical-logo-header.svg" alt="Ethical Solar logo" className="h-16 w-auto" />
+                  {/* src="/assets/Image/ethical-logo-header.svg" */}
 
 
           </div>
