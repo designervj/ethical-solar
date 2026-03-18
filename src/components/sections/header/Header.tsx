@@ -5,6 +5,10 @@ import Link from "next/link";
 
 import { SubCategory, MegaSection } from "./types";
 
+import { usePathname } from "next/navigation";
+
+
+
 // Top-level nav (page urls added)
 const navItems = [
   { name: "Home ", href: "/", megaKey: "whatWeDo" },
@@ -20,6 +24,9 @@ const navItems = [
 
   { name: "Contact us", href: "/contact-us", megaKey: "contact" },
 ];
+
+
+
 
 // Re-defining the Mega-menu data structure
 const megaMenuData: Record<
@@ -56,6 +63,7 @@ const Header = () => {
     currentSections && currentSections[activeSectionIndex]
       ? currentSections[activeSectionIndex]
       : null;
+const pathname = usePathname();
 
   return (
     // <header className="sticky top-0 z-50 w-full  bg-[#050B2F] ">
@@ -89,38 +97,41 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-6">
-              {navItems.map((item) => {
-                const isActive = activeMega === item.megaKey;
-                const hasMega =
-                  item.megaKey && megaMenuData[item.megaKey as string];
+            {navItems.map((item) => {
+  const isActive =
+    item.href === "/"
+      ? pathname === "/"
+      : pathname.startsWith(item.href);
 
-                return (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onMouseEnter={() =>
-                      hasMega ? setActiveMega(item.megaKey as string) : null
-                    }
-                    className={`group text-[16px] font-medium transition-colors relative ${
-                      isActive
-                        ? "text-[#3ccb7f]"
-                        : "text-[#FFFFFF] hover:text-[#3ccb7f]"
-                    }`}
-                  >
-                    {item.name}
-                    {hasMega && (
-                      <span
-                        className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] rounded-full transition-all duration-200 ${
-                          isActive
-                            ? "w-full bg-[#3ccb7f]"
-                            : "w-0 bg-[#3ccb7f] group-hover:w-full"
-                        }`}
-                      />
-                    )}
-                  </Link>
-                );
-              })}
+  const hasMega =
+    item.megaKey && megaMenuData[item.megaKey as string];
 
+  return (
+    <Link
+      key={item.name}
+      href={item.href}
+      onMouseEnter={() =>
+        hasMega ? setActiveMega(item.megaKey as string) : null
+      }
+      className={`group text-[16px] font-medium transition-colors relative ${
+        isActive
+          ? "text-[#3ccb7f]"
+          : "text-[#FFFFFF] hover:text-[#3ccb7f]"
+      }`}
+    >
+      {item.name}
+      {hasMega && (
+        <span
+          className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] rounded-full transition-all duration-200 ${
+            isActive
+              ? "w-full bg-[#3ccb7f]"
+              : "w-0 bg-[#3ccb7f] group-hover:w-full"
+          }`}
+        />
+      )}
+    </Link>
+  );
+})}
               {/* CTA Button */}
               <Link
                 href="/contact-us"
