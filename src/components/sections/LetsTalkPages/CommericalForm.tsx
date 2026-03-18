@@ -1,5 +1,5 @@
 import { createForm } from '@/lib/redux/slices/formSlice/formThunk';
-import { FormInterface } from '@/lib/redux/slices/formSlice/fromType';
+import { FormInterface } from '@/lib/redux/slices/formSlice/formType';
 import { AppDispatch } from '@/lib/redux/store';
 import React, { useId, useRef, useState } from 'react'
 import { useDispatch } from 'react-redux';
