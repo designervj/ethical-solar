@@ -95,7 +95,7 @@ const Header = () => {
   return (
     // <header className="sticky top-0 z-50 w-full  bg-[#050B2F] ">
 
-    <header className="sticky top-0 z-50 w-full  bg-[#fff] shadow">
+    <header className="sticky top-0 z-50 w-full  bg-[#050B2F] shadow ">
       {/* bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] */}
       <div
         className="relative "
@@ -114,7 +114,7 @@ const Header = () => {
               >
                 <img
                   // src="../assets/Image/ethicalsolar-logo.svg"
-                  src="../assets/Image/ethical-logo.svg"
+                  src="/assets/img/ethical-solar-logo.svg"
                   // src="../assets/Image/ethical-solar-logo.svg"
                   alt="Ethical Solar logo"
                   className="md:h-14 h-12 w-auto"
@@ -141,7 +141,7 @@ const Header = () => {
                     className={`group text-[16px] font-medium transition-colors relative ${
                       isActive
                         ? "text-[#f4f4f4]"
-                        : "text-[#050B2F] hover:text-[#528D35]"
+                        : "text-[#fff] hover:text-[#3ccb7f]"
                     }`}
                   >
                     {item.name}
