@@ -95,7 +95,7 @@ const Header = () => {
   return (
     // <header className="sticky top-0 z-50 w-full  bg-[#050B2F] ">
 
-    <header className="sticky top-0 z-50 w-full  bg-[#050B2F] shadow ">
+    <header className="sticky top-0 z-50 w-full  bg-[linear-gradient(90deg,_#050B2F_0%,_#121212_100%)] shadow ">
       {/* bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] */}
       <div
         className="relative "
@@ -114,7 +114,8 @@ const Header = () => {
               >
                 <img
                   // src="../assets/Image/ethicalsolar-logo.svg"
-                  src="/assets/img/ethical-solar-logo.svg"
+                  src="../assets/Image/ethical-solar.svg"
+                  // ethical-solar.svg
                   // src="../assets/Image/ethical-solar-logo.svg"
                   alt="Ethical Solar logo"
                   className="md:h-14 h-12 w-auto"
