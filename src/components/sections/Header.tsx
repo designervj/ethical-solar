@@ -115,7 +115,7 @@ const Header = () => {
               >
                 <img
                   // src="../assets/Image/ethicalsolar-logo.svg"
-                  src="../assets/Image/ethical-solar.svg"
+                  src="../assets/Image/ethical-solor-logo.svg"
                   // ethical-solar.svg
                   // src="../assets/Image/ethical-solar-logo.svg"
                   alt="Ethical Solar logo"
