@@ -149,7 +149,8 @@ const Footer: React.FC = () => {
           </h3> */}
           <div className="mb-5">
           {/* <img src="../assets/Image/ethical-solar-white-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" /> */}
-          <img src="../assets/Image/ethical-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" />
+          <img src="../assets/Image/ethical-solar.svg" alt="Ethical Solar logo" className="h-16 w-auto" />
+                  {/* src="../assets/Image/ethical-solar.svg" */}
 
 
           </div>
