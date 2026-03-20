@@ -208,15 +208,15 @@ const Footer: React.FC = () => {
             <p className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 text-[#00b09b]" />
               <span>
-                Suite No. 1562, 17 Gould Road<br />
+                Suite No. 1562,<br /> 17 Gould Road<br />
                 Herston 4006<br />
                 QLD, Australia
               </span>
             </p>
             <p className="flex items-start gap-3">
               <Phone className="mt-0.5 h-5 w-5 text-[#00b09b]" />
-              <a href="tel:+1300686595" className="text-[#cfd8dc] hover:text-[#2AF598]">
-                <span>+1300 686 595</span>
+              <a href="tel:+61-1300686595" className="text-[#cfd8dc] hover:text-[#2AF598]">
+                <span>(+61) 1300 686 595</span>
               </a>
             </p>
             <p className="flex items-start gap-3">
