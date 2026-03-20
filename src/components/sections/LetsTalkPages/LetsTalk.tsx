@@ -91,7 +91,7 @@ const LetsTalk: React.FC = () => {
                     alt="phone"
                     className="w-8"
                   />
-                  <span> 1300686595</span>
+                  <span> (+61) 1300686595</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <img
@@ -130,6 +130,7 @@ const LetsTalk: React.FC = () => {
                     </span>
                     <input
                       type="text"
+                      placeholder="Jhon"
                       className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
                     />
                   </label>
@@ -140,6 +141,7 @@ const LetsTalk: React.FC = () => {
                     </span>
                     <input
                       type="email"
+                      placeholder="Jhon@example.com"
                       className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
                     />
                   </label>
@@ -152,6 +154,7 @@ const LetsTalk: React.FC = () => {
                   </span>
                   <input
                     type="text"
+                    placeholder="e.g. 4000"
                     className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40"
                   />
                 </label>
