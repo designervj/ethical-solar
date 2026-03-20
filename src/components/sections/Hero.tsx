@@ -183,9 +183,9 @@ export default function Hero() {
   return (
     <section className="mx-auto relative w-full overflow-hidden  ">
       <div
-       className="relative mx-auto md:ps-16 px-4 py-20 
+       className="relative mx-auto md:ps-16 px-4 py-[68px] 
              grid md:grid-cols-[55%_45%] gap-10 items-center
-             min-h-[80vh]"
+"
         style={{
           // ✅ IMPORTANT: use leading slash for Next public folder
           backgroundImage: "url(/assets/img/solar-panal4.jpg)",
@@ -198,7 +198,7 @@ export default function Hero() {
 
         {/* Left Text Content */}
         <div className="relative max-w-xl md:ps-14">
-          <h1 className="text-white font-medium text-3xl sm:text-4xl lg:text-[70px] mb-6  leading-tight">
+          <h1 className="text-white font-medium text-4xl sm:text-4xl lg:text-[70px] mb-6  leading-tight">
             Solar built to last, by a team you can trust.
           </h1>
 
