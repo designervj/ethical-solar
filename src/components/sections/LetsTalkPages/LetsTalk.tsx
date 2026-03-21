@@ -101,8 +101,12 @@ const LetsTalk: React.FC = () => {
                   />
                   <div className="grid">
                   <span>Hours of Operation: </span>
-                  <span>9 am - 5 pm  AEST Mon- Fri</span>
-                  <span>9 am to 1 pm Sat</span>
+                 <span className="font-semibold tracking-wide">
+        Mon – Fri: <span className="font-normal">9:00 AM – 5:00 PM (AEST)</span>
+      </span>
+      <span className="font-semibold tracking-wide">
+        Sat: <span className="font-normal">9:00 AM – 1:00 PM</span>
+      </span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

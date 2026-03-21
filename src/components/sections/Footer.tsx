@@ -143,37 +143,29 @@ const Footer: React.FC = () => {
       {/* Content Grid */}
       <div className="relative z-[2] grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
-        <div>
+        {/* <div> */}
           {/* <h3 className="text-[1.8rem] font-semibold mb-5">
             Ethical <span className="text-[#2AF598]">Solar</span>
           </h3> */}
-          <div className="mb-5">
+          <div className="mb-5 flex items-center gap-3 justify-center">
           {/* <img src="../assets/Image/ethical-solar-white-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" /> */}
-          <img src="../assets/Image/ethical-solor-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" />
+          <img src="../assets/Image/ethical-solor-logo.svg" alt="Ethical Solar logo" className="h-24 w-auto" />
                   {/* src="../assets/Image/ethical-solar.svg" */}
 
 
           </div>
 
           {/* CHANGED: address in 3-line format */}
-          <div className="rounded-xl border border-[#2AF598]/30 bg-white/[0.03] p-5 text-center">
-            <div className="mx-auto mb-2 h-10 w-10 rounded-full bg-[#2AF598]/15 grid place-items-center">
-              <span className="text-[#2AF598] text-xl font-black">✓</span>
-            </div>
-            <span className="block font-bold text-white mb-1">SAA Accredited Installer</span>
-            <span className="block text-[0.8rem] text-[#cfd8dc] leading-snug">
-              Service area - South East Queensland (SEQ)
-            </span>
-          </div>
+       
 
-          <div className="mt-6 flex gap-4">
+          {/* <div className="mt-6 flex gap-4">
             {socialIcons.map(({ icon: Icon, href, name }) => (
               <IconPillLink key={name} href={href} label={name}>
                 <Icon className="h-5 w-5" />
               </IconPillLink>
             ))}
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         {/* Links 1 */}
        
@@ -190,7 +182,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-         <div>
+         {/* <div>
           <FooterHeading title="Solutions" />
           <ul className="space-y-3">
             <FooterLink href="#">Residential Solar</FooterLink>
@@ -198,7 +190,7 @@ const Footer: React.FC = () => {
             <FooterLink href="#">Battery Storage</FooterLink>
             <FooterLink href="#">Virtual Power Plant</FooterLink>
           </ul>
-        </div>
+        </div> */}
 
         {/* Connect / Accreditation */}
         <div>
@@ -244,11 +236,23 @@ const Footer: React.FC = () => {
             ))}
           </ul> */}
         </div>
+          
+          <div>
+           <div className="rounded-xl border border-[#2AF598]/30 bg-white/[0.03] p-5 text-center">
+            <div className="mx-auto mb-2 h-10 w-10 rounded-full bg-[#2AF598]/15 grid place-items-center">
+              <span className="text-[#2AF598] text-xl font-black">✓</span>
+            </div>
+            <span className="block font-bold text-white mb-1">SAA Accredited Installer</span>
+            <span className="block text-[0.8rem] text-[#cfd8dc] leading-snug">
+              Service area - South East Queensland (SEQ)
+            </span>
+          </div>
+          </div>
       </div>
 
       {/* Bottom */}
       <div className="relative z-[2] mt-14 pt-5 border-t border-white/10 text-center text-[0.85rem] text-[#cfd8dc] ">
-      <span className="hidden md:block">
+      <span className="hidden md:block mt-2">
         &copy; 2026 Ethical Solar Pty Ltd. All rights reserved.
          ABN: 13 670 165 938 
         </span> 
@@ -257,7 +261,7 @@ const Footer: React.FC = () => {
         &copy; 2026 Ethical Solar Pty Ltd. All rights reserved.
          <br/>ABN: 13 670 165 938
         </span>
-        <br />
+        {/* <br /> */}
 
         <span className="mt-2 inline-block text-[13px]">
           <a href="#" className="text-[#cfd8dc] hover:text-[#2AF598]">
