@@ -160,7 +160,7 @@ Whether you’re looking to reduce your power bills, increase your home’s valu
             </div>
 
             {/* 3 — Government Incentives — full width, richer content */}
-            <div className="group md:col-span-2 bg-emerald-900 rounded-2xl p-8 md:p-10 transition-all duration-300">
+            <div className="group md:col-span-2 bg-emerald-900 rounded-2xl p-8 md:p-10 transition-all duration-300 bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)]">
               <div className="flex flex-col md:flex-row md:gap-10 gap-6">
                 <div className="shrink-0">
                   <div className="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-5">
@@ -170,15 +170,15 @@ Whether you’re looking to reduce your power bills, increase your home’s valu
                   <p className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">STCs · Cheaper Home Batteries</p>
                 </div>
                 <div className="space-y-4 md:border-l md:border-emerald-700 md:pl-10">
-                  <p className="text-emerald-100 text-sm leading-relaxed">
+                  <p className="text-white text-sm leading-relaxed">
                     Eligible homeowners can benefit from the Small-scale Renewable Energy Scheme (SRES)
                     which provides STCs (Small-scale Technology Certificates) that reduce upfront system costs.
                   </p>
-                  <p className="text-emerald-100 text-sm leading-relaxed">
+                  <p className="text-white text-sm leading-relaxed">
                     You may also be eligible for around a <strong className="text-white">30% discount</strong> on the upfront cost of installing a
                     battery system through the Cheaper Home Batteries Program.
                   </p>
-                  <p className="text-emerald-200 text-sm leading-relaxed">
+                  <p className="text-white text-sm leading-relaxed">
                     The discount is based on battery size (usable capacity) and is funded by the Australian
                     Government.
                   </p>
