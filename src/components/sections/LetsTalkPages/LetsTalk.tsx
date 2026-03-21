@@ -115,10 +115,14 @@ const LetsTalk: React.FC = () => {
                     alt="map"
                     className="w-8"
                   />
-                  <span>Suite No. 1562,
-                   17 Gould Road
-                   Herston 4006 QLD AU
+                  <span>
+                     Suite No. 1562,<br />
+                       17 Gould Road<br />
+                      Herston 4006<br />
+                      QLD, Australia
 </span>
+
+                     
                 </div>
               </div>
             </div>

@@ -93,10 +93,10 @@ const IconPillLink: React.FC<{
 );
 
 /* ---------- FOOTER ---------- */
-
+// bg-[#00305a]
 const Footer: React.FC = () => {
   return (
-    <footer className="relative overflow-hidden bg-[#00305a] text-white border-t-4 border-[#2AF598] px-[5%] pt-20 pb-8 font-sans">
+    <footer className="relative overflow-hidden  bg-[linear-gradient(90deg,_#050B2F_0%,_#121212_100%)] text-white border-t-4 border-[#2AF598] px-[5%] pt-20 pb-8 font-sans">
       {/* Arc */}
       <div className="pointer-events-none absolute -top-12 -right-[10%] h-[700px] w-[700px] opacity-[0.15] z-[1]">
         <svg viewBox="0 0 100 100" className="h-full w-full">
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
           {/* <h3 className="text-[1.8rem] font-semibold mb-5">
             Ethical <span className="text-[#2AF598]">Solar</span>
           </h3> */}
-          <div className="mb-5 flex items-center gap-3 justify-center">
+          <div className="mb-5 md:flex md:flex lg:flex items-center gap-3 justify-center">
           {/* <img src="../assets/Image/ethical-solar-white-logo.svg" alt="Ethical Solar logo" className="h-16 w-auto" /> */}
           <img src="../assets/Image/ethical-solor-logo.svg" alt="Ethical Solar logo" className="h-24 w-auto" />
                   {/* src="../assets/Image/ethical-solar.svg" */}
@@ -172,7 +172,7 @@ const Footer: React.FC = () => {
 
         {/* Links 2 */}
         <div className="md:ps-10">
-          <FooterHeading title="Company" />
+          <FooterHeading title="Quick Links" />
           <ul className="space-y-3">
             {exploreLinks.slice(0, 4).map((l) => (
               <FooterLink key={l.label} href={l.href}>
