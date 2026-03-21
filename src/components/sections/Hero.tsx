@@ -197,6 +197,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/45" />
 
         {/* Left Text Content */}
+        
         <div className="relative max-w-xl md:ps-14">
           <h1 className="text-white font-medium text-4xl sm:text-4xl lg:text-[70px] mb-6  leading-tight">
             Solar built to last, by a team you can trust.
