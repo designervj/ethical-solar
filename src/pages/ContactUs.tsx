@@ -281,14 +281,22 @@ const LetsTalk: React.FC = () => {
 
       {/* CHANGED: Map updated to Brisbane/Herston QLD location */}
       <div className="mt-8 rounded-2xl overflow-hidden border border-slate-200 h-[400px] md:max-w-7xl md:mx-auto mb-20 md:px-0 mx-4">
-        <iframe
+        {/* <iframe
           title="Ethical Solar Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.877534867624!2d153.0253!3d-27.4552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9159b1e3a5a7af%3A0x6fe36c2870d2eb7a!2sHerston%20QLD%204006%2C%20Australia!5e0!3m2!1sen!2sau!4v1709225844039!5m2!1sen!2sau"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-full border-0"
           allowFullScreen
-        />
+        /> */}
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.8356138434765!2d153.01765577524384!3d-27.443233376334977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9159e0d6cd00cf%3A0x22940062b4415b6f!2s17%20Gould%20Rd%2C%20Herston%20QLD%204006%2C%20Australia!5e0!3m2!1sen!2sin!4v1774083221997!5m2!1sen!2sin" 
+           loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full h-full border-0"
+          allowFullScreen
+         >
+         </iframe>
       </div>
 
       {/* <WhatToExpect />
