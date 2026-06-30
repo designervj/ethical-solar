@@ -1,0 +1,107 @@
+{
+  "metaTitle": "Residential Solar - Ethical Solar",
+  "metaDescription": "Residential Solar for Australian Homes, Power Your Home with Smart, Affordable Solar.",
+  "sections": [
+    {
+      "id": "residential-hero-001",
+      "type": "residential-hero",
+      "adminTitle": "Hero Section",
+      "props": {
+        "title": "Let's put solar",
+        "highlight": "on your home.",
+        "description": "Residential Solar for Australian Homes, Power Your Home with Smart, Affordable Solar Take control of rising electricity costs with a custom-designed residential solar system built for Australian conditions. Whether you’re looking to reduce your power bills, increase your home’s value, or gain energy independence with battery storage, we make switching to solar simple and stress-free.",
+        "formTitle": "Get a Free Assessment",
+        "formSubtitle": "Custom design and savings estimate."
+      }
+    },
+    {
+      "id": "residential-benefits-001",
+      "type": "residential-benefits",
+      "adminTitle": "Benefits Section",
+      "props": {
+        "heading": "Why More Australians Are Choosing Solar",
+        "description": "Electricity prices across Australia continue to rise. Installing solar panels is one of the smartest long-term investments you can make for your home.",
+        "benefits": [
+          { "icon": "DollarSign", "title": "Lower Your Power Bills", "desc": "Generate your own electricity and significantly reduce your quarterly bills." },
+          { "icon": "ShieldCheck", "title": "Protection from Rising Energy Prices", "desc": "Lock in long-term savings and reduce dependence on energy retailers." },
+          { "icon": "Home", "title": "Increase Property Value", "desc": "Homes with solar systems are more attractive to buyers and often sell faster." },
+          { "icon": "Leaf", "title": "Environmentally Friendly", "desc": "Reduce your carbon footprint and contribute to a cleaner, more sustainable Australia." }
+        ],
+        "incentives": {
+          "title": "Government Incentives Available",
+          "subtitle": "STCs · Cheaper Home Batteries",
+          "points": [
+            "Eligible homeowners can benefit from the Small-scale Renewable Energy Scheme (SRES) which provides STCs (Small-scale Technology Certificates) that reduce upfront system costs.",
+            "You may also be eligible for around a 30% discount on the upfront cost of installing a battery system through the Cheaper Home Batteries Program.",
+            "The discount is based on battery size (usable capacity) and is funded by the Australian Government."
+          ]
+        }
+      }
+    },
+    {
+      "id": "residential-how-it-works-001",
+      "type": "residential-how-it-works",
+      "adminTitle": "How It Works",
+      "props": {
+        "heading": "How Solar Works",
+        "description": "Understanding your system is the first step to energy independence.",
+        "steps": [
+          { "icon": "Sun", "color": "bg-yellow-100 text-yellow-600", "title": "1. Solar Panels", "desc": "When sunlight hits your panels, they generate DC electricity. Even on cloudy days, your system produces power. Excess energy flows back to the grid for credits (Net Metering)." },
+          { "icon": "Zap", "color": "bg-blue-100 text-blue-600", "title": "2. Solar Inverters", "desc": "The inverter is the heart of the system, converting DC power to usable AC power for your home. We use premium Enphase microinverters or SolarEdge optimizers for maximum efficiency." },
+          { "icon": "Battery", "color": "bg-red-100 text-red-500", "title": "3. Power Outages?", "desc": "Standard grid-tied systems shut off during outages for safety. To keep lights on during a blackout, you need a battery backup solution integrated with your solar." },
+          { "icon": "ShieldCheck", "color": "bg-emerald-100 text-emerald-600", "title": "4. Solar + Battery", "desc": "Batteries store excess solar energy for use at night or during outages. We design systems that power your essential appliances (fridges, lights, wifi) indefinitely." }
+        ]
+      }
+    },
+    {
+      "id": "residential-maintenance-001",
+      "type": "residential-maintenance",
+      "adminTitle": "Maintenance",
+      "props": {
+        "heading": "Solar Maintenance & Longevity",
+        "items": [
+          { "icon": "Calendar", "title": "How long do solar panels last?", "desc": "Modern solar panels are built to last, with most high-quality panels producing power for 30+ years." },
+          { "icon": "Settings", "title": "Maintenance Requirements", "desc": "Solar panels require very minimal maintenance. In most climates, rain naturally cleans the panels." }
+        ]
+      }
+    },
+    {
+      "id": "residential-process-001",
+      "type": "residential-process",
+      "adminTitle": "Installation Process",
+      "props": {
+        "heading": "Our Installation Process",
+        "description": "We handle everything from the initial design to the final switch flip.",
+        "steps": [
+          { "number": "1", "title": "Free Assessment & Proposal", "desc": "We start with a conversation to understand your goals. Using satellite data, we design a custom system." },
+          { "number": "2", "title": "Site Survey", "desc": "Our engineering team visits your home to inspect the roof condition, measure shading, and check electrical panel capacity." },
+          { "number": "3", "title": "Contract & Permitting", "desc": "Once you approve the design, we handle all the paperwork." },
+          { "number": "4", "title": "Installation", "desc": "Most Residential installs take just 1-3 days. Our in-house crew works efficiently." },
+          { "number": "5", "title": "Inspection & Activation", "desc": "We schedule the final city inspection. Once approved, you can turn on your clean power plant!" }
+        ]
+      }
+    },
+    {
+      "id": "faq-section-002",
+      "type": "faq-section",
+      "adminTitle": "FAQ Section",
+      "props": {
+        "heading": "Frequently Asked Questions",
+        "subheading": "",
+        "faqs": [
+          { "q": "How much does residential solar cost in Australia?", "a": "System prices vary depending on size and equipment, but after government incentives, most systems are far more affordable than people expect." },
+          { "q": "How long do solar panels last?", "a": "Most panels come with 25-year performance warranties and often last even longer." },
+          { "q": "What happens on cloudy days?", "a": "Solar systems still generate electricity in cloudy weather — just at reduced output." },
+          { "q": "Is a battery worth it?", "a": "Batteries are ideal for households wanting energy independence, blackout protection, and maximum savings." },
+          { "q": "How long until I see savings?", "a": "Most homeowners notice reduced electricity bills immediately after installation." }
+        ]
+      }
+    },
+    {
+      "id": "cta-003",
+      "type": "cta-section",
+      "adminTitle": "CTA Section",
+      "props": {}
+    }
+  ]
+}

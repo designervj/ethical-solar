@@ -1,0 +1,32 @@
+import { proxyRequest } from "@/lib/apiProxy";
+import { NextRequest, NextResponse } from "next/server";
+
+export const dynamic = 'force-dynamic';
+
+export async function GET(req: NextRequest, context: { params: Promise<{ slug?: string[] }> }) {
+  return handleProxy(req, context);
+}
+
+export async function POST(req: NextRequest, context: { params: Promise<{ slug?: string[] }> }) {
+  return handleProxy(req, context);
+}
+
+export async function PUT(req: NextRequest, context: { params: Promise<{ slug?: string[] }> }) {
+  return handleProxy(req, context);
+}
+
+export async function DELETE(req: NextRequest, context: { params: Promise<{ slug?: string[] }> }) {
+  return handleProxy(req, context);
+}
+
+async function handleProxy(req: NextRequest, context: { params: Promise<{ slug?: string[] }> }) {
+  const { slug } = await context.params;
+
+  if (!slug || slug.length === 0) {
+    return NextResponse.json({ error: "Invalid API endpoint" }, { status: 404 });
+  }
+
+  const targetPath = slug.join("/");
+
+  return proxyRequest(req, targetPath, { addApiPrefix: false });
+}

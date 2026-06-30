@@ -1,0 +1,74 @@
+{
+  "metaTitle": "Contact Us - Ethical Solar",
+  "metaDescription": "Whether you're curious about solar savings or need support for an existing system — we're here to help.",
+  "sections": [
+    {
+      "id": "header-001",
+      "type": "page-header",
+      "adminTitle": "Page Header",
+      "props": {
+        "title": "Let's Start a Conversation",
+        "subtitle": "Whether you're curious about solar savings or need support for an existing system — we're here to help.",
+        "backgroundImage": "/assets/img/img (7).jpg"
+      }
+    },
+    {
+      "id": "contact-options-001",
+      "type": "contact-options",
+      "adminTitle": "Contact Options",
+      "props": {
+        "options": [
+          {
+            "icon": "☀️",
+            "title": "Interested in Solar?",
+            "desc": "Get a free quote and custom design for your home or business.",
+            "linkText": "Call (+61) 1300 686 595",
+            "href": "tel:+61-1300686595"
+          },
+          {
+            "icon": "🔧",
+            "title": "Customer Support",
+            "desc": "Already an Ethical Solar customer? We are here to assist.",
+            "linkText": "nick@ethicalsolar.com.au",
+            "href": "mailto:nick@ethicalsolar.com.au"
+          },
+          {
+            "icon": "🤝",
+            "title": "Partnerships",
+            "desc": "Builders, architects, and roofers. Let's work together.",
+            "linkText": "info@ethicalsolar.com.au",
+            "href": "mailto:info@ethicalsolar.com.au"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-form-001",
+      "type": "contact-form",
+      "adminTitle": "Contact Form",
+      "props": {
+        "addressInfo": {
+          "subtitle": "Get In Touch",
+          "title": "Visit Our Office",
+          "description": "Our energy consultants are available Monday through Friday, 9:00 AM to 5:00 PM.",
+          "address": "Suite No. 1562,<br />17 Gould Road<br />Herston 4006<br />QLD, Australia",
+          "email": "nick@ethicalsolar.com.au",
+          "phone": "+61-1300686595",
+          "phoneLabel": "(+61) 1300 686 595",
+          "hours": [
+            "Mon–Fri, 9:00 AM – 5:00 PM",
+            "9 AM to 1 PM Sat"
+          ]
+        }
+      }
+    },
+    {
+      "id": "contact-map-001",
+      "type": "contact-map",
+      "adminTitle": "Contact Map",
+      "props": {
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.8356138434765!2d153.01765577524384!3d-27.443233376334977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9159e0d6cd00cf%3A0x22940062b4415b6f!2s17%20Gould%20Rd%2C%20Herston%20QLD%204006%2C%20Australia!5e0!3m2!1sen!2sin!4v1774083221997!5m2!1sen!2sin"
+      }
+    }
+  ]
+}

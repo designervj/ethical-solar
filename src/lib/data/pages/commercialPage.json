@@ -1,0 +1,124 @@
+{
+  "metaTitle": "Commercial Solar Solutions - Ethical Solar",
+  "metaDescription": "Powering Australian Businesses with Smart Energy",
+  "sections": [
+    {
+      "id": "header-001",
+      "type": "page-header",
+      "adminTitle": "Page Header",
+      "props": {
+        "title": "Commercial Solar Solutions",
+        "subtitle": "Powering Australian Businesses with Smart Energy",
+        "description": "At Ethical Solar, we deliver high-performance commercial solar systems designed to reduce operating costs, improve sustainability outcomes, and protect businesses from rising electricity prices. From small enterprises to large industrial facilities, we provide tailored solar and battery solutions that deliver measurable financial returns. Future-proof your business with intelligent energy solutions.",
+        "buttonText": "Request a Commercial Energy Assessment",
+        "buttonLink": "/contact-us",
+        "backgroundImage": "/assets/img/img (3).jpg"
+      }
+    },
+    {
+      "id": "commercial-services-001",
+      "type": "commercial-services",
+      "adminTitle": "Our Services",
+      "props": {
+        "heading": "Our Services",
+        "subheading": "Tailored Commercial Solar Options — we design, supply, and install systems for all types of commercial properties across South East Queensland.",
+        "services": [
+          { "icon": "Sun", "color": "bg-yellow-100 text-yellow-600", "title": "Rooftop Commercial Solar", "desc": "Flat or pitched rooftop systems designed for offices, retail centres, schools, and industrial buildings. We maximise available roof space to deliver the highest energy output for your footprint.", "bullets": ["Custom system design per roof type", "Tier-1 panels and commercial-grade inverters", "Grid-connected and hybrid options available"] },
+          { "icon": "Zap", "color": "bg-blue-100 text-blue-600", "title": "Carport Solar Structures", "desc": "Solar carports combine covered parking with energy generation — turning underused car parks into productive assets. Ideal for shopping centres, hospitals, councils, and large employers.", "bullets": ["Dual function: shelter + solar generation", "Custom structural engineering included", "EV charging integration available"] },
+          { "icon": "Battery", "color": "bg-red-100 text-red-500", "title": "Ground Mount Systems", "desc": "For properties with available land, ground-mounted systems offer flexibility in orientation and scale. Suitable for farms, large industrial estates, and rural businesses.", "bullets": ["No roof constraints — optimise for full sun", "Large-scale capacity available", "Suitable for rural and semi-rural properties"] },
+          { "icon": "ShieldCheck", "color": "bg-emerald-100 text-emerald-600", "title": "Warehouse & Industrial Solar", "desc": "Large roof areas on warehouses and industrial facilities are ideal for high-capacity solar. We design systems to match your operational load profile and energy usage patterns.", "bullets": ["High-capacity systems from 30 kW to 1 MW+", "Designed around your operational load profile", "Reduce peak demand charges significantly"] }
+        ]
+      }
+    },
+    {
+      "id": "commercial-process-001",
+      "type": "commercial-process",
+      "adminTitle": "Order Process",
+      "props": {
+        "heading": "Commercial Solar Order Process",
+        "subheading": "A transparent, step-by-step process from initial inquiry through to system handover.",
+        "steps": [
+          { "step": "01", "title": "Initial Consultation & Energy Audit", "desc": "We review your electricity bills, operational hours, and energy goals." },
+          { "step": "02", "title": "System Design & Proposal", "desc": "Our engineers produce a custom system design with full financial modelling." },
+          { "step": "03", "title": "Approvals & Permitting", "desc": "We manage all council approvals, network applications, and grid connection paperwork." },
+          { "step": "04", "title": "Professional Installation", "desc": "Our CEC-accredited installation teams complete the project with minimal disruption." },
+          { "step": "05", "title": "Commissioning & Monitoring Setup", "desc": "Your system is commissioned, tested, and connected to our monitoring platform." },
+          { "step": "06", "title": "Ongoing Support & Maintenance", "desc": "We provide scheduled maintenance checks, performance reviews, and reactive support." }
+        ]
+      }
+    },
+    {
+      "id": "commercial-battery-001",
+      "type": "commercial-battery",
+      "adminTitle": "Battery Integration",
+      "props": {
+        "heading": "Battery & Battery Integration",
+        "description": "A commercial solar system paired with battery storage delivers maximum financial benefit. Store solar energy generated during the day and deploy it during peak tariff periods — reducing your demand charges and improving energy independence.",
+        "points": [
+          "Reduce peak demand charges significantly",
+          "Store excess solar for after-hours use",
+          "Backup power for critical operations during outages",
+          "Compatible with all major commercial battery brands",
+          "Scalable capacity — expand storage as your needs grow"
+        ],
+        "image": "/assets/Image/battery-solar-img.png"
+      }
+    },
+    {
+      "id": "commercial-panels-001",
+      "type": "commercial-panels",
+      "adminTitle": "Our Panels",
+      "props": {
+        "heading": "Our Commercial Solar Panels",
+        "subheading": "We exclusively source Tier-1 panels from manufacturers with proven 25-year track records.",
+        "panels": [
+          { "brand": "Q CELLS", "detail": "Q.PEAK DUO BLK ML-G10+ series — high efficiency monocrystalline panels. German-engineered, proven in Australian conditions." },
+          { "brand": "REC Group", "detail": "REC Alpha series — twin peak solar cell design delivering up to 405 W output. Excellent low-light performance." },
+          { "brand": "Jinko Solar", "detail": "Tiger Neo series — n-type TOPCon technology with class-leading efficiency above 22%." }
+        ]
+      }
+    },
+    {
+      "id": "commercial-finance-001",
+      "type": "commercial-finance",
+      "adminTitle": "Finance Case",
+      "props": {
+        "heading": "The Finance Case for Commercial Solar",
+        "description": "Commercial solar is one of the highest-returning capital investments available to Australian businesses today.",
+        "stats": [
+          { "stat": "4–7 years", "label": "Typical payback period for commercial systems" },
+          { "stat": "25+ years", "label": "Expected operational life of quality solar panels" },
+          { "stat": "30–60%", "label": "Average reduction in commercial electricity bills" }
+        ]
+      }
+    },
+    {
+      "id": "faq-section-001",
+      "type": "faq-section",
+      "adminTitle": "FAQ Section",
+      "props": {
+        "heading": "Frequently Asked Questions",
+        "subheading": "Common questions from business owners considering commercial solar.",
+        "faqs": [
+          { "q": "How much can a commercial solar system save my business?", "a": "Savings depend on your system size, energy usage, and feed-in tariff rates. Most commercial customers see a 30–60% reduction in electricity bills." },
+          { "q": "Do we need to shut operations down during installation?", "a": "In most cases, no. Our installation teams are experienced in working around active business operations." },
+          { "q": "What size system does my business need?", "a": "System size is determined by your energy consumption, roof or ground space available, and budget." },
+          { "q": "Are there government incentives available for commercial solar?", "a": "Yes. The SRES and LGCs are available depending on system size." },
+          { "q": "What warranties come with a commercial solar install?", "a": "Our commercial systems include up to 25-year product and performance warranties on panels." }
+        ]
+      }
+    },
+    {
+      "id": "letstalk-002",
+      "type": "lets-talk",
+      "adminTitle": "Let's Talk",
+      "props": {}
+    },
+    {
+      "id": "cta-002",
+      "type": "cta-section",
+      "adminTitle": "CTA Section",
+      "props": {}
+    }
+  ]
+}

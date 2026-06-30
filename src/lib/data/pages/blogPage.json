@@ -1,0 +1,73 @@
+{
+  "metaTitle": "Blog - Ethical Solar",
+  "metaDescription": "Insights & News about renewable energy technology, policy, and company updates.",
+  "sections": [
+    {
+      "id": "header-001",
+      "type": "page-header",
+      "adminTitle": "Page Header",
+      "props": {
+        "title": "Insights & News",
+        "subtitle": "Stay updated with the latest in renewable energy technology, policy, and company updates.",
+        "backgroundImage": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop"
+      }
+    },
+    {
+      "id": "blog-grid-001",
+      "type": "blog-grid",
+      "adminTitle": "Blog Grid",
+      "props": {
+        "posts": [
+          {
+            "id": 1,
+            "title": "The Future of Solar Storage: What 2025 Holds",
+            "category": "Technology",
+            "date": "Mar 15, 2025",
+            "image": "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1974&auto=format&fit=crop",
+            "excerpt": "Battery technology is evolving rapidly. Here's how solid-state batteries might change home energy storage forever."
+          },
+          {
+            "id": 2,
+            "title": "Understanding NEM 3.0 in California",
+            "category": "Policy",
+            "date": "Feb 28, 2025",
+            "image": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1974&auto=format&fit=crop",
+            "excerpt": "Net Metering has changed. Learn how to maximize your savings under the new utility rules using load shifting."
+          },
+          {
+            "id": 3,
+            "title": "5 Maintenance Tips for Peak Solar Efficiency",
+            "category": "Guides",
+            "date": "Feb 10, 2025",
+            "image": "/assets/img/img (5).jpg",
+            "excerpt": "Dirty panels can lose up to 25% efficiency. Here is our simple guide to keeping your system running perfectly."
+          },
+          {
+            "id": 4,
+            "title": "Ethical Sourcing in the Solar Supply Chain",
+            "category": "Company",
+            "date": "Jan 22, 2025",
+            "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop",
+            "excerpt": "Why we choose manufacturers who prioritize human rights and environmental stewardship in their production."
+          },
+          {
+            "id": 5,
+            "title": "Solar vs. Wind: What's Best for Your Property?",
+            "category": "Guides",
+            "date": "Jan 05, 2025",
+            "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=3264&auto=format&fit=crop",
+            "excerpt": "Comparing the two most popular renewable energy sources for Residential and small commercial use."
+          },
+          {
+            "id": 6,
+            "title": "How Much Does a Solar Roof Really Increase Home Value?",
+            "category": "Finance",
+            "date": "Dec 18, 2024",
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop",
+            "excerpt": "Recent real estate data shows a significant premium for homes with owned solar systems."
+          }
+        ]
+      }
+    }
+  ]
+}

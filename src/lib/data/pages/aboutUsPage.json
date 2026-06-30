@@ -1,0 +1,130 @@
+{
+  "metaTitle": "About Us - Ethical Solar",
+  "metaDescription": "Pioneering Australia with Integrity, Performance and Purpose",
+  "sections": [
+    {
+      "id": "header-001",
+      "type": "page-header",
+      "adminTitle": "Page Header",
+      "props": {
+        "title": "About Us",
+        "subtitle": "Pioneering Australia with Integrity, Performance and Purpose",
+        "backgroundImage": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
+      }
+    },
+    {
+      "id": "about-hero-001",
+      "type": "about-hero",
+      "adminTitle": "About Hero",
+      "props": {
+        "heading": "Pioneering Australia with Integrity, Performance and Purpose",
+        "paragraphs": [
+          "Ethical Solar was founded on a simple but powerful belief — that Australians deserve honest, high-quality solar solutions backed by real expertise and long-term support.",
+          "From day one, we have prioritised doing things the right way. That means recommending systems only when they make financial sense for the customer, using premium components that stand the test of time, and being transparent about pricing, performance, and expectations at every step.",
+          "We are not just installers — we are energy partners committed to helping homes and businesses across Australia transition to cleaner, more affordable power with confidence and clarity."
+        ],
+        "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop"
+      }
+    },
+    {
+      "id": "about-commitments-001",
+      "type": "about-commitments",
+      "adminTitle": "Commitments to Quality",
+      "props": {
+        "heading": "Our Commitments to Quality",
+        "subheading": "Everything we do is built around delivering reliable, ethical, and long-lasting solar outcomes for our clients.",
+        "items": [
+          {
+            "icon": "Shield",
+            "title": "Premium Components Only",
+            "desc": "We exclusively install Tier-1 panels and inverters from manufacturers with proven track records — no budget shortcuts."
+          },
+          {
+            "icon": "Award",
+            "title": "Certified & Experienced Installers",
+            "desc": "Every installation is completed by Clean Energy Council accredited professionals with extensive field experience."
+          },
+          {
+            "icon": "CheckCircle",
+            "title": "Transparent Pricing",
+            "desc": "No hidden fees, no surprise add-ons. What we quote is what you pay — with full system breakdowns provided upfront."
+          },
+          {
+            "icon": "Clock",
+            "title": "Long-Term Support",
+            "desc": "Our relationship doesn't end at installation. We provide ongoing monitoring, maintenance, and warranty support."
+          },
+          {
+            "icon": "Leaf",
+            "title": "Sustainable Practices",
+            "desc": "We offset our operational footprint and prioritise environmentally responsible installation and disposal processes."
+          },
+          {
+            "icon": "Users",
+            "title": "Customer-First Approach",
+            "desc": "We only recommend a solar system if it genuinely makes financial and practical sense for the customer's situation."
+          }
+        ]
+      }
+    },
+    {
+      "id": "about-long-term-001",
+      "type": "about-long-term",
+      "adminTitle": "Long-Term Partner",
+      "props": {
+        "heading": "A Long-Term Energy Partner",
+        "description": [
+          "Unlike companies that disappear after the installation truck drives away, Ethical Solar is built for the long haul. We monitor system performance, address warranty claims promptly, and stay accessible when you have questions — years after your system goes live.",
+          "Whether your energy needs evolve, you want to add battery storage, or you simply want a system health check, our team is here. We grow with you."
+        ]
+      }
+    },
+    {
+      "id": "about-sustainability-001",
+      "type": "about-sustainability",
+      "adminTitle": "Sustainability",
+      "props": {
+        "heading": "Sustainability and Transparency",
+        "description": "At Ethical Solar, our commitment to sustainability is not just about the energy we help generate — it extends to how we operate as a business every day.",
+        "points": [
+          "Carbon-neutral operations with offset programs",
+          "50 trees planted for every system installed",
+          "Responsible recycling of all packaging and materials",
+          "Full pricing transparency — no commissions hidden in quotes",
+          "Honest performance projections modelled for your specific property"
+        ],
+        "image": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2072&auto=format&fit=crop"
+      }
+    },
+    {
+      "id": "about-why-choose-001",
+      "type": "about-why-choose",
+      "adminTitle": "Why Choose Us",
+      "props": {
+        "heading": "Why Clients Choose Ethical Solar",
+        "reasons": [
+          "No pushy sales tactics — ever",
+          "Honest advice, even when it means recommending a smaller system",
+          "Tier-1 panels and inverters with proven performance records",
+          "Clean Energy Council accredited installers on every job",
+          "Detailed written quotes with no hidden fees",
+          "Post-installation monitoring and genuine long-term support",
+          "Sustainability commitments built into operations, not just marketing",
+          "Local teams who understand Australian conditions and incentives"
+        ]
+      }
+    },
+    {
+      "id": "about-team-001",
+      "type": "about-team",
+      "adminTitle": "Our Team",
+      "props": {
+        "heading": "Our Team",
+        "description": [
+          "The Ethical Solar team brings together solar designers, accredited electricians, project managers, and customer support specialists all united by a shared commitment to doing solar the right way.",
+          "We hire locally, train rigorously, and hold every team member to the same standard of honesty and professionalism that defines our brand. When you work with Ethical Solar, you are working with people who genuinely care about the outcome — for you and for the planet."
+        ]
+      }
+    }
+  ]
+}

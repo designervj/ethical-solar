@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "enhance-prompt": {
+      "source": "google-labs-code/stitch-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/stitch-utilities/skills/enhance-prompt/SKILL.md",
+      "computedHash": "71cc23e9ec5fc6361e12453495fa8c683f6cf26f3efaf9b230b0f43e0a32cc96"
+    },
+    "ui-ux-designer": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ui-ux-designer/SKILL.md",
+      "computedHash": "2f0bcb6b7a81fbd31575b78a3d777d4b43fc8a2f602db46ad027dbbb6adc9a0f"
+    }
+  }
+}

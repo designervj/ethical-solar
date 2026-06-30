@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================
+   DESIGN SYSTEM
+========================================================== */
+
+@layer base {
+  :root {
+    /* Colors */
+    --primary: #3ccb7f;
+    --primary-light: #64d799;
+    --primary-dark: #2ea166;
+    --primary-hover: #2ba564;
+
+    --secondary: #23469B;
+    --accent: #2AF598;
+
+    --background: #ffffff;
+    --surface: #F8F8F8;
+    --card: #ffffff;
+
+    --text: #0F0F3D;
+    --text-secondary: #555555;
+    --text-muted: #888888;
+
+    --border: #e2e8f0;
+    --border-hover: #cbd5e1;
+
+    /* Fonts */
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-heading: "Epilogue", "Inter", system-ui, sans-serif;
+
+    /* Brand Colors (Legacy support) */
+    --brand-orange: #FF7020;
+    --brand-text: #4F4640;
+  }
+
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+
+      font-family: var(--font-body);
+      background: var(--background);
+      color: var(--text);
+
+      transition: all .3s ease;
+  }
+
+  h1, h2, h3, h5, h6 {
+      margin: 0;
+      font-family: var(--font-heading);
+      line-height: 1.2 !important;
+  }
+
+  h1, h2, h3 {
+      font-weight: 600 !important;
+  }
+
+  h4 {
+      margin: 0;
+      font-family: var(--font-body);
+      font-weight: 500;
+  }
+
+  p {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text-secondary);
+  }
+
+  span {
+      font-family: var(--font-body);
+  }
+
+  a {
+      color: inherit;
+      text-decoration: none;
+  }
+
+  img {
+      display: block;
+      max-width: 100%;
+  }
+}
+
+/* ==========================================================
+   COMPONENTS
+========================================================== */
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-lg {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-xl {
+    @apply mx-auto w-[90%] px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* ==========================================================
+   UTILITIES
+========================================================== */
+
+@layer utilities {
+  .bg-gray-color {
+    background-color: var(--surface);
+  }
+
+  .text-gray-color {
+    color: var(--text-secondary) !important;
+  }
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+}

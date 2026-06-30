@@ -1,33 +1,58 @@
-import * as React from "react";
-import { cn } from "@/lib/cn";
+"use client"
 
-type TabsContext = { value: string; setValue: (v: string) => void };
-const Ctx = React.createContext<TabsContext | null>(null);
+import * as React from "react"
+import { cn } from "@/lib/cn"
+
+interface TabsContextType {
+  value: string
+  onValueChange: (value: string) => void
+}
+
+const TabsContext = React.createContext<TabsContextType | null>(null)
+
+function useTabs() {
+  const ctx = React.useContext(TabsContext)
+  if (!ctx) throw new Error("Tabs components must be used within Tabs")
+  return ctx
+}
 
 export function Tabs({
   defaultValue,
+  value,
+  onValueChange,
   className,
   children,
 }: {
-  defaultValue: string;
-  className?: string;
-  children: React.ReactNode;
+  defaultValue?: string
+  value?: string
+  onValueChange?: (value: string) => void
+  className?: string
+  children: React.ReactNode
 }) {
-  const [value, setValue] = React.useState(defaultValue);
+  const [internalValue, setInternalValue] = React.useState(defaultValue ?? "")
+  const isControlled = value !== undefined
+  const currentValue = isControlled ? value : internalValue
+  const handleChange = React.useCallback(
+    (v: string) => {
+      if (!isControlled) setInternalValue(v)
+      onValueChange?.(v)
+    },
+    [isControlled, onValueChange]
+  )
+
   return (
-    <div className={className}>
-      <Ctx.Provider value={{ value, setValue }}>{children}</Ctx.Provider>
-    </div>
-  );
+    <TabsContext.Provider value={{ value: currentValue, onValueChange: handleChange }}>
+      <div className={cn("w-full", className)}>{children}</div>
+    </TabsContext.Provider>
+  )
 }
 
-export function TabsList({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
+export function TabsList({ className, children }: { className?: string; children: React.ReactNode }) {
   return (
-    <div className={cn("inline-flex gap-3 bg-transparent", className)} {...props} />
-  );
+    <div className={cn("inline-flex items-center gap-2 rounded-lg bg-gray-100 p-1", className)} role="tablist">
+      {children}
+    </div>
+  )
 }
 
 export function TabsTrigger({
@@ -35,28 +60,26 @@ export function TabsTrigger({
   className,
   children,
 }: {
-  value: string;
-  className?: string;
-  children: React.ReactNode;
+  value: string
+  className?: string
+  children: React.ReactNode
 }) {
-  const ctx = React.useContext(Ctx)!;
-  const active = ctx.value === value;
+  const { value: selectedValue, onValueChange } = useTabs()
+  const isActive = selectedValue === value
 
   return (
     <button
-      onClick={() => ctx.setValue(value)}
-      style={{borderRadius:"6px"}}
+      role="tab"
+      onClick={() => onValueChange(value)}
       className={cn(
-        "px-5 py-2 text-[16px] font-medium rounded-lg transition-all duration-200 shadow-none",
-        active
-          ? "bg-[#F3F3F3] text-[#FF7020] shadow-inner"
-          : "text-[#4F4640] hover:bg-gray-100 hover:text-[#FF7020]",
+        "inline-flex items-center justify-center rounded-md px-3 py-1.5 text-sm font-medium transition-all",
+        isActive ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700",
         className
       )}
     >
       {children}
     </button>
-  );
+  )
 }
 
 export function TabsContent({
@@ -64,11 +87,15 @@ export function TabsContent({
   className,
   children,
 }: {
-  value: string;
-  className?: string;
-  children: React.ReactNode;
+  value: string
+  className?: string
+  children: React.ReactNode
 }) {
-  const ctx = React.useContext(Ctx)!;
-  if (ctx.value !== value) return null;
-  return <div className={className}>{children}</div>;
+  const { value: selectedValue } = useTabs()
+  if (selectedValue !== value) return null
+  return (
+    <div role="tabpanel" className={cn("mt-2", className)}>
+      {children}
+    </div>
+  )
 }

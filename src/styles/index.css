@@ -76,3 +76,7 @@ background-color:#F8F8F8;
    color: #000;
    width: 10px !important;
 }
+
+.bg-yellow-100{
+  background-color: #fef9c3 !important;
+}

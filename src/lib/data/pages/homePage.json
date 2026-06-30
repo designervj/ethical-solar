@@ -1,0 +1,228 @@
+{
+  "metaTitle": "Ethical Solar - Solar built to last, by a team you can trust.",
+  "metaDescription": "We install the highest-quality solar panel systems and back them up with a 30-year warranty.",
+  "sections": [
+    {
+      "id": "hero-001",
+      "type": "hero",
+      "adminTitle": "Hero Section",
+      "props": {
+        "heading": "Solar built to last, by a team you can trust.",
+        "subheading": "We install the highest-quality solar panel systems and back them up with a 30-year warranty.",
+        "backgroundImage": "/assets/img/solar-panal4.jpg"
+      }
+    },
+    {
+      "id": "brands-001",
+      "type": "slider-brand",
+      "adminTitle": "Brand Logos",
+      "props": {
+        "heading": "Trusted by homeowners and installers — featuring leading solar brands:",
+        "brands": [
+          { "img": "/assets/img/Enphase_logo.svg.png", "alt": "Enphase" },
+          { "img": "/assets/img/SolarEdge_logo.svg.png", "alt": "SolarEdge" },
+          { "img": "/assets/img/CSIQ-logo.png", "alt": "Canadian Solar" },
+          { "img": "/assets/img/jinko-solar.png", "alt": "Jinko Solar" },
+          { "img": "/assets/img/Fronius Logo.webp", "alt": "Fronius" },
+          { "img": "/assets/img/logo-suntech.png", "alt": "Suntech" },
+          { "img": "/assets/img/SolisLogo.jpeg", "alt": "Solis" },
+          { "img": "/assets/img/sungrow.webp", "alt": "Sungrow" },
+          { "img": "/assets/img/trinasolar.png", "alt": "trinasolar" },
+          { "img": "/assets/img/PylonTech.png", "alt": "PylonTech" }
+        ]
+      }
+    },
+    {
+      "id": "whatwedo-001",
+      "type": "what-we-do",
+      "adminTitle": "What We Do",
+      "props": {
+        "heading": "What Ethical Solar Does",
+        "description": "Solar is not just panels — it's a complete system. We design, install, and support solar + storage solutions that reduce bills, improve reliability, and deliver long-term savings.",
+        "linkText": "Get a free solar assessment",
+        "linkHref": "/contact-us",
+        "bottomText": "Want a clear estimate for your property? We'll model your roof, show expected production, and explain incentives available in your area.",
+        "services": [
+          {
+            "service": "Residential Solar",
+            "icon": "FiHome",
+            "problem": "High electricity bills and unpredictable rate increases.",
+            "get": "Site assessment, system design, premium panels + inverter, clean installation.",
+            "savings": "Cuts monthly bills and increases home value with long-term energy security."
+          },
+          {
+            "service": "Commercial Solar",
+            "icon": "FiBriefcase",
+            "problem": "Rising operating costs are eating into profit margins.",
+            "get": "Energy audit, scalable design, performance modelling, compliant commercial install.",
+            "savings": "Reduces overhead, improves sustainability reporting, and stabilizes energy spend."
+          },
+          {
+            "service": "Battery Storage",
+            "icon": "FiBatteryCharging",
+            "problem": "Grid outages and peak-hour costs reduce reliability and savings.",
+            "get": "Battery sizing, backup setup, smart load control, hybrid-ready configuration.",
+            "savings": "Stores solar for night use, improves resilience, and increases ROI over time."
+          },
+          {
+            "service": "Maintenance & Monitoring",
+            "icon": "FiActivity",
+            "problem": "Systems underperform without anyone noticing.",
+            "get": "Production monitoring, health checks, cleaning guidance, warranty support.",
+            "savings": "Protects performance year-round and maximizes lifetime savings."
+          }
+        ]
+      }
+    },
+    {
+      "id": "letstalk-001",
+      "type": "lets-talk",
+      "adminTitle": "Let's Talk",
+      "props": {}
+    },
+    {
+      "id": "ourservices-001",
+      "type": "our-services",
+      "adminTitle": "Our Services",
+      "props": {
+        "heading": "Our services",
+        "services": [
+          {
+            "title": "Solar for Home",
+            "icon": "FiSun",
+            "description": "Take control of your power with custom-designed rooftop solar. We design a system around your roof and budget."
+          },
+          {
+            "title": "Ground-Mounted Solar",
+            "icon": "FiGrid",
+            "description": "If your roof is shaded or unsuitable, ground-mounted solar gives you maximum performance."
+          },
+          {
+            "title": "Solar for Small Business",
+            "icon": "FiBriefcase",
+            "description": "Lower operating costs and lock in predictable bills. Capture incentives while keeping operations running."
+          },
+          {
+            "title": "Solar Battery Backup",
+            "icon": "FiBatteryCharging",
+            "description": "Stay powered during outages. Store excess solar energy and use it when you need it most, day or night."
+          },
+          {
+            "title": "Battery Installation",
+            "icon": "FiTool",
+            "description": "Professional installation and seamless integration. Configured for safety, efficiency, and easy monitoring."
+          },
+          {
+            "title": "Smart Panel Installation",
+            "icon": "FiCpu",
+            "description": "Upgrade to smart panels for control. Monitor usage, optimise loads, and make the most of your system."
+          }
+        ]
+      }
+    },
+    {
+      "id": "about-001",
+      "type": "about-strip",
+      "adminTitle": "About Strip",
+      "props": {
+        "heading": "What We Do",
+        "description": "We design and install reliable solar + storage systems for homes and businesses — with clear pricing, quality components, and long-term support.",
+        "videoSection": {
+          "brandName": "ETHICAL SOLAR",
+          "label": "Solar Installation Overview",
+          "posterSrc": "/assets/img/solar-panal4.jpg",
+          "videoSrc": "/assets/img/showreel.mp4"
+        },
+        "services": [
+          {
+            "title": "Residential Solar",
+            "description": "Custom rooftop solar systems designed for your home, usage, and budget — built to maximize long-term savings.",
+            "linkText": "Explore Residential solar",
+            "href": "/residential"
+          },
+          {
+            "title": "Commercial Solar",
+            "description": "Scalable solar solutions for businesses to reduce operating costs and improve sustainability performance.",
+            "linkText": "Explore commercial solar",
+            "href": "/commercial"
+          },
+          {
+            "title": "Battery Storage",
+            "description": "Store energy for nights and outages. Add backup power and smarter savings with modern battery systems.",
+            "linkText": "Explore battery options",
+            "href": "#battery"
+          },
+          {
+            "title": "Maintenance & Monitoring",
+            "description": "Ongoing monitoring, performance checks, and maintenance support to keep your system running at its best.",
+            "linkText": "View support plans",
+            "href": "#support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whowebuildfor-001",
+      "type": "who-we-build-for",
+      "adminTitle": "Who We Build For",
+      "props": {
+        "heading": "Who We Build Solar For",
+        "description": "Ethical Solar partners with homeowners and businesses to design solar + storage systems that reduce costs, improve reliability, and deliver long-term savings.",
+        "audiences": [
+          {
+            "title": "Homeowners (Residential)",
+            "icon": "FiHome",
+            "description": "For families who want lower power bills and long-term energy independence. We design clean, high-performance rooftop solar systems.",
+            "linkText": "Explore Residential solar",
+            "href": "/residential"
+          },
+          {
+            "title": "Commercial & Industrial",
+            "icon": "FiBriefcase",
+            "description": "For businesses that want to reduce operating costs and improve sustainability metrics with scalable solar solutions.",
+            "linkText": "Explore commercial solar",
+            "href": "/commercial"
+          },
+          {
+            "title": "Battery & Backup",
+            "icon": "FiBatteryCharging",
+            "description": "For anyone who wants protection from outages and better savings by storing solar energy for night use and peak times.",
+            "linkText": "Explore battery storage",
+            "href": "/residential#battery"
+          },
+          {
+            "title": "Maintenance & Monitoring",
+            "icon": "FiTool",
+            "description": "For existing systems that need peak performance. Monitoring, inspections, and support to maximize lifetime production.",
+            "linkText": "View maintenance plans",
+            "href": "/contact-us"
+          }
+        ],
+        "statsBlock": {
+          "heading": "Different properties. One goal: reliable savings with a solar system designed to last.",
+          "buttonText": "Get a free Solar Assessment",
+          "stats": [
+            {
+              "value": "30 Years",
+              "label": "Total Performance Warranty with long-term reliability assurance."
+            },
+            {
+              "value": "25+10 Years",
+              "label": "25 Years Product Warranty on Panels and 10 Years Product Warranty on Inverter & Batteries."
+            },
+            {
+              "value": "70–90%",
+              "label": "Bill reduction is possible for most properties, depending on usage and system size."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta-001",
+      "type": "cta-section",
+      "adminTitle": "CTA Section",
+      "props": {}
+    }
+  ]
+}
