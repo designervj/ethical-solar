@@ -21,10 +21,10 @@ export default function AdminBar() {
     return (
       <button
         onClick={() => setIsVisible(true)}
-        className="fixed top-3 right-3 z-[10000] flex items-center gap-2 px-4 h-8 bg-[#000000] border border-white/20 text-white/80 rounded-full transition-all duration-200 hover:scale-105 hover:border-[#2AF598] hover:text-white font-semibold text-[11px] shadow-lg shadow-black/40"
+        className="fixed top-3 right-3 z-[10000] flex items-center gap-2 px-4 h-8 bg-[#000000] border border-white/20 text-white/80 rounded-full transition-all duration-200 hover:scale-105 hover:border-accent hover:text-white font-semibold text-[11px] shadow-lg shadow-black/40"
         title="Show Admin Bar"
       >
-        <Eye className="w-3.5 h-3.5 text-[#2AF598]" />
+        <Eye className="w-3.5 h-3.5 text-accent" />
         <span>Show Admin Bar</span>
       </button>
     );
@@ -38,7 +38,7 @@ export default function AdminBar() {
         <div className="flex items-center">
           <a 
             href="#admin-dashboard" 
-            className="flex items-center gap-2 text-white/80 hover:text-[#2AF598] transition-colors duration-200 font-bold uppercase tracking-wider text-[11px]"
+            className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors duration-200 font-bold uppercase tracking-wider text-[11px]"
             onClick={(e) => {
               e.preventDefault();
               alert("Redirecting to Admin Dashboard...");
@@ -56,7 +56,7 @@ export default function AdminBar() {
             onClick={() => setShowComments(!showComments)}
             className={`h-7 px-3 rounded-full flex items-center gap-2 transition-all border text-[11px] font-semibold ${
               showComments 
-                ? "bg-[#2AF598]/10 border-[#2AF598] text-[#2AF598] hover:bg-[#2AF598]/20" 
+                ? "bg-accent/10 border-accent text-accent hover:bg-accent/20" 
                 : "bg-white/5 border-white/20 text-white/80 hover:bg-white/10 hover:text-white"
             }`}
           >

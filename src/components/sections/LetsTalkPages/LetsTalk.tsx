@@ -120,7 +120,7 @@ const LetsTalk: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 bg-[#3ccb7f] hover:bg-[#23499b] text-white px-5 py-3 rounded-full text-sm font-medium shadow-sm hover:brightness-95 transition"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white px-5 py-3 rounded-full text-sm font-medium shadow-sm hover:brightness-95 transition"
               >
                 <img src="/assets/Image/mail2-icon.svg" alt="send" className="w-5 h-5" />
                 Send Message

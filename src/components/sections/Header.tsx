@@ -44,7 +44,7 @@ const Header = () => {
       : null;
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[linear-gradient(90deg,_#050B2F_0%,_#121212_100%)] shadow">
+    <header className="sticky top-0 z-50 w-full bg-[linear-gradient(90deg,_var(--gradient-start)_0%,_var(--gradient-end)_100%)] shadow">
       <div
         className="relative"
         onMouseLeave={() => setActiveMega(null)}
@@ -75,7 +75,7 @@ const Header = () => {
                     className={`group text-[16px] font-medium transition-colors relative ${
                       isActive
                         ? "text-[#f4f4f4]"
-                        : "text-[#fff] hover:text-[#3ccb7f]"
+                        : "text-[#fff] hover:text-primary"
                     }`}
                   >
                     {item.name}
@@ -83,8 +83,8 @@ const Header = () => {
                       <span
                         className={`pointer-events-none absolute left-0 -bottom-1 h-[2px] rounded-full transition-all duration-200 ${
                           isActive
-                            ? "w-full bg-[#3ccb7f]"
-                            : "w-0 bg-[#3ccb7f] group-hover:w-full"
+                            ? "w-full bg-primary"
+                            : "w-0 bg-primary group-hover:w-full"
                         }`}
                       />
                     )}
@@ -94,7 +94,7 @@ const Header = () => {
 
               <Link
                 href="/contact-us"
-                className="bg-[#3ccb7f] hover:bg-[#23499b] text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
+                className="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
               >
                 Get a Quote
               </Link>
@@ -135,7 +135,7 @@ const Header = () => {
                             onMouseEnter={() => setActiveSectionIndex(idx)}
                             className={`w-full text-left text-base font-bold py-3 px-4 rounded-md transition-all ${
                               isSelected
-                                ? "bg-[#3ccb7f] text-white shadow-sm"
+                                ? "bg-primary text-white shadow-sm"
                                 : "text-gray-900 hover:bg-gray-50"
                             }`}
                           >
@@ -158,12 +158,12 @@ const Header = () => {
                               href={href}
                               className="group relative flex items-start gap-3 p-4 rounded-lg transition-all duration-200 bg-transparent hover:bg-[#f6f7f9]"
                             >
-                              <span className="absolute inset-y-0 left-0 w-1 rounded-full bg-transparent group-hover:bg-[#3ccb7f]" />
-                              <div className="relative z-10 mt-1 flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-[11px] font-semibold text-gray-500 group-hover:border-[#0e7090] group-hover:text-[#0e7090]">
+                              <span className="absolute inset-y-0 left-0 w-1 rounded-full bg-transparent group-hover:bg-primary" />
+                              <div className="relative z-10 mt-1 flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-[11px] font-semibold text-gray-500 group-hover:border-secondary group-hover:text-secondary">
                                 {badgeLetter}
                               </div>
                               <div className="relative z-10">
-                                <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-[#0e7090]">
+                                <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-secondary">
                                   {sub.title}
                                 </h4>
                                 <p className="mt-1 text-xs text-gray-500 leading-relaxed">{sub.description}</p>
@@ -183,7 +183,7 @@ const Header = () => {
                     <div className="w-full">
                       {currentMega.items.map((section) => (
                         <div key={section.title} className="mb-6">
-                          <h3 className="text-sm font-semibold uppercase text-[#0e7090] mb-3">
+                          <h3 className="text-sm font-semibold uppercase text-secondary mb-3">
                             {section.title}
                           </h3>
                           <div className="grid grid-cols-2 gap-x-10 gap-y-4">
@@ -195,7 +195,7 @@ const Header = () => {
                                   href={href}
                                   className="group flex flex-col p-3 rounded-md hover:bg-[#F4F5F7] transition-colors"
                                 >
-                                  <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-[#0e7090]">
+                                  <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-secondary">
                                     {card.title}
                                   </h4>
                                   <p className="mt-1 text-xs text-gray-500 leading-relaxed">{card.description}</p>
@@ -232,7 +232,7 @@ const Header = () => {
             <Link
               href="/contact-us"
               onClick={() => setMobileOpen(false)}
-              className="bg-[#3ccb7f] hover:bg-[#0e7090] text-white w-full py-3 rounded-full text-sm font-medium text-center transition-all"
+              className="bg-primary hover:bg-secondary text-white w-full py-3 rounded-full text-sm font-medium text-center transition-all"
             >
               Get a Quote
             </Link>

@@ -28,13 +28,13 @@ const FooterHeading: React.FC<{ title: string }> = ({ title }) => (
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative overflow-hidden bg-[linear-gradient(90deg,_#050B2F_0%,_#121212_100%)] text-white border-t-4 border-[#2AF598] px-[5%] pt-20 pb-8 font-sans">
+    <footer className="relative overflow-hidden bg-[linear-gradient(90deg,_var(--gradient-start)_0%,_var(--gradient-end)_100%)] text-white border-t-4 border-accent px-[5%] pt-20 pb-8 font-sans">
       <div className="pointer-events-none absolute -top-12 -right-[10%] h-[700px] w-[700px] opacity-[0.15] z-[1]">
         <svg viewBox="0 0 100 100" className="h-full w-full">
           <defs>
             <linearGradient id="themeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="#005C97" stopOpacity="1" />
-              <stop offset="100%" stopColor="#2AF598" stopOpacity="1" />
+              <stop offset="100%" stopColor="var(--primary-hover)" stopOpacity="1" />
             </linearGradient>
           </defs>
           <path d="M 50 0 A 50 50 0 0 1 100 50" fill="none" stroke="url(#themeGrad)" strokeWidth="2" />
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
           <FooterHeading title="Contact" />
           <div className="space-y-3 text-[0.95rem] text-[#fff]">
             <p className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-5 w-5 text-[#00b09b]" />
+              <MapPin className="mt-0.5 h-5 w-5 text-[var(--primary)]" />
               <span className="text-[#cfd8dc]">
                 Suite No. 1562,<br /> 17 Gould Road<br />
                 Herston 4006<br />
@@ -70,14 +70,14 @@ const Footer: React.FC = () => {
               </span>
             </p>
             <p className="flex items-start gap-3">
-              <Phone className="mt-0.5 h-5 w-5 text-[#00b09b]" />
-              <a href="tel:+61-1300686595" className="text-[#cfd8dc] hover:text-[#2AF598]">
+              <Phone className="mt-0.5 h-5 w-5 text-[var(--primary)]" />
+              <a href="tel:+61-1300686595" className="text-[#cfd8dc] hover:text-accent">
                 <span>(+61) 1300 686 595</span>
               </a>
             </p>
             <p className="flex items-start gap-3">
-              <Mail className="mt-0.5 h-5 w-5 text-[#00b09b]" />
-              <a href="mailto:info@ethicalsolar.com.au" className="text-[#cfd8dc] hover:text-[#2AF598]">
+              <Mail className="mt-0.5 h-5 w-5 text-[var(--primary)]" />
+              <a href="mailto:info@ethicalsolar.com.au" className="text-[#cfd8dc] hover:text-accent">
                 <span>info@ethicalsolar.com.au</span>
               </a>
             </p>
@@ -85,9 +85,9 @@ const Footer: React.FC = () => {
         </div>
 
         <div>
-          <div className="rounded-xl border border-[#2AF598]/30 bg-white/[0.03] p-5 text-center">
-            <div className="mx-auto mb-2 h-10 w-10 rounded-full bg-[#2AF598]/15 grid place-items-center">
-              <span className="text-[#2AF598] text-xl font-black">✓</span>
+          <div className="rounded-xl border border-accent/30 bg-white/[0.03] p-5 text-center">
+            <div className="mx-auto mb-2 h-10 w-10 rounded-full bg-accent/15 grid place-items-center">
+              <span className="text-accent text-xl font-black">✓</span>
             </div>
             <span className="block font-bold text-white mb-1">SAA Accredited Installer</span>
             <span className="block text-[0.8rem] text-[#cfd8dc] leading-snug">
@@ -107,9 +107,9 @@ const Footer: React.FC = () => {
           <br/>ABN: 13 670 165 938
         </span>
         <span className="mt-2 inline-block text-[13px]">
-          <a href="#" className="text-[#cfd8dc] hover:text-[#2AF598]">Privacy Policy</a>
+          <a href="#" className="text-[#cfd8dc] hover:text-accent">Privacy Policy</a>
           &nbsp;|&nbsp;
-          <a href="#" className="text-[#cfd8dc] hover:text-[#2AF598]">Terms of Service</a>
+          <a href="#" className="text-[#cfd8dc] hover:text-accent">Terms of Service</a>
         </span>
       </div>
     </footer>

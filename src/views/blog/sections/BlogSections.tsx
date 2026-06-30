@@ -15,7 +15,7 @@ export function BlogGrid({ posts }: any) {
                 alt={post.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[#050B2F] uppercase tracking-wide">
+              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--gradient-start)] uppercase tracking-wide">
                 {post.category}
               </div>
             </div>

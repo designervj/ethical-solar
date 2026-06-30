@@ -5,66 +5,71 @@
 @tailwind utilities;
 
 /* ==========================================================
-   DESIGN SYSTEM
+   ETHICAL SOLAR - MODERN DESIGN SYSTEM
 ========================================================== */
 
 @layer base {
   :root {
-    /* Colors */
-    --primary: #3ccb7f;
-    --primary-light: #64d799;
-    --primary-dark: #2ea166;
-    --primary-hover: #2ba564;
+    /* Brand Colors - Premium Solar Vibe */
+    --primary: #10B981; /* Emerald Green */
+    --primary-light: #34D399;
+    --primary-dark: #059669;
+    --primary-hover: #047857;
 
-    --secondary: #23469B;
-    --accent: #2AF598;
+    --secondary: #2563EB; /* Deep Blue for contrast/panels */
+    --accent: #F59E0B; /* Sun/Amber Accent */
 
-    --background: #ffffff;
-    --surface: #F8F8F8;
-    --card: #ffffff;
+    /* Gradients */
+    --gradient-start: #050B2F;
+    --gradient-end: #121212;
 
-    --text: #0F0F3D;
-    --text-secondary: #555555;
-    --text-muted: #888888;
+    /* Neutrals & Surfaces */
+    --background: #FAFAFA;
+    --surface: #FFFFFF;
+    --card: #FFFFFF;
 
-    --border: #e2e8f0;
-    --border-hover: #cbd5e1;
+    /* Typography Colors */
+    --text: #0F172A; /* Slate 900 for rich contrast */
+    --text-secondary: #475569; /* Slate 600 */
+    --text-muted: #94A3B8; /* Slate 400 */
 
-    /* Fonts */
+    /* Borders */
+    --border: #E2E8F0;
+    --border-hover: #CBD5E1;
+
+    /* Modern Typography Tokens */
     --font-body: "Inter", system-ui, sans-serif;
-    --font-heading: "Epilogue", "Inter", system-ui, sans-serif;
+    --font-heading: "Epilogue", system-ui, sans-serif;
 
-    /* Brand Colors (Legacy support) */
-    --brand-orange: #FF7020;
-    --brand-text: #4F4640;
+    /* Legacy support overrides */
+    --brand-orange: #F59E0B;
+    --brand-text: #0F172A;
   }
 
-  *,
-  *::before,
-  *::after {
-      box-sizing: border-box;
+  *, *::before, *::after {
+    box-sizing: border-box;
   }
 
   html {
-      scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 
   body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-
-      font-family: var(--font-body);
-      background: var(--background);
-      color: var(--text);
-
-      transition: all .3s ease;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--font-body);
+    background: var(--background);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   h1, h2, h3, h5, h6 {
       margin: 0;
       font-family: var(--font-heading);
-      line-height: 1.2 !important;
+      line-height: 120% !important;
   }
 
   h1, h2, h3 {
@@ -86,17 +91,19 @@
   }
 
   span {
-      font-family: var(--font-body);
+    font-family: inherit;
   }
 
   a {
-      color: inherit;
-      text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
   }
 
   img {
-      display: block;
-      max-width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -106,15 +113,20 @@
 
 @layer components {
   .container {
-    @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8; /* Modern wider container */
   }
 
   .container-lg {
-    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-12;
   }
 
   .container-xl {
-    @apply mx-auto w-[90%] px-4 sm:px-6 lg:px-8;
+    @apply mx-auto w-[92%] px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Modern Button Base */
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-[var(--primary-hover)] hover:shadow-lg hover:shadow-[var(--primary-light)]/30 active:scale-95;
   }
 }
 
@@ -133,22 +145,28 @@
 }
 
 /* ==========================================================
-   SCROLLBAR
+   SCROLLBAR & SELECTION
 ========================================================== */
 
+::selection {
+  background: var(--primary-light);
+  color: white;
+}
+
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--surface);
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border-radius: 999px;
+  background: var(--border-hover);
+  border-radius: 999px;
+  border: 2px solid var(--background);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-hover);
+  background: var(--primary);
 }

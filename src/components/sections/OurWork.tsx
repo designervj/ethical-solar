@@ -111,7 +111,7 @@ export default function WhoWeCreateFor() {
             </div>
             <a
               href="/contact-us"
-              className="inline-flex items-center justify-center bg-[#3ccb7f] hover:bg-[#23499b] text-white px-7 py-3 rounded-full text-md font-medium transition-all"
+              className="inline-flex items-center justify-center bg-primary hover:bg-secondary text-white px-7 py-3 rounded-full text-md font-medium transition-all"
             >
               Book a Free Solar Assessment
             </a>

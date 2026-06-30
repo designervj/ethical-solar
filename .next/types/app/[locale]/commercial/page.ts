@@ -1,4 +1,4 @@
-// File: /Users/apple/Documents/GitHub/ethical-solar/src/app/[locale]/commercial/page.tsx
+// File: D:\projects\tyre-Project\git\ethical-solar\src\app\[locale]\commercial\page.tsx
 import * as entry from '../../../../../src/app/[locale]/commercial/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

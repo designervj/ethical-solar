@@ -11,7 +11,7 @@ export function ContactOptions({ options }: any) {
           {options.map((opt: any) => (
             <div
               key={opt.title}
-              className="bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.10)] p-8 text-center border-b-4 border-transparent hover:-translate-y-1 hover:border-[#2AF598] transition"
+              className="bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.10)] p-8 text-center border-b-4 border-transparent hover:-translate-y-1 hover:border-accent transition"
             >
               <div className="text-4xl mb-4">{opt.icon}</div>
               <h3 className="text-[#00305a] text-xl font-semibold mb-2">{opt.title}</h3>
@@ -58,7 +58,7 @@ export function ContactForm({ addressInfo }: any) {
                 </div>
                 <div>
                   <div className="font-semibold text-[#00305a] mb-1">Email Us</div>
-                  <a className="text-[#666] hover:text-[#00b09b] transition" href={`mailto:${addressInfo.email}`}>{addressInfo.email}</a>
+                  <a className="text-[#666] hover:text-[var(--primary)] transition" href={`mailto:${addressInfo.email}`}>{addressInfo.email}</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
@@ -67,7 +67,7 @@ export function ContactForm({ addressInfo }: any) {
                 </div>
                 <div>
                   <div className="font-semibold text-[#00305a] mb-1">Call Us</div>
-                  <a className="text-[#666] hover:text-[#00b09b] transition" href={`tel:${addressInfo.phone}`}>{addressInfo.phoneLabel || addressInfo.phone}</a>
+                  <a className="text-[#666] hover:text-[var(--primary)] transition" href={`tel:${addressInfo.phone}`}>{addressInfo.phoneLabel || addressInfo.phone}</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
@@ -119,12 +119,12 @@ export function ContactForm({ addressInfo }: any) {
                 <textarea
                   rows={5}
                   placeholder="Tell us about your energy needs..."
-                  className="w-full rounded-xl border border-black/10 p-3 text-sm outline-none focus:ring-2 focus:ring-[#2AF598]/20 focus:border-[#2AF598]"
+                  className="w-full rounded-xl border border-black/10 p-3 text-sm outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent"
                 />
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 bg-[#3ccb7f] text-white px-6 py-3 rounded-full text-sm font-semibold shadow-sm hover:brightness-95 transition"
+                className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full text-sm font-semibold shadow-sm hover:brightness-95 transition"
               >
                 Send Message
               </button>

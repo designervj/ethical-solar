@@ -64,7 +64,7 @@ export default function WhoWeBuildForSection({ heading, description, audiences, 
                 ))}
               </div>
 
-              <Button className="bg-[#3ccb7f] hover:bg-[#2ba564] text-white px-8 py-6 rounded-full text-[15px] font-semibold border-0 shadow-lg transition-transform hover:scale-105">
+              <Button className="bg-primary hover:bg-primary-hover text-white px-8 py-6 rounded-full text-[15px] font-semibold border-0 shadow-lg transition-transform hover:scale-105">
                 {statsBlock.buttonText || "Get a free Solar Assessment"}
               </Button>
             </div>

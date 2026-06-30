@@ -5,13 +5,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", "ui-sans-serif", "system-ui"],
-        serif: ["Epilogue", "serif"],
+        inter: ["var(--font-body)"],
+        serif: ["var(--font-heading)"],
+        heading: ["var(--font-heading)"],
       },
       colors: {
         brand: {
-          orange: "#FF7020",
-          text: "#4F4640",
+          orange: "var(--brand-orange)",
+          text: "var(--brand-text)",
         },
         background: "var(--background)",
         foreground: "var(--text)",
@@ -25,6 +26,9 @@ module.exports = {
         },
         primary: {
           DEFAULT: "var(--primary)",
+          light: "var(--primary-light)",
+          dark: "var(--primary-dark)",
+          hover: "var(--primary-hover)",
           foreground: "var(--background)",
         },
         secondary: {
