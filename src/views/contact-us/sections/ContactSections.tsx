@@ -14,9 +14,9 @@ export function ContactOptions({ options }: any) {
               className="bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.10)] p-8 text-center border-b-4 border-transparent hover:-translate-y-1 hover:border-accent transition"
             >
               <div className="text-4xl mb-4">{opt.icon}</div>
-              <h3 className="text-[#00305a] text-xl font-semibold mb-2">{opt.title}</h3>
-              <p className="text-[#666] mb-4">{opt.desc}</p>
-              <a href={opt.href} className="text-[#005C97] font-semibold underline underline-offset-4">
+              <h3 className="text-secondary text-xl font-semibold mb-2">{opt.title}</h3>
+              <p className="text-text-secondary mb-4">{opt.desc}</p>
+              <a href={opt.href} className="text-secondary font-semibold underline underline-offset-4">
                 {opt.linkText}
               </a>
             </div>
@@ -38,46 +38,46 @@ export function ContactForm({ addressInfo }: any) {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-10 lg:gap-14 items-start">
           <div>
             <div className="mb-6">
-              <div className="text-[#005C97] font-semibold tracking-[0.2em] text-xs uppercase mb-3">{addressInfo.subtitle}</div>
-              <h3 className="text-[#00305a] text-2xl md:text-3xl font-semibold mb-3">{addressInfo.title}</h3>
-              <p className="text-[#555]">{addressInfo.description}</p>
+              <div className="text-secondary font-semibold tracking-[0.2em] text-xs uppercase mb-3">{addressInfo.subtitle}</div>
+              <h3 className="text-secondary text-2xl md:text-3xl font-semibold mb-3">{addressInfo.title}</h3>
+              <p className="text-text-secondary">{addressInfo.description}</p>
             </div>
             <div className="space-y-5">
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 rounded-full bg-[#f8fbfe] grid place-items-center text-[#005C97]">
+                <div className="w-12 h-12 rounded-full bg-light-dark grid place-items-center text-secondary">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="font-semibold text-[#00305a] mb-1">Head Office</div>
-                  <div className="text-[#666] leading-relaxed" dangerouslySetInnerHTML={{__html: addressInfo.address}} />
+                  <div className="font-semibold text-secondary mb-1">Head Office</div>
+                  <div className="text-text-secondary leading-relaxed" dangerouslySetInnerHTML={{__html: addressInfo.address}} />
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 rounded-full bg-[#f8fbfe] grid place-items-center text-[#005C97]">
+                <div className="w-12 h-12 rounded-full bg-light-dark grid place-items-center text-secondary">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="font-semibold text-[#00305a] mb-1">Email Us</div>
-                  <a className="text-[#666] hover:text-[var(--primary)] transition" href={`mailto:${addressInfo.email}`}>{addressInfo.email}</a>
+                  <div className="font-semibold text-secondary mb-1">Email Us</div>
+                  <a className="text-text-secondary hover:text-[var(--primary)] transition" href={`mailto:${addressInfo.email}`}>{addressInfo.email}</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 rounded-full bg-[#f8fbfe] grid place-items-center text-[#005C97]">
+                <div className="w-12 h-12 rounded-full bg-light-dark grid place-items-center text-secondary">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="font-semibold text-[#00305a] mb-1">Call Us</div>
-                  <a className="text-[#666] hover:text-[var(--primary)] transition" href={`tel:${addressInfo.phone}`}>{addressInfo.phoneLabel || addressInfo.phone}</a>
+                  <div className="font-semibold text-secondary mb-1">Call Us</div>
+                  <a className="text-text-secondary hover:text-[var(--primary)] transition" href={`tel:${addressInfo.phone}`}>{addressInfo.phoneLabel || addressInfo.phone}</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 rounded-full bg-[#f8fbfe] grid place-items-center text-[#005C97]">
+                <div className="w-12 h-12 rounded-full bg-light-dark grid place-items-center text-secondary">
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="font-semibold text-[#00305a] mb-1">Business Hours</div>
+                  <div className="font-semibold text-secondary mb-1">Business Hours</div>
                   {addressInfo.hours.map((line: string, i: number) => (
-                    <div key={i} className="text-[#666]">{line}</div>
+                    <div key={i} className="text-text-secondary">{line}</div>
                   ))}
                 </div>
               </div>
@@ -88,34 +88,34 @@ export function ContactForm({ addressInfo }: any) {
             id="contact-section"
             className="bg-white rounded-2xl border border-gray-200 shadow-[0_10px_40px_rgba(0,92,151,0.05)] p-7 md:p-10"
           >
-            <h3 className="text-[#00305a] text-2xl font-semibold mb-6">Send us a Message</h3>
+            <h3 className="text-secondary text-2xl font-semibold mb-6">Send us a Message</h3>
             <form onSubmit={onSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <label className="space-y-2">
-                  <span className="text-[15px] font-semibold text-[#00305a]">First Name*</span>
+                  <span className="text-[15px] font-semibold text-secondary">First Name*</span>
                   <input required type="text" placeholder="John" className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40" />
                 </label>
                 <label className="space-y-2">
-                  <span className="text-[15px] font-semibold text-[#00305a]">Last Name*</span>
+                  <span className="text-[15px] font-semibold text-secondary">Last Name*</span>
                   <input required type="text" placeholder="Doe" className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40" />
                 </label>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <label className="space-y-2">
-                  <span className="text-[15px] font-semibold text-[#00305a]">Email*</span>
+                  <span className="text-[15px] font-semibold text-secondary">Email*</span>
                   <input required type="email" placeholder="john@example.com" className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40" />
                 </label>
                 <label className="space-y-2">
-                  <span className="text-[15px] font-semibold text-[#00305a]">Phone*</span>
+                  <span className="text-[15px] font-semibold text-secondary">Phone*</span>
                   <input required type="tel" placeholder="04XX XXX XXX" className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40" />
                 </label>
               </div>
               <label className="space-y-2 block">
-                <span className="text-[15px] font-semibold text-[#00305a]">Postcode</span>
+                <span className="text-[15px] font-semibold text-secondary">Postcode</span>
                 <input required type="text" placeholder="e.g. 4000" className="w-full border-b border-black/15 py-2 text-sm outline-none focus:border-black/40" />
               </label>
               <div className="space-y-2">
-                <span className="text-[15px] font-semibold text-[#00305a]">How can we help?</span>
+                <span className="text-[15px] font-semibold text-secondary">How can we help?</span>
                 <textarea
                   rows={5}
                   placeholder="Tell us about your energy needs..."

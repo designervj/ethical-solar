@@ -6,7 +6,7 @@ const WhatToExpect = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div
           className="
-            bg-[#F8F8F8]
+            bg-background
             rounded-[20px]
             min-h-[260px] md:min-h-[320px]
             flex flex-col items-center justify-center
@@ -15,11 +15,11 @@ const WhatToExpect = () => {
       
           "
         >
-          <h2 className="text-2xl md:text-[48px] font-medium text-[#555555] mb-4">
+          <h2 className="text-2xl md:text-[48px] font-medium text-text-secondary mb-4">
             What to Expect
           </h2>
 
-          <ul className="text-sm md:text-[18px] text-[#555555] space-y-2 list-disc list-inside text-start">
+          <ul className="text-sm md:text-[18px] text-text-secondary space-y-2 list-disc list-inside text-start">
             <li>Friendly, clear and straight to the point.</li>
             <li>No pressure, no pushy sales bullshit.</li>
             <li>You’ll get an honest assessment of what will actually help.</li>

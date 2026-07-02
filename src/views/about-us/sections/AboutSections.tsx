@@ -14,7 +14,7 @@ export function AboutHero({ heading, paragraphs, image }: any) {
           ))}
         </div>
         <div className="relative">
-          <div className="absolute -inset-4 bg-emerald-100 rounded-full opacity-50 blur-3xl z-0"></div>
+          <div className="absolute -inset-4 bg-surface rounded-full opacity-50 blur-3xl z-0"></div>
           <img src={image} alt="About Us" className="relative z-10 rounded-2xl shadow-xl" />
         </div>
       </div>
@@ -44,7 +44,7 @@ export function AboutCommitments({ heading, subheading, items }: any) {
             const Icon = iconMap[item.icon] || CheckCircle;
             return (
               <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-                <div className="w-14 h-14 bg-emerald-50 rounded-full flex items-center justify-center mb-5 text-emerald-600">
+                <div className="w-14 h-14 bg-surface rounded-full flex items-center justify-center mb-5 text-primary">
                   <Icon size={28} />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -90,7 +90,7 @@ export function AboutSustainability({ heading, description, points, image }: any
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -inset-4 bg-emerald-700 rounded-full opacity-40 blur-3xl z-0"></div>
+            <div className="absolute -inset-4 bg-primary rounded-full opacity-40 blur-3xl z-0"></div>
             <img src={image} alt="Sustainability" className="relative z-10 rounded-2xl shadow-2xl" />
           </div>
         </div>
@@ -109,7 +109,7 @@ export function AboutWhyChoose({ heading, reasons }: any) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5 max-w-4xl mx-auto">
           {reasons.map((reason: string, i: number) => (
             <div key={i} className="flex items-start gap-3 py-3 border-b border-gray-200 last:border-0">
-              <CheckCircle className="text-emerald-600 shrink-0 mt-0.5" size={20} />
+              <CheckCircle className="text-primary shrink-0 mt-0.5" size={20} />
               <span className="text-gray-700 text-sm md:text-base leading-relaxed">{reason}</span>
             </div>
           ))}

@@ -15,7 +15,7 @@ const FooterLink: React.FC<FooterLinkProps> = ({ href, children }) => (
   <li>
     <Link
       href={href}
-      className="text-[#cfd8dc] text-[16px] transition hover:text-[#e5e7eb] hover:pl-1 font-medium"
+      className="text-text-muted text-[16px] transition hover:text-text-muted hover:pl-1 font-medium"
     >
       {children}
     </Link>
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         <svg viewBox="0 0 100 100" className="h-full w-full">
           <defs>
             <linearGradient id="themeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#005C97" stopOpacity="1" />
+              <stop offset="0%" stopColor="var(--secondary)" stopOpacity="1" />
               <stop offset="100%" stopColor="var(--primary-hover)" stopOpacity="1" />
             </linearGradient>
           </defs>
@@ -60,10 +60,10 @@ const Footer: React.FC = () => {
 
         <div>
           <FooterHeading title="Contact" />
-          <div className="space-y-3 text-[0.95rem] text-[#fff]">
+          <div className="space-y-3 text-[0.95rem] text-surface">
             <p className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 text-[var(--primary)]" />
-              <span className="text-[#cfd8dc]">
+              <span className="text-text-muted">
                 Suite No. 1562,<br /> 17 Gould Road<br />
                 Herston 4006<br />
                 QLD, Australia
@@ -71,13 +71,13 @@ const Footer: React.FC = () => {
             </p>
             <p className="flex items-start gap-3">
               <Phone className="mt-0.5 h-5 w-5 text-[var(--primary)]" />
-              <a href="tel:+61-1300686595" className="text-[#cfd8dc] hover:text-accent">
+              <a href="tel:+61-1300686595" className="text-text-muted hover:text-accent">
                 <span>(+61) 1300 686 595</span>
               </a>
             </p>
             <p className="flex items-start gap-3">
               <Mail className="mt-0.5 h-5 w-5 text-[var(--primary)]" />
-              <a href="mailto:info@ethicalsolar.com.au" className="text-[#cfd8dc] hover:text-accent">
+              <a href="mailto:info@ethicalsolar.com.au" className="text-text-muted hover:text-accent">
                 <span>info@ethicalsolar.com.au</span>
               </a>
             </p>
@@ -90,14 +90,14 @@ const Footer: React.FC = () => {
               <span className="text-accent text-xl font-black">✓</span>
             </div>
             <span className="block font-bold text-white mb-1">SAA Accredited Installer</span>
-            <span className="block text-[0.8rem] text-[#cfd8dc] leading-snug">
+            <span className="block text-[0.8rem] text-text-muted leading-snug">
               Service area - South East Queensland (SEQ)
             </span>
           </div>
         </div>
       </div>
 
-      <div className="relative z-[2] mt-14 pt-5 border-t border-white/10 text-center text-[0.85rem] text-[#cfd8dc]">
+      <div className="relative z-[2] mt-14 pt-5 border-t border-white/10 text-center text-[0.85rem] text-text-muted">
         <span className="hidden md:block mt-2">
           &copy; 2026 Ethical Solar Pty Ltd. All rights reserved.
           ABN: 13 670 165 938
@@ -107,9 +107,9 @@ const Footer: React.FC = () => {
           <br/>ABN: 13 670 165 938
         </span>
         <span className="mt-2 inline-block text-[13px]">
-          <a href="#" className="text-[#cfd8dc] hover:text-accent">Privacy Policy</a>
+          <a href="#" className="text-text-muted hover:text-accent">Privacy Policy</a>
           &nbsp;|&nbsp;
-          <a href="#" className="text-[#cfd8dc] hover:text-accent">Terms of Service</a>
+          <a href="#" className="text-text-muted hover:text-accent">Terms of Service</a>
         </span>
       </div>
     </footer>

@@ -29,7 +29,7 @@ const LetsTalk: React.FC = () => {
     <section className="w-full bg-white py-10 md:py-20">
       <div className="container-xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-6 overflow-hidden">
-          <div className="bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] text-white p-8 md:p-10 flex flex-col min-h-[520px] rounded-[20px] md:w-1/3">
+          <div className="bg-gradient-to-r from-secondary to-primary-light text-white p-8 md:p-10 flex flex-col min-h-[520px] rounded-[20px] md:w-1/3">
             <div>
               <h4 className="text-xl font-semibold">Get a free solar assessment</h4>
             </div>
@@ -64,7 +64,7 @@ const LetsTalk: React.FC = () => {
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <label className="space-y-2">
-                  <span className="text-[16px] font-semibold text-[#0F0F3D]">First Name*</span>
+                  <span className="text-[16px] font-semibold text-text">First Name*</span>
                   <input
                     type="text"
                     placeholder="Jhon"
@@ -72,7 +72,7 @@ const LetsTalk: React.FC = () => {
                   />
                 </label>
                 <label className="space-y-2 block">
-                  <span className="text-[16px] font-semibold text-[#0F0F3D]">Email*</span>
+                  <span className="text-[16px] font-semibold text-text">Email*</span>
                   <input
                     type="email"
                     placeholder="Jhon@example.com"
@@ -81,7 +81,7 @@ const LetsTalk: React.FC = () => {
                 </label>
               </div>
               <label className="space-y-2 block">
-                <span className="text-[16px] font-semibold text-[#0F0F3D]">Postcode</span>
+                <span className="text-[16px] font-semibold text-text">Postcode</span>
                 <input
                   type="text"
                   placeholder="e.g. 4000"
@@ -89,7 +89,7 @@ const LetsTalk: React.FC = () => {
                 />
               </label>
               <div className="space-y-2">
-                <span className="text-[16px] font-semibold text-[#0F0F3D]">Message</span>
+                <span className="text-[16px] font-semibold text-text">Message</span>
                 <textarea
                   rows={5}
                   placeholder="Write your questions here..."
@@ -120,7 +120,7 @@ const LetsTalk: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white px-5 py-3 rounded-full text-sm font-medium shadow-sm hover:brightness-95 transition"
+                className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-3 rounded-full text-sm font-medium shadow-sm hover:brightness-95 transition"
               >
                 <img src="/assets/Image/mail2-icon.svg" alt="send" className="w-5 h-5" />
                 Send Message

@@ -23,7 +23,7 @@ export function CommercialServices({ heading, subheading, services }: any) {
             const Icon = iconMap[service.icon] || CheckCircle;
             return (
               <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
-                <div className={`w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 bg-emerald-100 text-emerald-600`}>
+                <div className={`w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 bg-surface text-primary`}>
                   <Icon size={28} />
                 </div>
                 <div>
@@ -32,7 +32,7 @@ export function CommercialServices({ heading, subheading, services }: any) {
                   <ul className="space-y-2">
                     {service.bullets.map((b: string, j: number) => (
                       <li key={j} className="flex items-start gap-2 text-sm text-gray-600">
-                        <CheckCircle size={16} className="text-emerald-500 mt-0.5 shrink-0" />
+                        <CheckCircle size={16} className="text-primary mt-0.5 shrink-0" />
                         {b}
                       </li>
                     ))}
@@ -58,7 +58,7 @@ export function CommercialProcess({ heading, subheading, steps }: any) {
         <div className="max-w-3xl mx-auto space-y-6">
           {steps.map((step: any, i: number) => (
             <div key={i} className="flex gap-6 items-start bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <div className="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0">{step.step}</div>
+              <div className="w-12 h-12 bg-primary-hover text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0">{step.step}</div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
@@ -89,7 +89,7 @@ export function CommercialBattery({ heading, description, points, image }: any) 
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -inset-4 bg-emerald-700 rounded-full opacity-40 blur-3xl z-0"></div>
+            <div className="absolute -inset-4 bg-primary rounded-full opacity-40 blur-3xl z-0"></div>
             <img src={image} alt="Battery storage system" className="relative z-10 rounded-2xl shadow-2xl" />
           </div>
         </div>
@@ -109,8 +109,8 @@ export function CommercialPanels({ heading, subheading, panels }: any) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {panels.map((panel: any, i: number) => (
             <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <div className="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center mb-5">
-                <Sun className="text-emerald-600" size={20} />
+              <div className="w-10 h-10 bg-surface rounded-full flex items-center justify-center mb-5">
+                <Sun className="text-primary" size={20} />
               </div>
               <h3 className="text-gray-900 font-bold text-lg mb-3">{panel.brand}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{panel.detail}</p>
@@ -122,7 +122,7 @@ export function CommercialPanels({ heading, subheading, panels }: any) {
   );
 }
 
-export function CommercialFinance({ heading, description, stats }: any) {
+export function CommercialFinance({ heading, description,stats,descriptiontwo }: any) {
   return (
     <section className="bg-white py-20">
       <div className="container-xl">
@@ -133,11 +133,12 @@ export function CommercialFinance({ heading, description, stats }: any) {
             <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-200 bg-white rounded-2xl border border-gray-100 mb-8">
               {stats.map((item: any, i: number) => (
                 <div key={i} className="text-center py-8 px-6">
-                  <div className="text-3xl font-bold text-emerald-600 mb-2">{item.stat}</div>
+                  <div className="text-3xl font-bold text-primary mb-2">{item.stat}</div>
                   <div className="text-gray-500 text-sm leading-snug">{item.label}</div>
                 </div>
               ))}
             </div>
+            <p className="text-gray-600 text-md leading-relaxed mb-8">{descriptiontwo}</p>
           </div>
         </div>
       </div>
@@ -153,8 +154,8 @@ const FAQ: React.FC<{ q: string; a: string }> = ({ q, a }) => {
         className="w-full py-6 flex justify-between items-center text-left focus:outline-none group bg-white"
         onClick={() => setOpen(!open)}
       >
-        <span className="text-sm md:text-lg font-medium text-gray-900 pr-8 group-hover:text-emerald-600 transition-colors">{q}</span>
-        {open ? <ChevronUp className="text-emerald-500 flex-shrink-0" /> : <ChevronDown className="text-gray-400 flex-shrink-0" />}
+        <span className="text-sm md:text-lg font-medium text-gray-900 pr-8 group-hover:text-primary transition-colors">{q}</span>
+        {open ? <ChevronUp className="text-primary flex-shrink-0" /> : <ChevronDown className="text-gray-400 flex-shrink-0" />}
       </button>
       <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-96 pb-6" : "max-h-0"}`}>
         <p className="text-gray-600 leading-relaxed">{a}</p>

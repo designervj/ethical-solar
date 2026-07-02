@@ -19,7 +19,7 @@ const SliderBrandSolar: React.FC<any> = ({ heading, brands }) => {
       <div className="mx-auto max-w-6xl px-4">
         {heading && (
           <div className="text-center">
-            <p className="text-sm md:text-base italic font-medium text-[#555555]">
+            <p className="text-sm md:text-base italic font-medium text-text-secondary">
               {heading}
             </p>
           </div>

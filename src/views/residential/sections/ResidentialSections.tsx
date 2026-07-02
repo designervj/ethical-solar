@@ -51,7 +51,7 @@ export function ResidentialHero({ title, highlight, description, formTitle, form
                   </select>
                 </div>
                 <div className="pt-2">
-                  <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white border-0 shadow-lg shadow-emerald-500/30">
+                  <Button className="w-full bg-primary hover:bg-primary-hover text-white border-0 shadow-lg shadow-primary/30">
                     Get a solar assessment
                   </Button>
                 </div>
@@ -71,7 +71,7 @@ export function ResidentialBenefits({ heading, description, benefits, incentives
     <section className="bg-white py-20 md:px-0 px-4">
       <div className="container-xl">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <span className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-2 block">Benefits</span>
+          <span className="text-primary font-bold tracking-widest text-sm uppercase mb-2 block">Benefits</span>
           <h2 className="md:text-4xl text-3xl font-serif text-gray-900 mb-6">{heading}</h2>
           <p className="text-gray-600 leading-relaxed">{description}</p>
         </div>
@@ -79,9 +79,9 @@ export function ResidentialBenefits({ heading, description, benefits, incentives
           {benefits.slice(0, 2).map((benefit: any, i: number) => {
             const Icon = benefitIconMap[benefit.icon] || Home;
             return (
-              <div key={i} className="group bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 rounded-2xl p-8 transition-all duration-300">
-                <div className="w-12 h-12 bg-emerald-100 group-hover:bg-emerald-200 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
-                  <Icon className="text-emerald-700" size={24} />
+              <div key={i} className="group bg-gray-50 hover:bg-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl p-8 transition-all duration-300">
+                <div className="w-12 h-12 bg-surface group-hover:bg-emerald-200 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+                  <Icon className="text-primary" size={24} />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3">{benefit.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{benefit.desc}</p>
@@ -89,16 +89,16 @@ export function ResidentialBenefits({ heading, description, benefits, incentives
             );
           })}
           
-          <div className="group md:col-span-2 bg-emerald-900 rounded-2xl p-8 md:p-10 transition-all duration-300 bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)]">
+          <div className="group md:col-span-2 bg-emerald-900 rounded-2xl p-8 md:p-10 transition-all duration-300 bg-gradient-to-r from-secondary to-primary-light">
             <div className="flex flex-col md:flex-row md:gap-10 gap-6">
               <div className="shrink-0">
-                <div className="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-5">
+                <div className="w-12 h-12 bg-surface rounded-xl flex items-center justify-center mb-5">
                   <Award className="text-emerald-200" size={24} />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-1">{incentives.title}</h3>
                 <p className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">{incentives.subtitle}</p>
               </div>
-              <div className="space-y-4 md:border-l md:border-emerald-700 md:pl-10">
+              <div className="space-y-4 md:border-l md:border-primary md:pl-10">
                 {incentives.points.map((p: string, i: number) => (
                   <p key={i} className="text-white text-sm leading-relaxed" dangerouslySetInnerHTML={{__html: p}} />
                 ))}
@@ -109,9 +109,9 @@ export function ResidentialBenefits({ heading, description, benefits, incentives
           {benefits.slice(2).map((benefit: any, i: number) => {
             const Icon = benefitIconMap[benefit.icon] || Home;
             return (
-              <div key={i} className="group bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 rounded-2xl p-8 transition-all duration-300">
-                <div className="w-12 h-12 bg-emerald-100 group-hover:bg-emerald-200 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
-                  <Icon className="text-emerald-700" size={24} />
+              <div key={i} className="group bg-gray-50 hover:bg-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl p-8 transition-all duration-300">
+                <div className="w-12 h-12 bg-surface group-hover:bg-emerald-200 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+                  <Icon className="text-primary" size={24} />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3">{benefit.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{benefit.desc}</p>
@@ -139,7 +139,7 @@ export function ResidentialHowItWorks({ heading, description, steps }: any) {
             const Icon = worksIconMap[step.icon] || Sun;
             return (
               <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
-                <div className={`w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0`}>
+                <div className={`w-14 h-14 bg-surface text-primary rounded-full flex items-center justify-center flex-shrink-0`}>
                   <Icon size={28} />
                 </div>
                 <div>
@@ -157,7 +157,7 @@ export function ResidentialHowItWorks({ heading, description, steps }: any) {
 
 export function ResidentialMaintenance({ heading, items }: any) {
   return (
-    <section className="py-20 bg-[#f7f7f7]">
+    <section className="py-20 bg-background">
       <div className="container-xl">
         <div className="text-center mb-16">
           <h2 className="md:text-4xl text-3xl font-serif mb-6 text-gray-800">{heading}</h2>
@@ -168,7 +168,7 @@ export function ResidentialMaintenance({ heading, items }: any) {
             return (
               <div key={i} className="flex md:gap-6 gap-4 items-start">
                 <div className="bg-white p-3 rounded-xl shadow">
-                  <Icon className="w-8 h-8 text-[#00305a]" />
+                  <Icon className="w-8 h-8 text-secondary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-3">{item.title}</h3>
@@ -185,7 +185,7 @@ export function ResidentialMaintenance({ heading, items }: any) {
 
 const ProcessStep = ({ number, title, desc }: { number: string; title: string; desc: string }) => (
   <div className="flex gap-6 relative group">
-    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-serif font-bold text-xl z-10 relative group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-serif font-bold text-xl z-10 relative group-hover:bg-primary-hover group-hover:text-white transition-colors duration-300">
       {number}
     </div>
     <div className="pb-12 border-l-2 border-gray-100 -ml-[48px] pl-16 group-last:border-0 group-last:pb-0">

@@ -39,9 +39,9 @@ export default function ProductTabsGrid({ categories }: { categories: Category[]
                     <div className="p-3 pb-2">
                       <div className="font-semibold">{p.name}</div>
                     </div>
-                    <div className="border-b border-[#E6E6E6] mx-3" />
+                    <div className="border-b border-border mx-3" />
                     <div className="flex items-center p-4 pt-2">
-                      <div className="text-[13px] font-semibold text-[#FF7020]">EUR {p.priceEUR.toFixed(2)}</div>
+                      <div className="text-[13px] font-semibold text-accent">EUR {p.priceEUR.toFixed(2)}</div>
                     </div>
                   </div>
                 </motion.div>

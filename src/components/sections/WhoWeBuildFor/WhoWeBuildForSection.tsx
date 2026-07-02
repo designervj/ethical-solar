@@ -15,11 +15,11 @@ export default function WhoWeBuildForSection({ heading, description, audiences, 
   const displayAudiences = audiences || [];
 
   return (
-    <section className="py-20 md:py-24 md:px-12 px-4 bg-[#F8F9FA]">
+    <section className="py-20 md:py-24 md:px-12 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0F0F3D] mb-6">{heading || "Who We Build Solar For"}</h2>
-          <p className="text-[#555555] max-w-3xl mx-auto md:text-[16px] leading-relaxed font-medium">
+          <h2 className="text-3xl md:text-4xl font-bold text-text mb-6">{heading || "Who We Build Solar For"}</h2>
+          <p className="text-text-secondary max-w-3xl mx-auto md:text-[16px] leading-relaxed font-medium">
             {description}
           </p>
         </div>
@@ -30,15 +30,15 @@ export default function WhoWeBuildForSection({ heading, description, audiences, 
             return (
               <div key={title} className="bg-white rounded-[20px] p-8 shadow-sm border border-gray-100 flex flex-col items-start hover:shadow-md transition-shadow">
                 <div className="flex gap-4 items-center mb-4">
-                  <div className="w-10 h-10 shrink-0 rounded-full bg-[#E8F8F0] text-[#00875A] flex items-center justify-center">
+                  <div className="w-10 h-10 shrink-0 rounded-full bg-surface text-primary flex items-center justify-center">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <h3 className="text-[18px] font-bold text-[#0F0F3D]">{title}</h3>
+                  <h3 className="text-[18px] font-bold text-text">{title}</h3>
                 </div>
-                <p className="text-[14px] leading-relaxed text-[#555555] font-medium mb-6 flex-1">
+                <p className="text-[14px] leading-relaxed text-text-secondary font-medium mb-6 flex-1">
                   {description}
                 </p>
-                <a href={href} className="group flex items-center gap-2 text-[14px] text-[#00875A] font-semibold hover:text-emerald-800 transition mt-auto">
+                <a href={href} className="group flex items-center gap-2 text-[14px] text-primary font-semibold hover:text-primary-dark transition mt-auto">
                   {linkText} <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
@@ -47,9 +47,9 @@ export default function WhoWeBuildForSection({ heading, description, audiences, 
         </div>
 
         {statsBlock && (
-          <div className="bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] rounded-[20px] p-10 md:p-14 text-center text-white shadow-xl relative overflow-hidden">
+          <div className="bg-gradient-to-r from-secondary to-primary-light rounded-[20px] p-10 md:p-14 text-center text-white shadow-xl relative overflow-hidden">
             <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-bold mb-12 max-w-2xl mx-auto leading-tight">
+              <h3 className="text-2xl md:text-4xl font-bold mb-12 max-w-4xl mx-auto leading-tight">
                 {statsBlock.heading}
               </h3>
 
@@ -64,7 +64,7 @@ export default function WhoWeBuildForSection({ heading, description, audiences, 
                 ))}
               </div>
 
-              <Button className="bg-primary hover:bg-primary-hover text-white px-8 py-6 rounded-full text-[15px] font-semibold border-0 shadow-lg transition-transform hover:scale-105">
+              <Button className="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-full text-[15px] font-semibold border-0 shadow-lg transition-transform hover:scale-105">
                 {statsBlock.buttonText || "Get a free Solar Assessment"}
               </Button>
             </div>

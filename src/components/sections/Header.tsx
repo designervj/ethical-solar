@@ -74,8 +74,8 @@ const Header = () => {
                     }
                     className={`group text-[16px] font-medium transition-colors relative ${
                       isActive
-                        ? "text-[#f4f4f4]"
-                        : "text-[#fff] hover:text-primary"
+                        ? "text-background"
+                        : "text-surface hover:text-primary"
                     }`}
                   >
                     {item.name}
@@ -156,7 +156,7 @@ const Header = () => {
                             <Link
                               key={sub.title}
                               href={href}
-                              className="group relative flex items-start gap-3 p-4 rounded-lg transition-all duration-200 bg-transparent hover:bg-[#f6f7f9]"
+                              className="group relative flex items-start gap-3 p-4 rounded-lg transition-all duration-200 bg-transparent hover:bg-surface"
                             >
                               <span className="absolute inset-y-0 left-0 w-1 rounded-full bg-transparent group-hover:bg-primary" />
                               <div className="relative z-10 mt-1 flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-[11px] font-semibold text-gray-500 group-hover:border-secondary group-hover:text-secondary">
@@ -193,7 +193,7 @@ const Header = () => {
                                 <Link
                                   key={card.title}
                                   href={href}
-                                  className="group flex flex-col p-3 rounded-md hover:bg-[#F4F5F7] transition-colors"
+                                  className="group flex flex-col p-3 rounded-md hover:bg-surface transition-colors"
                                 >
                                   <h4 className="text-[15px] font-semibold text-gray-900 group-hover:text-secondary">
                                     {card.title}

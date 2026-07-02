@@ -167,7 +167,7 @@
       "adminTitle": "Who We Build For",
       "props": {
         "heading": "Who We Build Solar For",
-        "description": "Ethical Solar partners with homeowners and businesses to design solar + storage systems that reduce costs, improve reliability, and deliver long-term savings.",
+        "description": "Ethical Solar partners with homeowners and businesses to deliver custom systems, high-quality components, and long-term energy savings.",
         "audiences": [
           {
             "title": "Homeowners (Residential)",
@@ -204,11 +204,11 @@
           "stats": [
             {
               "value": "30 Years",
-              "label": "Total Performance Warranty with long-term reliability assurance."
+              "label": "Panel Performance Warranty with long-term reliability assurance."
             },
             {
               "value": "25+10 Years",
-              "label": "25 Years Product Warranty on Panels and 10 Years Product Warranty on Inverter & Batteries."
+              "label": "25 Years Product Warranty on Panels and 10 Years Product Warranty on Inverters & Batteries."
             },
             {
               "value": "70–90%",

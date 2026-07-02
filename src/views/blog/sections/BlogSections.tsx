@@ -21,11 +21,11 @@ export function BlogGrid({ posts }: any) {
             </div>
             <div className="p-6 flex flex-col flex-grow">
               <p className="text-gray-400 text-xs mb-3">{post.date}</p>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
                 {post.title}
               </h3>
               <p className="text-gray-600 text-sm mb-6 flex-grow">{post.excerpt}</p>
-              <a href="#" className="inline-flex items-center text-emerald-600 font-semibold text-sm hover:text-emerald-700">
+              <a href="#" className="inline-flex items-center text-primary font-semibold text-sm hover:text-primary">
                 Read Article <ArrowRight size={16} className="ml-1" />
               </a>
             </div>

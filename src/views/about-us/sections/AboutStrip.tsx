@@ -29,7 +29,7 @@ export default function AboutStrip({ heading, description, services, videoSectio
       <div className="container-xl mx-auto">
         <div className="max-w-lg mx-auto text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-normal text-gray-800 mb-4">{heading || "What We Do"}</h2>
-          <p className="md:text-lg text-base text-[#555555]">
+          <p className="md:text-lg text-base text-text-secondary">
             {description}
           </p>
         </div>
@@ -48,8 +48,8 @@ export default function AboutStrip({ heading, description, services, videoSectio
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className={
               expanded
-                ? "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[560px]"
-                : "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[450px] p-6 flex flex-col justify-between"
+                ? "relative w-full bg-secondary rounded-2xl overflow-hidden h-[400px] md:h-[560px]"
+                : "relative w-full bg-secondary rounded-2xl overflow-hidden h-[400px] md:h-[450px] p-6 flex flex-col justify-between"
             }
           >
             {!expanded && (
@@ -125,13 +125,13 @@ export default function AboutStrip({ heading, description, services, videoSectio
 
           <motion.div layout transition={{ duration: 0.7, ease: "easeInOut" }} className={cardGridClass}>
             {displayServices.map((service: any) => (
-              <motion.div layout key={service.title} className="bg-[#F3F3F3] border border-none rounded-2xl p-6 h-full flex flex-col">
-                <h4 className="font-bold text-lg text-[#1F1F1F] mb-2">{service.title}</h4>
-                <p className="text-[#4B4B4B] text-sm mb-4">{service.description}</p>
+              <motion.div layout key={service.title} className="bg-background border border-none rounded-2xl p-6 h-full flex flex-col">
+                <h4 className="font-bold text-lg text-text mb-2">{service.title}</h4>
+                <p className="text-text-secondary text-sm mb-4">{service.description}</p>
                 <hr className="mt-auto" />
                 <a
                   href={service.href}
-                  className="text-[#047857] hover:text-[#047857] text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
+                  className="text-primary-dark hover:text-primary text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
                 >
                   {service.linkText}
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

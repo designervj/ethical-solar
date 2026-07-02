@@ -21,7 +21,7 @@ export default function AdminBar() {
     return (
       <button
         onClick={() => setIsVisible(true)}
-        className="fixed top-3 right-3 z-[10000] flex items-center gap-2 px-4 h-8 bg-[#000000] border border-white/20 text-white/80 rounded-full transition-all duration-200 hover:scale-105 hover:border-accent hover:text-white font-semibold text-[11px] shadow-lg shadow-black/40"
+        className="fixed top-3 right-3 z-[10000] flex items-center gap-2 px-4 h-8 bg-text border border-white/20 text-white/80 rounded-full transition-all duration-200 hover:scale-105 hover:border-accent hover:text-white font-semibold text-[11px] shadow-lg shadow-black/40"
         title="Show Admin Bar"
       >
         <Eye className="w-3.5 h-3.5 text-accent" />
@@ -31,7 +31,7 @@ export default function AdminBar() {
   }
 
   return (
-    <div className="w-full bg-[#000000] text-white text-[13px] font-sans border-b border-white/10 relative z-[9999] select-none">
+    <div className="w-full bg-text text-white text-[13px] font-sans border-b border-white/10 relative z-[9999] select-none">
       <div className="w-full px-4 h-11 flex items-center justify-between">
         
         {/* Left Section (Dashboard Link) */}
@@ -69,7 +69,7 @@ export default function AdminBar() {
             onClick={() => setEditMode(!editMode)}
             className={`h-7 px-3 rounded-full flex items-center gap-1.5 transition-all text-[11px] font-semibold border ${
               editMode 
-                ? "bg-[#FF7020] border-[#FF7020] text-white hover:bg-[#FF7020]/90 shadow-[0_0_12px_rgba(255,112,32,0.4)]" 
+                ? "bg-accent border-accent text-white hover:bg-accent/90 shadow-[0_0_12px_rgba(255,112,32,0.4)]" 
                 : "bg-white/5 border-white/20 text-white/80 hover:bg-white/10 hover:text-white"
             }`}
           >
@@ -94,7 +94,7 @@ export default function AdminBar() {
 
       {/* Inline Edit Banner (under the bar, when editMode is true) */}
       {editMode && (
-        <div className="w-full bg-[#FF7020] text-white text-center py-2 text-[12px] font-medium animate-pulse border-t border-white/10">
+        <div className="w-full bg-accent text-white text-center py-2 text-[12px] font-medium animate-pulse border-t border-white/10">
           ✨ Inline editing is active. Hover over any text block on the page and click to update.
         </div>
       )}

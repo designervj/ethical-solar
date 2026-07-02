@@ -18,7 +18,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   backgroundImage,
 }) => {
   return (
-    <div className="relative h-[50vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-[50vh] lg:min-h-[500px] py-24 md:py-32 flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src={backgroundImage}
@@ -43,7 +43,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
         {buttonText && (
           <a
             href={buttonLink}
-            className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3 rounded-full font-semibold transition duration-300"
+            className="inline-block bg-primary-hover hover:bg-primary text-white px-7 py-3 rounded-full font-semibold transition duration-300"
           >
             {buttonText}
           </a>

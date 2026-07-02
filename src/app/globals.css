@@ -11,23 +11,19 @@
 @layer base {
   :root {
     /* Brand Colors - Premium Solar Vibe */
-    --primary: #10B981; /* Emerald Green */
-    --primary-light: #34D399;
-    --primary-dark: #059669;
-    --primary-hover: #047857;
-
-    --secondary: #2563EB; /* Deep Blue for contrast/panels */
+    --primary: #00875A; /* Emerald Green */
+    --primary-light: #26A187;
+    --primary-dark: #00704A;
+    --primary-hover: #00704A;
+    --secondary: #23469B; /* Deep Blue for contrast/panels */
     --accent: #F59E0B; /* Sun/Amber Accent */
-
     /* Gradients */
     --gradient-start: #050B2F;
     --gradient-end: #121212;
-
     /* Neutrals & Surfaces */
-    --background: #FAFAFA;
+    --background: #f7f7f7;
     --surface: #FFFFFF;
     --card: #FFFFFF;
-
     /* Typography Colors */
     --text: #0F172A; /* Slate 900 for rich contrast */
     --text-secondary: #475569; /* Slate 600 */
@@ -42,8 +38,8 @@
     --font-heading: "Epilogue", system-ui, sans-serif;
 
     /* Legacy support overrides */
-    --brand-orange: #F59E0B;
-    --brand-text: #0F172A;
+    --brand-orange: var(--accent);
+    --brand-text: var(--text);
   }
 
   *, *::before, *::after {
@@ -170,3 +166,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
+
+
+.bg-surface{
+  background-color: #d1fae5 !important;
+  border: 1px solid #d1fae5 !important;
+}
+
+.bg-light-dark{
+  background-color: #f8fbfe !important;
+
+}
+

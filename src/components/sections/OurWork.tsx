@@ -52,7 +52,7 @@ const stats = [
 export default function WhoWeCreateFor() {
   return (
     <>
-      <section className="bg-[#f7f7f7] py-20 md:py-18 px-4 md:px-10">
+      <section className="bg-background py-20 md:py-18 px-4 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-[40px] font-normal text-gray-900 mb-4">Who We Build Solar For</h2>
@@ -72,13 +72,13 @@ export default function WhoWeCreateFor() {
                   className="group rounded-2xl border border-black/10 bg-white p-7 shadow-sm hover:shadow-md transition-all"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="h-12 w-12 rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100 grid place-items-center">
+                    <div className="h-12 w-12 rounded-full bg-primary/10 text-primary ring-1 ring-primary/20 grid place-items-center">
                       <Icon className="h-6 w-6" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
                       <p className="text-gray-600 leading-relaxed">{item.description}</p>
-                      <div className="mt-4 inline-flex items-center gap-2 text-emerald-700 font-medium">
+                      <div className="mt-4 inline-flex items-center gap-2 text-primary font-medium">
                         {item.linkText}
                         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </div>
@@ -91,9 +91,9 @@ export default function WhoWeCreateFor() {
         </div>
       </section>
 
-      <section className="bg-[#f7f7f7] py-20 md:pt-0 md:pb-24 px-4 md:px-0">
+      <section className="bg-background py-20 md:pt-0 md:pb-24 px-4 md:px-0">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-[linear-gradient(90deg,_#23469B_0%,_#26A187_100%)] text-white rounded-2xl p-10 md:p-14 text-center">
+          <div className="bg-gradient-to-r from-secondary to-primary-light text-white rounded-2xl p-10 md:p-14 text-center">
             <h3 className="md:text-[30px] text-[24px] font-normal max-w-3xl mx-auto py-5 md:mb-10">
               Different properties. One goal: reliable savings with a solar system designed to last.
             </h3>

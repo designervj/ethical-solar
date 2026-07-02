@@ -15,6 +15,10 @@ module.exports = {
           text: "var(--brand-text)",
         },
         background: "var(--background)",
+        surface: "var(--surface)",
+        text: "var(--text)",
+        "text-secondary": "var(--text-secondary)",
+        "text-muted": "var(--text-muted)",
         foreground: "var(--text)",
         card: {
           DEFAULT: "var(--card)",
